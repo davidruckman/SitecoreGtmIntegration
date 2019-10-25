@@ -1,5 +1,4 @@
 ﻿using Sitecore.Analytics;
-using Sitecore.Analytics.Model;
 using Sitecore.ContentSearch;
 using Sitecore.ContentSearch.SearchTypes;
 using Sitecore.Diagnostics;

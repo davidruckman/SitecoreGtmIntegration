@@ -25,6 +25,16 @@ Project("{CAA73BB0-EF22-4D79-A57E-DF67B3BA9C80}") = "RDA.Feature.RichText.Serial
 EndProject
 Project("{CAA73BB0-EF22-4D79-A57E-DF67B3BA9C80}") = "RDA.Project.SymposiumDemo.Serialization", "src\Project\SymposiumDemo\serialization\RDA.Project.SymposiumDemo.Serialization.scproj", "{C2479C8A-7D53-4E3F-8C02-8DFC63D2B4F2}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Resources", "Resources", "{B2C8D006-E31B-4CD2-A093-55C8083B1130}"
+	ProjectSection(SolutionItems) = preProject
+		Resources\Sample Reqs Document.xlsx = Resources\Sample Reqs Document.xlsx
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "GTM", "GTM", "{DC278A30-AC34-48FE-9C05-8F370616AA07}"
+	ProjectSection(SolutionItems) = preProject
+		Resources\GTM\GTM-SymposiumDemo.json = Resources\GTM\GTM-SymposiumDemo.json
+	EndProjectSection
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		CM US East|Any CPU = CM US East|Any CPU
@@ -91,9 +101,10 @@ Global
 		{084EE08F-CD2F-4647-A3BD-CE23B94925D7} = {489B548C-C8FD-4CEC-8A30-F591A6ED188F}
 		{BE4BF1EB-8541-4188-A69D-1251FCA15B38} = {A7253CCE-D2F4-470A-A497-FEC1E9CA8600}
 		{C2479C8A-7D53-4E3F-8C02-8DFC63D2B4F2} = {90195810-6253-4678-AEA4-72203E6963D6}
+		{DC278A30-AC34-48FE-9C05-8F370616AA07} = {B2C8D006-E31B-4CD2-A093-55C8083B1130}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
-		SolutionGuid = {DCB83F51-B488-4E94-B934-94E441841529}
 		EnterpriseLibraryConfigurationToolBinariesPathV6 = packages\EnterpriseLibrary.Common.6.0.1304.0\lib\NET45;packages\EnterpriseLibrary.TransientFaultHandling.6.0.1304.0\lib\portable-net45+win+wp8;packages\EnterpriseLibrary.TransientFaultHandling.Caching.6.0.1304.0\lib\NET45;packages\EnterpriseLibrary.TransientFaultHandling.Data.6.0.1304.1\lib\NET45;packages\EnterpriseLibrary.TransientFaultHandling.ServiceBus.6.0.1304.0\lib\NET45;packages\EnterpriseLibrary.TransientFaultHandling.WindowsAzure.Storage.6.0.1304.0\lib\NET45;packages\EnterpriseLibrary.TransientFaultHandling.Configuration.6.0.1304.0\lib\NET45
+		SolutionGuid = {DCB83F51-B488-4E94-B934-94E441841529}
 	EndGlobalSection
 EndGlobal
