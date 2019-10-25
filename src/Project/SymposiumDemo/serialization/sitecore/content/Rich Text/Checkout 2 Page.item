@@ -1,0 +1,684 @@
+----item----
+version: 1
+id: {F441A90E-0185-4CD3-8C14-572659ED05F3}
+database: master
+path: /sitecore/content/Rich Text/Checkout 2 Page
+parent: {29E596C9-E880-4176-9EB6-FDCE51E48F20}
+name: Checkout 2 Page
+master: {00000000-0000-0000-0000-000000000000}
+template: {8CD96FD3-C7BB-4647-BA91-E8A779C5C4CC}
+templatekey: Rich Text
+created: 20191011T000357Z
+
+----version----
+language: en
+version: 1
+revision: 6324bfba-c210-493e-9b90-590f5784cfbd
+
+----field----
+field: {01A5F9FF-7E14-4C2D-AB36-1BDDF2B1D2CD}
+name: Rich Text
+key: rich text
+content-length: 25801
+
+<!-- Required meta tags -->
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+<!-- Font & Icon -->
+<link href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,500,500i,700,700i&amp;display=swap" rel="stylesheet" />
+<link href="https://fonts.googleapis.com/css?family=Roboto+Condensed:400,700" rel="stylesheet" />
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
+<!-- Favicon -->
+<link rel="shortcut icon" type="image/x-icon" href="/img/favicon/favicon.ico" />
+<link rel="icon" type="image/x-icon" href="/img/favicon/favicon.ico" />
+<link rel="icon" type="image/png" href="/img/favicon/favicon.png" />
+<link rel="apple-touch-icon" href="/img/favicon/touch-icon-iphone.png" />
+<link rel="apple-touch-icon" sizes="152x152" href="/img/favicon/touch-icon-ipad.png" />
+<link rel="apple-touch-icon" sizes="180x180" href="/img/favicon/touch-icon-iphone-retina.png" />
+<link rel="apple-touch-icon" sizes="167x167" href="/img/favicon/touch-icon-ipad-retina.png" />
+<!-- Main style -->
+<link rel="stylesheet" href="/css/style.min.css" />
+<title>Mimity</title>
+<!-- TOP BAR -->
+<div class="topbar">
+<div class="container-fluid d-flex align-items-center">
+<nav class="nav mr-1 d-none d-md-flex">
+<a class="nav-link nav-link-sm has-icon bg-white pl-0" href="#"><em class="material-icons mr-1">phone</em> 212 123 456 789</a>
+<a class="nav-link nav-link-sm has-icon bg-white" href="#"><em class="material-icons mr-1">mail_outline</em> support@mimity.com</a>
+</nav>
+<nav class="nav nav-circle d-none d-sm-flex">
+<a class="nav-link nav-link-sm nav-icon p-0" href="#"><em class="custom-icon" data-icon="facebook" data-size="17x17"></em></a>
+<a class="nav-link nav-link-sm nav-icon p-0" href="#"><em class="custom-icon" data-icon="twitter" data-size="17x17"></em></a>
+<a class="nav-link nav-link-sm nav-icon p-0" href="#"><em class="custom-icon" data-icon="instagram" data-size="17x17"></em></a>
+</nav>
+<div class="btn-group btn-group-toggle btn-group-sm ml-auto mr-1" data-toggle="buttons">
+<label class="btn btn-text-primary active">
+<input type="radio" name="lang" /> EN
+</label>
+<label class="btn btn-text-primary">
+<input type="radio" name="lang" /> RU
+</label>
+</div>
+<nav class="nav nav-gap-x-1 ml-auto mr-1">
+<div class="nav-item nav-pills dropdown">
+<a class="nav-link nav-link-sm dropdown-toggle no-caret" href="#" id="currencyDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" data-display="static">
+$ USD
+</a>
+<div class="dropdown-menu dropdown-menu-right font-size-sm" aria-labelledby="currencyDropdown">
+<button class="dropdown-item active" type="button">$ USD</button>
+<button class="dropdown-item" type="button">&euro; EUR</button>
+<button class="dropdown-item" type="button">&pound; UKP</button>
+<button class="dropdown-item" type="button">&yen; JPY</button>
+</div>
+</div>
+<div class="nav-item nav-pills dropdown">
+<a class="nav-link nav-link-sm dropdown-toggle no-caret" href="#" id="langDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" data-display="static">
+English
+</a>
+<div class="dropdown-menu dropdown-menu-right font-size-sm" aria-labelledby="langDropdown">
+<button class="dropdown-item active" type="button">English</button>
+<button class="dropdown-item" type="button">Fran&ccedil;ais</button>
+<button class="dropdown-item" type="button">Deutsch</button>
+<button class="dropdown-item" type="button">Italiano</button>
+</div>
+</div>
+</nav>
+<nav class="nav">
+<div class="nav-item nav-pills dropdown dropdown-hover">
+<a class="nav-link nav-link-sm dropdown-toggle has-icon hover" href="#" id="userDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" data-display="static">
+<em class="material-icons mr-1">person</em> Hi, John
+</a>
+<div class="dropdown-menu dropdown-menu-right font-size-sm" aria-labelledby="userDropdown">
+<a class="dropdown-item has-icon pr-5" href="/"><em class="material-icons mr-2">shopping_cart</em> My Orders</a>
+<a class="dropdown-item has-icon pr-5" href="/"><em class="material-icons mr-2">favorite_border</em> Wishlist</a>
+<a class="dropdown-item has-icon pr-5" href="/"><em class="material-icons mr-2">person</em> Account Setting</a>
+<div class="dropdown-divider">&nbsp;</div>
+<a class="dropdown-item has-icon pr-5 text-danger" href="/"><em class="material-icons mr-2">exit_to_app</em> Sign Out</a>
+</div>
+</div>
+</nav>
+</div>
+</div>
+<!-- /TOP BAR -->
+<!-- HEADER -->
+<header>
+<div class="container-fluid">
+<nav class="nav nav-circle d-flex d-lg-none">
+<a href="#menuModal" data-toggle="modal" class="nav-link nav-icon"><em class="material-icons">menu</em></a>
+</nav>
+<nav class="nav ml-3 ml-lg-0">
+<a href="/" class="nav-link has-icon p-0 bg-white">
+<img src="/img/logo.png" alt="Logo" height="40" />
+</a>
+</nav>
+<nav class="nav nav-main nav-gap-x-1 nav-pills ml-3 d-none d-lg-flex">
+<div class="nav-item dropdown dropdown-hover">
+<a class="nav-link dropdown-toggle no-caret forwardable" href="/" id="homeDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+Home
+</a>
+<div class="dropdown-menu" aria-labelledby="homeDropdown">
+<a class="dropdown-item" href="/">Layout 1</a>
+<a class="dropdown-item" href="/">Layout 2</a>
+<a class="dropdown-item" href="/">Electronics Store</a>
+</div>
+</div>
+<div class="nav-item dropdown dropdown-hover">
+<a class="nav-link dropdown-toggle no-caret forwardable active" href="/" id="shopDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+Shop
+</a>
+<div class="dropdown-menu" aria-labelledby="shopDropdown">
+<a class="dropdown-item" href="/">Shop Categories</a>
+<a class="dropdown-item" href="/">Shop Grid</a>
+<a class="dropdown-item" href="/">Shop List</a>
+<a class="dropdown-item" href="/">Cart</a>
+<div class="dropdown-submenu">
+<a class="dropdown-item active" href="/">Checkout</a>
+<div class="dropdown-menu">
+<a class="dropdown-item" href="/">Checkout - Shipping</a>
+<a class="dropdown-item active" href="/">Checkout - Payment</a>
+<a class="dropdown-item" href="/">Checkout - Review</a>
+<a class="dropdown-item" href="/">Checkout - Complete</a>
+</div>
+</div>
+<a class="dropdown-item" href="/">Single Product</a>
+</div>
+</div>
+<div class="nav-item dropdown dropdown-hover dropdown-mega">
+<a class="nav-link dropdown-toggle no-caret" href="#" id="megaDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" data-display="static">
+Mega Menu
+</a>
+<div class="dropdown-menu" aria-labelledby="megaDropdown">
+<div class="row">
+<div class="col-lg-3">
+<div class="list-group list-group-flush list-group-no-border list-group-sm">
+<a href="/" class="list-group-item list-group-item-action"><strong>CLOTHING</strong></a>
+<a href="/" class="list-group-item list-group-item-action">Polos &amp; Tees</a>
+<a href="/" class="list-group-item list-group-item-action">Casual Shirts</a>
+<a href="/" class="list-group-item list-group-item-action">Jeans</a>
+<a href="/" class="list-group-item list-group-item-action">Casual Trousers</a>
+<a href="/" class="list-group-item list-group-item-action">Formal Shirts</a>
+<a href="/" class="list-group-item list-group-item-action">Formal Trousers</a>
+<a href="/" class="list-group-item list-group-item-action">Suits &amp; Blazers</a>
+<a href="/" class="list-group-item list-group-item-action">Shorts &amp; 3/4ths</a>
+</div>
+</div>
+<div class="col-lg-3 border-left">
+<div class="list-group list-group-flush list-group-no-border list-group-sm">
+<a href="/" class="list-group-item list-group-item-action"><strong>FOOTWEAR</strong></a>
+<a href="/" class="list-group-item list-group-item-action">Sports Shoes</a>
+<a href="/" class="list-group-item list-group-item-action">Sneakers</a>
+<a href="/" class="list-group-item list-group-item-action">Casual Shoes</a>
+<a href="/" class="list-group-item list-group-item-action">Loafers</a>
+<a href="/" class="list-group-item list-group-item-action">Formal Shoes</a>
+<a href="/" class="list-group-item list-group-item-action">Boots</a>
+<a href="/" class="list-group-item list-group-item-action">Outdoor &amp; Hiking</a>
+<a href="/" class="list-group-item list-group-item-action">Floaters</a>
+</div>
+</div>
+<div class="col-lg-3 border-left">
+<div class="img img-zoom-in w-100 h-100">
+<div data-cover="/img/categories/1.jpeg">&nbsp;</div>
+<div class="overlay overlay-show bg-dark">&nbsp;</div>
+<div class="overlay-content overlay-show flex-column text-white">
+<h4 class="card-title text-center">New Men's Fashion</h4>
+<h6>See what's new</h6>
+<a href="/" class="btn btn-primary rounded-pill">Shop Now</a>
+</div>
+</div>
+</div>
+<div class="col-lg-3 border-left">
+<div class="img img-zoom-in w-100 h-100">
+<div data-cover="/img/categories/6.jpeg">&nbsp;</div>
+<div class="overlay overlay-show bg-dark">&nbsp;</div>
+<div class="overlay-content overlay-show flex-column text-white">
+<h4 class="card-title text-center">New Women's Fashion</h4>
+<h6>See what's new</h6>
+<a href="/" class="btn btn-danger rounded-pill">Shop Now</a>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="nav-item dropdown dropdown-hover">
+<a class="nav-link dropdown-toggle no-caret forwardable" href="/" id="accountDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+Account
+</a>
+<div class="dropdown-menu" aria-labelledby="accountDropdown">
+<a class="dropdown-item" href="/">Sign In / Sign Up</a>
+<a class="dropdown-item" href="/">Profile Page</a>
+<a class="dropdown-item" href="/">Orders List</a>
+<a class="dropdown-item" href="/">Order Detail</a>
+<a class="dropdown-item" href="/">Wishlist</a>
+<a class="dropdown-item" href="/">Address</a>
+</div>
+</div>
+<div class="nav-item dropdown dropdown-hover">
+<a class="nav-link dropdown-toggle no-caret forwardable" href="/" id="blogDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+Blog
+</a>
+<div class="dropdown-menu" aria-labelledby="blogDropdown">
+<a class="dropdown-item" href="/">Post Grid</a>
+<a class="dropdown-item" href="/">Post List</a>
+<a class="dropdown-item" href="/">Single Post</a>
+</div>
+</div>
+<div class="nav-item dropdown dropdown-hover">
+<a class="nav-link dropdown-toggle no-caret" href="#" id="pagesDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+Pages
+</a>
+<div class="dropdown-menu" aria-labelledby="pagesDropdown">
+<a class="dropdown-item" href="/">About Us</a>
+<a class="dropdown-item" href="/">Contact Us</a>
+<a class="dropdown-item" href="/">Compare</a>
+<a class="dropdown-item" href="/">Help / FAQ</a>
+<a class="dropdown-item" href="/">404 Not Found</a>
+</div>
+</div>
+<a class="nav-item nav-link" href="/">
+Components
+</a>
+</nav>
+<nav class="nav nav-circle nav-gap-x-1 ml-auto">
+<a class="nav-link nav-icon" data-toggle="modal" href="#searchModal">
+<em class="material-icons">search</em>
+</a>
+<a class="nav-link nav-icon has-badge d-none d-sm-flex" href="/">
+<em class="material-icons">favorite_border</em>
+<span class="badge badge-pill badge-danger">3</span>
+</a>
+<a class="nav-link nav-icon has-badge" data-toggle="modal" href="#cartModal">
+<em class="material-icons">shopping_cart</em>
+<span class="badge badge-pill badge-danger">1</span>
+</a>
+</nav>
+</div>
+</header>
+<!-- /HEADER -->
+<div class="breadcrumb-container">
+<div class="container-fluid">
+<nav aria-label="breadcrumb" class="text-center">
+<ol class="breadcrumb">
+    <li class="breadcrumb-item"><a href="/">Home</a></li>
+    <li class="breadcrumb-item"><a>Checkout</a></li>
+    <li class="breadcrumb-item active" aria-current="page">Checkout - Payment</li>
+</ol>
+</nav>
+</div>
+</div>
+<div class="container-fluid mb-3">
+<div class="row gutters-3 justify-content-center">
+<div class="col-md-7 col-lg-6 col-xl-5">
+<div class="card card-style1">
+<div class="card-body">
+<nav class="steps">
+<a href="/" data-step="1" class="done">Shipping</a>
+<a href="/" data-step="2" class="current">Payment</a>
+<a href="/" data-step="3">Review</a>
+</nav>
+<hr />
+<div class="accordion accordion-caret accordion-no-border" id="accordion-payment">
+<div class="card card-secondary">
+<a class="card-header h6" data-toggle="collapse" href="#content-caret-1" aria-expanded="true">
+<em class="material-icons mr-3">credit_card</em>Pay with Credit Card
+</a>
+<div id="content-caret-1" class="collapse show" data-parent="#accordion-payment">
+<div class="card-body px-0">
+<form class="form-style-1" id="form-payment">
+    <div class="card-wrapper mb-3">&nbsp;</div>
+    <div class="form-row">
+    <div class="form-group col-lg-6">
+    <input type="text" name="number" class="form-control" placeholder="Card Number" value="8991 6613 6155 1111" />
+    </div>
+    <div class="form-group col-lg-6">
+    <input type="text" name="name" class="form-control" placeholder="Full Name" />
+    </div>
+    <div class="form-group col-sm-6">
+    <input type="text" name="expiry" class="form-control" placeholder="MM / YY" value="02 23" />
+    </div>
+    <div class="form-group col-sm-6">
+    <input type="text" name="cvc" class="form-control" placeholder="CVC Code" />
+    </div>
+    </div>
+</form>
+</div>
+</div>
+</div>
+<div class="card card-secondary">
+<a class="card-header h6" data-toggle="collapse" href="#content-caret-2" aria-expanded="false">
+<em class="custom-icon mr-3" data-icon="paypal" data-size="24x20"></em>Pay with Paypal
+</a>
+<div id="content-caret-2" class="collapse" data-parent="#accordion-payment">
+<div class="card-body px-0">
+<em>Login to your Paypal account</em>
+<form class="form-style-1 mt-3">
+    <div class="form-group">
+    <span class="input-icon">
+    <em class="material-icons">mail_outline</em>
+    <input type="email" class="form-control" placeholder="Email address" />
+    </span>
+    </div>
+    <div class="form-group">
+    <span class="input-icon">
+    <em class="material-icons">lock_open</em>
+    <input type="password" class="form-control" placeholder="Password" />
+    </span>
+    </div>
+    <div class="form-group d-flex justify-content-between">
+    <button type="submit" class="btn btn-primary">Login</button>
+    <a class="text-primary small">Forgot password ?</a>
+    </div>
+</form>
+</div>
+</div>
+</div>
+<div class="card card-secondary">
+<a class="card-header h6" data-toggle="collapse" href="#content-caret-3" aria-expanded="false">
+<em class="material-icons mr-3">card_giftcard</em>Reedem Points
+</a>
+<div id="content-caret-3" class="collapse" data-parent="#accordion-payment">
+<div class="card-body px-0 text-center">
+<div class="alert alert-primary" role="alert">
+You currently have <strong>9,386</strong> Points to spend.
+</div>
+<div class="custom-control custom-checkbox">
+<input type="checkbox" class="custom-control-input" id="usePoint" />
+<label class="custom-control-label" for="usePoint">Use my Points to pay for this order.</label>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="col-md-5 col-xl-4 mt-1 mt-md-0">
+<div class="card card-style1">
+<div class="card-body">
+<h5>Order summary</h5>
+<ul class="list-group list-group-flush list-group-sm">
+    <li class="list-group-item px-0">
+    <div class="media">
+    <a href="/">
+    <img src="/img/products/1_small.jpg" alt="product" width="75" />
+    </a>
+    <div class="media-body ml-3">
+    <a href="/" class="card-link text-secondary">Hanes Hooded Sweatshirt</a>
+    <div class="font-size-sm"><span class="text-muted">Size:</span> small</div>
+    <div class="price">
+    <span class="text-success">$18.56</span>
+    <span class="ml-3 text-secondary font-weight-normal">x 1</span>
+    <span class="ml-3">$18.56</span>
+    </div>
+    </div>
+    </div>
+    </li>
+</ul>
+<div class="mt-3 font-condensed">
+<div class="d-flex">
+<div class="text-muted">Bag Total</div>
+<div class="ml-auto font-weight-bold">$18.56</div>
+</div>
+<div class="d-flex">
+<div class="text-muted">Bag Discount</div>
+<div class="ml-auto font-weight-bold">$2.04</div>
+</div>
+<hr class="my-1" />
+<div class="d-flex">
+<div class="text-muted">Coupon Discount</div>
+<div class="ml-auto font-weight-bold">-</div>
+</div>
+<div class="d-flex">
+<div class="text-muted">Shipping Cost</div>
+<div class="ml-auto font-weight-bold">FREE</div>
+</div>
+<hr />
+<div class="d-flex">
+<div class="text-muted">Order Total</div>
+<div class="ml-auto font-weight-bold text-primary h4 mb-0">$16.54</div>
+</div>
+<hr />
+</div>
+<a href="/checkout-3" class="btn btn-lg btn-primary btn-block has-icon">REVIEW MY ORDER<em class="material-icons">chevron_right</em></a>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- FOOTER -->
+<div class="footer">
+<div class="container-fluid">
+<div class="d-grid grid-template-col-sm-2 grid-template-col-lg-4">
+<div class="px-3 text-center">
+<h5>Subscribe</h5>
+<p>and get <strong class="text-primary">10% discount</strong></p>
+<form>
+    <div class="form-group">
+    <input type="email" class="form-control rounded-pill text-center" placeholder="Enter your email" />
+    </div>
+    <button type="button" class="btn btn-primary btn-block rounded-pill">SUBSCRIBE</button>
+</form>
+</div>
+<div>
+<h5>Customer Service</h5>
+<div class="list-group list-group-flush list-group-no-border list-group-sm">
+<a class="list-group-item list-group-item-action">Help Center</a>
+<a class="list-group-item list-group-item-action">How to buy</a>
+<a class="list-group-item list-group-item-action">Delivery</a>
+<a class="list-group-item list-group-item-action">How to return</a>
+<a class="list-group-item list-group-item-action">Payment Method</a>
+<a class="list-group-item list-group-item-action">Shipping Method</a>
+</div>
+</div>
+<div>
+<h5>Mimity</h5>
+<div class="list-group list-group-flush list-group-no-border list-group-sm">
+<a href="/" class="list-group-item list-group-item-action">About Us</a>
+<a class="list-group-item list-group-item-action">Terms and Conditions</a>
+<a class="list-group-item list-group-item-action">Privacy Policy</a>
+<a href="/" class="list-group-item list-group-item-action">FAQs</a>
+<a class="list-group-item list-group-item-action">Our Story</a>
+<a class="list-group-item list-group-item-action">Services</a>
+</div>
+</div>
+<div>
+<h5>Download The App</h5>
+<a class="download-app">
+</a>
+<div class="media"><a class="download-app">
+<img src="/img/app/google-play.svg" alt="Google Play Logo" height="30" />
+<div class="media-body">
+<small>Get it on</small>
+<h5>Google Play</h5>
+</div>
+</a></div>
+<a class="download-app">
+</a>
+<div class="media"><a class="download-app">
+<img src="/img/app/apple.svg" alt="Apple Logo" height="30" />
+<div class="media-body">
+<small>Download on the</small>
+<h5>App Store</h5>
+</div>
+</a></div>
+<a class="download-app">
+</a>
+<div class="media"><a class="download-app">
+<img src="/img/app/windows.svg" alt="Windows Logo" height="30" />
+<div class="media-body">
+<small>Get it from</small>
+<h5>Microsoft Store</h5>
+</div>
+</a></div>
+</div>
+</div>
+</div>
+</div>
+<div class="copyright">Copyright &copy; 2019 Mimity All right reserved</div>
+<!-- /FOOTER -->
+<!-- MENU MODAL -->
+<div class="modal fade modal-content-left" id="menuModal" tabindex="-1" role="dialog" aria-hidden="true">
+<div class="modal-dialog modal-dialog-scrollable" role="document">
+<div class="modal-content">
+<div class="modal-header align-items-center border-bottom shadow-sm z-index-1">
+<a href="#"><img src="/img/logo.svg" alt="Logo" height="40" /></a>
+<button class="btn btn-icon btn-sm btn-text-secondary rounded-circle" type="button" data-dismiss="modal">
+<em class="material-icons">close</em>
+</button>
+</div>
+<div class="modal-body px-0 scrollbar-width-thin">
+<ul class="menu" id="menu">
+    <li class="no-sub"><a href="/"><em class="material-icons">home</em> Home</a></li>
+    <li class="no-sub"><a href="/"><em class="material-icons">home_work</em> Home layout 2</a></li>
+    <li class="no-sub"><a href="/"><em class="material-icons">phonelink</em> Electronics Store</a></li>
+    <li>
+    <a href="#" class="has-arrow"><em class="material-icons">shopping_cart</em> Shop</a>
+    <ul>
+        <li><a href="/">Shop Categories</a></li>
+        <li><a href="/">Shop Grid</a></li>
+        <li><a href="/">Shop List</a></li>
+        <li><a href="/">Cart</a></li>
+        <li>
+        <a href="#" class="has-arrow">Checkout</a>
+        <ul>
+            <li><a href="/">Checkout Shipping</a></li>
+            <li class="mm-active"><a href="/">Checkout Payment</a></li>
+            <li><a href="/">Checkout Review</a></li>
+            <li><a href="/">Checkout Complete</a></li>
+        </ul>
+        </li>
+        <li><a href="/">Single Product</a></li>
+    </ul>
+    </li>
+    <li>
+    <a href="#" class="has-arrow"><em class="material-icons">person</em> Account</a>
+    <ul>
+        <li><a href="/">Sign In / Sign Up</a></li>
+        <li><a href="/">Profile Page</a></li>
+        <li><a href="/">Orders List</a></li>
+        <li><a href="/">Order Detail</a></li>
+        <li><a href="/" class="has-badge">Wishlist <span class="badge badge-primary badge-pill">3</span></a></li>
+        <li><a href="/">Address</a></li>
+    </ul>
+    </li>
+    <li>
+    <a href="#" class="has-arrow"><em class="material-icons">rss_feed</em> Blog</a>
+    <ul>
+        <li><a href="/">Post Grid</a></li>
+        <li><a href="/">Post List</a></li>
+        <li><a href="/">Single Post</a></li>
+    </ul>
+    </li>
+    <li>
+    <a href="#" class="has-arrow"><em class="material-icons">file_copy</em> Pages</a>
+    <ul>
+        <li><a href="/">About Us</a></li>
+        <li><a href="/">Contact Us</a></li>
+        <li><a href="/">Compare</a></li>
+        <li><a href="/">Help / FAQ</a></li>
+        <li><a href="/">404 Not Found</a></li>
+    </ul>
+    </li>
+    <li class="no-sub"><a href="/"><em class="material-icons">check_box_outline_blank</em> Components</a></li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+<!-- /MENU MODAL -->
+<!-- SEARCH MODAL -->
+<div class="modal fade" id="searchModal" tabindex="-1" role="dialog">
+<div class="modal-dialog modal-lg" role="document">
+<div class="modal-content">
+<div class="modal-body p-1 p-lg-3">
+<form>
+    <div class="input-group input-group-lg input-group-search">
+    <div class="input-group-prepend">
+    <button class="btn btn-text-secondary btn-icon btn-lg rounded-circle" type="button" data-dismiss="modal">
+    <em class="material-icons">chevron_left</em>
+    </button>
+    </div>
+    <input type="search" class="form-control form-control-lg border-0 shadow-none mx-1 px-0 px-lg-3" id="searchInput" placeholder="Search..." />
+    <div class="input-group-append">
+    <button class="btn btn-text-secondary btn-icon btn-lg rounded-circle" type="submit">
+    <em class="material-icons">search</em>
+    </button>
+    </div>
+    </div>
+</form>
+</div>
+</div>
+</div>
+</div>
+<!-- /SEARCH MODAL -->
+<!-- CART MODAL -->
+<div class="modal fade modal-content-right modal-cart" id="cartModal" tabindex="-1" role="dialog" aria-labelledby="cartModalLabel" aria-hidden="true">
+<div class="modal-dialog modal-dialog-scrollable" role="document">
+<div class="modal-content">
+<div class="modal-header border-bottom">
+<h5 class="modal-title" id="cartModalLabel">You have 4 items in your cart</h5>
+<button class="btn btn-icon btn-sm btn-text-secondary rounded-circle" type="button" data-dismiss="modal">
+<em class="material-icons">close</em>
+</button>
+</div>
+<div class="modal-body scrollbar-width-thin">
+<ul class="list-group list-group-flush">
+    <li class="list-group-item px-0">
+    <div class="media">
+    <a href="/" class="mr-2"><img src="/img/products/1_small.jpg" width="50" height="50" alt="Hanes Hooded Sweatshirt" /></a>
+    <div class="media-body">
+    <a href="/" class="d-block text-body" title="Hanes Hooded Sweatshirt">Hanes Hooded Sweatshirt</a>
+    <em class="text-muted">1 x $18.56</em>
+    </div>
+    <button class="btn btn-icon btn-sm btn-text-danger rounded-circle" type="button"><em class="material-icons">close</em></button>
+    </div>
+    </li>
+    <li class="list-group-item px-0">
+    <div class="media">
+    <a href="/" class="mr-2"><img src="/img/products/2_small.jpg" width="50" height="50" alt="The Flash Logo T-Shirt" /></a>
+    <div class="media-body">
+    <a href="/" class="d-block text-body" title="The Flash Logo T-Shirt">The Flash Logo T-Shirt</a>
+    <em class="text-muted">2 x $16.64</em>
+    </div>
+    <button class="btn btn-icon btn-sm btn-text-danger rounded-circle" type="button"><em class="material-icons">close</em></button>
+    </div>
+    </li>
+    <li class="list-group-item px-0">
+    <div class="media">
+    <a href="/" class="mr-2"><img src="/img/products/3_small.jpg" width="50" height="50" alt="Open Front Cropped Cardigans" /></a>
+    <div class="media-body">
+    <a href="/" class="d-block text-body" title="Open Front Cropped Cardigans">Open Front Cropped Cardigans</a>
+    <em class="text-muted">1 x $15.20</em>
+    </div>
+    <button class="btn btn-icon btn-sm btn-text-danger rounded-circle" type="button"><em class="material-icons">close</em></button>
+    </div>
+    </li>
+    <li class="list-group-item px-0">
+    <div class="media">
+    <a href="/" class="mr-2"><img src="/img/products/4_small.jpg" width="50" height="50" alt="Cotton Fleece Long Hoodie" /></a>
+    <div class="media-body">
+    <a href="/" class="d-block text-body" title="Cotton Fleece Long Hoodie">Cotton Fleece Long Hoodie</a>
+    <em class="text-muted">1 x $85.00</em>
+    </div>
+    <button class="btn btn-icon btn-sm btn-text-danger rounded-circle" type="button"><em class="material-icons">close</em></button>
+    </div>
+    </li>
+</ul>
+</div>
+<div class="modal-footer border-top">
+<div class="mr-auto">
+<em>Subtotal</em>
+<h5 class="mb-0 text-dark font-weight-bold font-condensed">$152.04</h5>
+</div>
+<a href="/" class="btn btn-faded-success">View Cart</a>
+<a href="/" class="btn btn-success">Checkout</a>
+</div>
+</div>
+</div>
+</div>
+<!-- /CART MODAL -->
+<!-- Main script -->
+<!-- Plugins -->
+<!-- Application script -->
+----field----
+field: {52807595-0F8F-4B20-8D2A-CB71D28C6103}
+name: __Owner
+key: __owner
+content-length: 14
+
+sitecore\Admin
+----field----
+field: {25BED78C-4957-4165-998A-CA1B52F67497}
+name: __Created
+key: __created
+content-length: 16
+
+20191003T183555Z
+----field----
+field: {5DD74568-4D4B-44C1-B513-0AF5F4CDA34F}
+name: __Created by
+key: __created by
+content-length: 14
+
+sitecore\Admin
+----field----
+field: {8CDC337E-A112-42FB-BBB4-4143751E123F}
+name: __Revision
+key: __revision
+content-length: 36
+
+6324bfba-c210-493e-9b90-590f5784cfbd
+----field----
+field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
+name: __Updated
+key: __updated
+content-length: 16
+
+20191019T121326Z
+----field----
+field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
+name: __Updated by
+key: __updated by
+content-length: 14
+
+sitecore\Admin

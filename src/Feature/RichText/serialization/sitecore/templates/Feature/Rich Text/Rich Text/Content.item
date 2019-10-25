@@ -1,0 +1,45 @@
+----item----
+version: 1
+id: {1C9A7397-07A9-45F5-86F5-96AE194C86AB}
+database: master
+path: /sitecore/templates/Feature/Rich Text/Rich Text/Content
+parent: {8CD96FD3-C7BB-4647-BA91-E8A779C5C4CC}
+name: Content
+master: {00000000-0000-0000-0000-000000000000}
+template: {E269FBB5-3750-427A-9149-7AA950B49301}
+templatekey: Template section
+created: 20191003T154457Z
+
+----version----
+language: en
+version: 1
+revision: ada0eaa6-ead1-4ac7-817c-9510ed47e642
+
+----field----
+field: {25BED78C-4957-4165-998A-CA1B52F67497}
+name: __Created
+key: __created
+content-length: 16
+
+20191003T154457Z
+----field----
+field: {8CDC337E-A112-42FB-BBB4-4143751E123F}
+name: __Revision
+key: __revision
+content-length: 36
+
+ada0eaa6-ead1-4ac7-817c-9510ed47e642
+----field----
+field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
+name: __Updated
+key: __updated
+content-length: 16
+
+20191003T183622Z
+----field----
+field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
+name: __Updated by
+key: __updated by
+content-length: 14
+
+sitecore\Admin

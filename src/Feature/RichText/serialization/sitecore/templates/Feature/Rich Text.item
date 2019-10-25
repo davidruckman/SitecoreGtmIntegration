@@ -1,0 +1,12 @@
+----item----
+version: 1
+id: {C2AF7851-0DEE-4D84-8708-778695C264B0}
+database: master
+path: /sitecore/templates/Feature/Rich Text
+parent: {8F343079-3CC5-4EF7-BC27-32ADDB46F45E}
+name: Rich Text
+master: {00000000-0000-0000-0000-000000000000}
+template: {0437FEE2-44C9-46A6-ABE9-28858D9FEE8C}
+templatekey: Template Folder
+created: 20191003T154412Z
+

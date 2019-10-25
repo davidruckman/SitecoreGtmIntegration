@@ -1,0 +1,12 @@
+﻿@using Sitecore.Mvc
+@using Sitecore.Mvc.Presentation
+
+<script>
+window.dataLayer = window.dataLayer || [];
+    window.dataLayer.push({
+    'ItemId': '@Sitecore.Context.Item.ID.ToString()',
+    'Culture': '@Sitecore.Context.Item.Language.Name',
+    'ItemVersion': '@Sitecore.Context.Item.Version',
+    'ItemName': '@Sitecore.Context.Item.DisplayName'
+});
+</script>

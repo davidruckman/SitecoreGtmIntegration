@@ -1,0 +1,4 @@
+﻿@using Sitecore.Mvc
+@using Sitecore.Mvc.Presentation
+
+@Html.Raw(Sitecore.Context.Database.GetItem(RenderingContext.Current.Rendering.DataSource)[1])

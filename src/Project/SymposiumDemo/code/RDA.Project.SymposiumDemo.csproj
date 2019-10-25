@@ -1,0 +1,381 @@
+﻿<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="..\..\..\..\packages\Microsoft.Net.Compilers.1.3.2\build\Microsoft.Net.Compilers.props" Condition="Exists('..\..\..\..\packages\Microsoft.Net.Compilers.1.3.2\build\Microsoft.Net.Compilers.props')" />
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{6229446C-6910-490C-8DCD-60AD645B0DCA}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>RDA.Project.SymposiumDemo</RootNamespace>
+    <AssemblyName>RDA.Project.SymposiumDemo</AssemblyName>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
+    <UseIISExpress>true</UseIISExpress>
+    <IISExpressSSLPort />
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+    <UseGlobalApplicationHostFile />
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
+    <TargetFrameworkProfile />
+    <Use64BitIISExpress />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Content Include="css\style.css.map" />
+    <None Include="Properties\PublishProfiles\Local.pubxml" />
+    <Content Include="css\style.css" />
+    <Content Include="css\style.min.css" />
+    <Content Include="img\404.jpg" />
+    <Content Include="img\about-us\about-us.jpg" />
+    <Content Include="img\about-us\adapt.jpg" />
+    <Content Include="img\about-us\commit.jpg" />
+    <Content Include="img\about-us\our-purpose.jpg" />
+    <Content Include="img\about-us\run.jpg" />
+    <Content Include="img\about-us\serve.jpg" />
+    <Content Include="img\app\apple.svg" />
+    <Content Include="img\app\google-play.svg" />
+    <Content Include="img\app\windows.svg" />
+    <Content Include="img\blog\1.jpeg" />
+    <Content Include="img\blog\2.jpeg" />
+    <Content Include="img\blog\3.jpeg" />
+    <Content Include="img\blog\4.jpeg" />
+    <Content Include="img\blog\blog-single.jpeg" />
+    <Content Include="img\brands\brand1.svg" />
+    <Content Include="img\brands\brand2.svg" />
+    <Content Include="img\brands\brand3.svg" />
+    <Content Include="img\brands\brand4.svg" />
+    <Content Include="img\brands\brand5.svg" />
+    <Content Include="img\brands\electro\canon.svg" />
+    <Content Include="img\brands\electro\dell.svg" />
+    <Content Include="img\brands\electro\gopro.svg" />
+    <Content Include="img\brands\electro\ibm.svg" />
+    <Content Include="img\brands\electro\lenovo.svg" />
+    <Content Include="img\brands\electro\lg.svg" />
+    <Content Include="img\brands\electro\logitech.svg" />
+    <Content Include="img\brands\electro\nikon.svg" />
+    <Content Include="img\brands\electro\samsung.svg" />
+    <Content Include="img\brands\electro\sandisk.svg" />
+    <Content Include="img\brands\electro\sony.svg" />
+    <Content Include="img\brands\electro\vaio.svg" />
+    <Content Include="img\brands\electro\xbox.svg" />
+    <Content Include="img\brands\electro\xerox.svg" />
+    <Content Include="img\categories\1.jpeg" />
+    <Content Include="img\categories\10.jpeg" />
+    <Content Include="img\categories\2.jpeg" />
+    <Content Include="img\categories\3.jpeg" />
+    <Content Include="img\categories\4.jpeg" />
+    <Content Include="img\categories\5.jpeg" />
+    <Content Include="img\categories\6.jpeg" />
+    <Content Include="img\categories\7.jpeg" />
+    <Content Include="img\categories\8.jpeg" />
+    <Content Include="img\categories\9.jpeg" />
+    <Content Include="img\categories\backpack.jpg" />
+    <Content Include="img\categories\electro\1-wide.jpeg" />
+    <Content Include="img\categories\electro\1.jpeg" />
+    <Content Include="img\categories\electro\2.jpeg" />
+    <Content Include="img\categories\electro\3.jpeg" />
+    <Content Include="img\categories\electro\4.jpeg" />
+    <Content Include="img\categories\electro\5.jpeg" />
+    <Content Include="img\categories\electro\6.jpeg" />
+    <Content Include="img\categories\electro\7.jpeg" />
+    <Content Include="img\categories\electro\8.jpeg" />
+    <Content Include="img\categories\girls.jpg" />
+    <Content Include="img\categories\hoodies.jpg" />
+    <Content Include="img\categories\kids.jpg" />
+    <Content Include="img\categories\men.jpg" />
+    <Content Include="img\categories\men2.jpg" />
+    <Content Include="img\categories\sunglasses.jpg" />
+    <Content Include="img\categories\women.jpg" />
+    <Content Include="img\categories\women2.jpg" />
+    <Content Include="img\discover\1.jpeg" />
+    <Content Include="img\discover\2.jpeg" />
+    <Content Include="img\discover\3.jpeg" />
+    <Content Include="img\discover\4.jpeg" />
+    <Content Include="img\discover\5.jpeg" />
+    <Content Include="img\favicon\favicon.ico" />
+    <Content Include="img\favicon\favicon.png" />
+    <Content Include="img\favicon\touch-icon-ipad-retina.png" />
+    <Content Include="img\favicon\touch-icon-ipad.png" />
+    <Content Include="img\favicon\touch-icon-iphone-retina.png" />
+    <Content Include="img\favicon\touch-icon-iphone.png" />
+    <Content Include="img\gallery\1.jpeg" />
+    <Content Include="img\gallery\10.jpeg" />
+    <Content Include="img\gallery\10m.jpeg" />
+    <Content Include="img\gallery\10s.jpeg" />
+    <Content Include="img\gallery\10swide.jpeg" />
+    <Content Include="img\gallery\1m.jpeg" />
+    <Content Include="img\gallery\1s.jpeg" />
+    <Content Include="img\gallery\1swide.jpeg" />
+    <Content Include="img\gallery\2.jpeg" />
+    <Content Include="img\gallery\2m.jpeg" />
+    <Content Include="img\gallery\2s.jpeg" />
+    <Content Include="img\gallery\2swide.jpeg" />
+    <Content Include="img\gallery\3.jpeg" />
+    <Content Include="img\gallery\3m.jpeg" />
+    <Content Include="img\gallery\3s.jpeg" />
+    <Content Include="img\gallery\3swide.jpeg" />
+    <Content Include="img\gallery\4.jpeg" />
+    <Content Include="img\gallery\4m.jpeg" />
+    <Content Include="img\gallery\4s.jpeg" />
+    <Content Include="img\gallery\4swide.jpeg" />
+    <Content Include="img\gallery\5.jpeg" />
+    <Content Include="img\gallery\5m.jpeg" />
+    <Content Include="img\gallery\5s.jpeg" />
+    <Content Include="img\gallery\5swide.jpeg" />
+    <Content Include="img\gallery\6.jpeg" />
+    <Content Include="img\gallery\6m.jpeg" />
+    <Content Include="img\gallery\6s.jpeg" />
+    <Content Include="img\gallery\6swide.jpeg" />
+    <Content Include="img\gallery\7.jpeg" />
+    <Content Include="img\gallery\7m.jpeg" />
+    <Content Include="img\gallery\7s.jpeg" />
+    <Content Include="img\gallery\7swide.jpeg" />
+    <Content Include="img\gallery\8.jpeg" />
+    <Content Include="img\gallery\8m.jpeg" />
+    <Content Include="img\gallery\8s.jpeg" />
+    <Content Include="img\gallery\8swide.jpeg" />
+    <Content Include="img\gallery\9.jpeg" />
+    <Content Include="img\gallery\9m.jpeg" />
+    <Content Include="img\gallery\9s.jpeg" />
+    <Content Include="img\gallery\9swide.jpeg" />
+    <Content Include="img\logo-white.png" />
+    <Content Include="img\logo-white.svg" />
+    <Content Include="img\logo.png" />
+    <Content Include="img\logo.svg" />
+    <Content Include="img\products\1_large.jpg" />
+    <Content Include="img\products\1_large_charcoal.jpg" />
+    <Content Include="img\products\1_large_maroon.jpg" />
+    <Content Include="img\products\1_large_red.jpg" />
+    <Content Include="img\products\1_large_yellow.jpg" />
+    <Content Include="img\products\1_medium.jpg" />
+    <Content Include="img\products\1_medium_charcoal.jpg" />
+    <Content Include="img\products\1_medium_maroon.jpg" />
+    <Content Include="img\products\1_medium_red.jpg" />
+    <Content Include="img\products\1_medium_yellow.jpg" />
+    <Content Include="img\products\1_small.jpg" />
+    <Content Include="img\products\1_small_charcoal.jpg" />
+    <Content Include="img\products\1_small_maroon.jpg" />
+    <Content Include="img\products\1_small_red.jpg" />
+    <Content Include="img\products\1_small_yellow.jpg" />
+    <Content Include="img\products\2_large.jpg" />
+    <Content Include="img\products\2_large_black.jpg" />
+    <Content Include="img\products\2_large_red.jpg" />
+    <Content Include="img\products\2_medium.jpg" />
+    <Content Include="img\products\2_medium_black.jpg" />
+    <Content Include="img\products\2_medium_red.jpg" />
+    <Content Include="img\products\2_small.jpg" />
+    <Content Include="img\products\2_small_black.jpg" />
+    <Content Include="img\products\2_small_red.jpg" />
+    <Content Include="img\products\3_large.jpg" />
+    <Content Include="img\products\3_medium.jpg" />
+    <Content Include="img\products\3_small.jpg" />
+    <Content Include="img\products\4_large.jpg" />
+    <Content Include="img\products\4_large_blue.jpg" />
+    <Content Include="img\products\4_large_maroon.jpg" />
+    <Content Include="img\products\4_medium.jpg" />
+    <Content Include="img\products\4_medium_blue.jpg" />
+    <Content Include="img\products\4_medium_maroon.jpg" />
+    <Content Include="img\products\4_small.jpg" />
+    <Content Include="img\products\4_small_blue.jpg" />
+    <Content Include="img\products\4_small_maroon.jpg" />
+    <Content Include="img\products\5_large.jpg" />
+    <Content Include="img\products\5_medium.jpg" />
+    <Content Include="img\products\5_small.jpg" />
+    <Content Include="img\products\6_large.jpg" />
+    <Content Include="img\products\6_medium.jpg" />
+    <Content Include="img\products\6_small.jpg" />
+    <Content Include="img\products\7_large.jpg" />
+    <Content Include="img\products\7_large_grey.jpg" />
+    <Content Include="img\products\7_medium.jpg" />
+    <Content Include="img\products\7_medium_grey.jpg" />
+    <Content Include="img\products\7_small.jpg" />
+    <Content Include="img\products\7_small_grey.jpg" />
+    <Content Include="img\products\8_large.jpg" />
+    <Content Include="img\products\8_medium.jpg" />
+    <Content Include="img\products\8_small.jpg" />
+    <Content Include="img\products\electro\1.jpg" />
+    <Content Include="img\products\electro\10.jpg" />
+    <Content Include="img\products\electro\11.jpg" />
+    <Content Include="img\products\electro\12.jpg" />
+    <Content Include="img\products\electro\13.jpg" />
+    <Content Include="img\products\electro\14.jpg" />
+    <Content Include="img\products\electro\15.jpg" />
+    <Content Include="img\products\electro\16.jpg" />
+    <Content Include="img\products\electro\17.jpg" />
+    <Content Include="img\products\electro\2.jpg" />
+    <Content Include="img\products\electro\3.jpg" />
+    <Content Include="img\products\electro\4.jpg" />
+    <Content Include="img\products\electro\5.jpg" />
+    <Content Include="img\products\electro\6.jpg" />
+    <Content Include="img\products\electro\7.jpg" />
+    <Content Include="img\products\electro\8.jpg" />
+    <Content Include="img\products\electro\9.jpg" />
+    <Content Include="img\products\flash_deals_1.jpg" />
+    <Content Include="img\products\flash_deals_2.jpg" />
+    <Content Include="img\slider\1.jpg" />
+    <Content Include="img\slider\2.jpg" />
+    <Content Include="img\slider\3.jpg" />
+    <Content Include="img\slider\electro\1.jpg" />
+    <Content Include="img\slider\electro\2.jpg" />
+    <Content Include="img\slider\electro\3.jpg" />
+    <Content Include="img\user\user.svg" />
+    <Content Include="img\user\user1.svg" />
+    <Content Include="img\user\user2.svg" />
+    <Content Include="img\user\user3.svg" />
+    <Content Include="img\user\user4.svg" />
+    <Content Include="img\user\user5.svg" />
+    <Content Include="js\app.js" />
+    <Content Include="js\app.min.js" />
+    <Content Include="js\script.js" />
+    <Content Include="js\script.min.js" />
+    <Content Include="plugins\autosize\autosize.js" />
+    <Content Include="plugins\autosize\autosize.min.js" />
+    <Content Include="plugins\card\card.css" />
+    <Content Include="plugins\card\card.js" />
+    <Content Include="plugins\card\jquery.card.js" />
+    <Content Include="plugins\card\jquery.card.min.js" />
+    <Content Include="plugins\jquery-countdown\jquery.countdown.js" />
+    <Content Include="plugins\jquery-countdown\jquery.countdown.min.js" />
+    <Content Include="plugins\nouislider\nouislider.css" />
+    <Content Include="plugins\nouislider\nouislider.js" />
+    <Content Include="plugins\nouislider\nouislider.min.css" />
+    <Content Include="plugins\nouislider\nouislider.min.js" />
+    <Content Include="plugins\photoswipe\photoswipe-default-skin\default-skin.css" />
+    <Content Include="plugins\photoswipe\photoswipe-default-skin\default-skin.min.css" />
+    <Content Include="plugins\photoswipe\photoswipe-default-skin\default-skin.png" />
+    <Content Include="plugins\photoswipe\photoswipe-default-skin\default-skin.svg" />
+    <Content Include="plugins\photoswipe\photoswipe-default-skin\preloader.gif" />
+    <Content Include="plugins\photoswipe\photoswipe-ui-default.js" />
+    <Content Include="plugins\photoswipe\photoswipe-ui-default.min.js" />
+    <Content Include="plugins\photoswipe\photoswipe.css" />
+    <Content Include="plugins\photoswipe\photoswipe.js" />
+    <Content Include="plugins\photoswipe\photoswipe.min.css" />
+    <Content Include="plugins\photoswipe\photoswipe.min.js" />
+    <Content Include="plugins\swiper\swiper.css" />
+    <Content Include="plugins\swiper\swiper.js" />
+    <Content Include="plugins\swiper\swiper.min.css" />
+    <Content Include="plugins\swiper\swiper.min.js" />
+    <Content Include="Views\Project\SymposiumDemo\Layouts\MainLayout.cshtml" />
+    <None Include="Web.config">
+      <SubType>Designer</SubType>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Views\web.config" />
+    <Content Include="packages.config" />
+    <None Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+    <None Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup />
+  <ItemGroup>
+    <Reference Include="Sitecore.Analytics, Version=13.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\..\..\..\packages\Sitecore.Analytics.9.2.0\lib\net471\Sitecore.Analytics.dll</HintPath>
+    </Reference>
+    <Reference Include="Sitecore.Analytics.Core">
+      <HintPath>..\..\..\..\packages\Sitecore.Analytics.Core.9.2.0\lib\net471\Sitecore.Analytics.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="Sitecore.Analytics.Model">
+      <HintPath>..\..\..\..\packages\Sitecore.Analytics.Model.9.2.0\lib\net471\Sitecore.Analytics.Model.dll</HintPath>
+    </Reference>
+    <Reference Include="Sitecore.Kernel, Version=13.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\packages\Sitecore.Kernel.9.2.0\lib\net471\Sitecore.Kernel.dll</HintPath>
+    </Reference>
+    <Reference Include="Sitecore.Mvc, Version=4.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\packages\Sitecore.Mvc.9.2.0\lib\net471\Sitecore.Mvc.dll</HintPath>
+    </Reference>
+    <Reference Include="Sitecore.Mvc.Analytics, Version=13.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\..\..\..\packages\Sitecore.Mvc.Analytics.9.2.0\lib\net471\Sitecore.Mvc.Analytics.dll</HintPath>
+    </Reference>
+    <Reference Include="Sitecore.XConnect, Version=2.1.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\..\..\..\packages\Sitecore.XConnect.9.2.0\lib\netstandard2.0\Sitecore.XConnect.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.configuration" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Data.Linq" />
+    <Reference Include="System.IO.FileSystem.Primitives" />
+    <Reference Include="System.Runtime.InteropServices.RuntimeInformation" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Mvc, Version=5.2.4.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\..\..\..\packages\Microsoft.AspNet.Mvc.5.2.4\lib\net45\System.Web.Mvc.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.WebPages">
+      <HintPath>..\..\..\..\packages\Microsoft.AspNet.WebPages.3.2.4\lib\net45\System.Web.WebPages.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Xml.Linq" />
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'CM US East|AnyCPU'">
+    <OutputPath>bin\</OutputPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>True</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>58132</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>http://localhost:58132/</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
+    <PropertyGroup>
+      <ErrorText>This project references NuGet package(s) that are missing on this computer. Use NuGet Package Restore to download them.  For more information, see http://go.microsoft.com/fwlink/?LinkID=322105. The missing file is {0}.</ErrorText>
+    </PropertyGroup>
+    <Error Condition="!Exists('..\..\..\..\packages\Microsoft.Net.Compilers.1.3.2\build\Microsoft.Net.Compilers.props')" Text="$([System.String]::Format('$(ErrorText)', '..\..\..\..\packages\Microsoft.Net.Compilers.1.3.2\build\Microsoft.Net.Compilers.props'))" />
+  </Target>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
