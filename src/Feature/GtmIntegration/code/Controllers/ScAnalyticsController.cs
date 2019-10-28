@@ -41,6 +41,7 @@ namespace RDA.Feature.GtmIntegration.Controllers
             var mediaItemName = string.Empty;       //20
             var searchTerm = string.Empty;          //21
             var itemName = string.Empty;            //22
+            var responseMessage = string.Empty;
 
             // Make sure Tracker is started.
             if (!Tracker.IsActive)
@@ -74,12 +75,6 @@ namespace RDA.Feature.GtmIntegration.Controllers
                     IdentifyContact(itemName, firstName, lastName, jobTitle, email);
                 }
 
-                if (sitecoreEventName == "page view")
-                {
-                    // For simple page view all we need to do is make sure tracker is started - so we can get out at this point.
-                    return "ok";
-                }
-
                 // Check for valid category.
                 category = json[1].ToLower();
                 if (string.IsNullOrEmpty(category))
@@ -88,47 +83,46 @@ namespace RDA.Feature.GtmIntegration.Controllers
                 }
 
                 // Resolve the event definition ID.
-                var results = new List<SearchResultItem>();
                 Guid eventDefinitionId = Guid.NewGuid();
-                ISearchIndex index = ContentSearchManager.GetIndex("sitecore_master_index");
-                using (IProviderSearchContext context = index.CreateSearchContext())
+                if (sitecoreEventName != "page view")
                 {
-                    switch (category)
+                    var results = new List<SearchResultItem>();
+                    ISearchIndex index = ContentSearchManager.GetIndex("sitecore_master_index");
+                    using (IProviderSearchContext context = index.CreateSearchContext())
                     {
-                        // Ensure we have an item definition ID.
-                        case "page event":
-                            // We can skip this check if we are just registering a Page View with no events.
-                            if (sitecoreEventName != "page view")
-                            {
+                        switch (category)
+                        {
+                            // Ensure we have an item definition ID.
+                            case "page event":
                                 results = context.GetQueryable<SearchResultItem>().Where(x => x.Path.StartsWith("/sitecore/system/Settings/Analytics/Page Events/") && x.Name == sitecoreEventName).ToList();
-                            }
-                            break;
-                        case "goal":
-                            results = context.GetQueryable<SearchResultItem>().Where(x => x.Path.StartsWith("/sitecore/system/Marketing Control Panel/Goals/") && x.Name == sitecoreEventName).ToList();
-                            break;
-                        case "campaign":
-                            results = context.GetQueryable<SearchResultItem>().Where(x => x.Path.StartsWith("/sitecore/system/Marketing Control Panel/Campaigns/") && x.Name == sitecoreEventName).ToList();
-                            break;
-                        case "download":
-                            eventDefinitionId = AnalyticsIds.DownloadEvent.Guid;
-                            break;
-                        case "search":
-                            eventDefinitionId = AnalyticsIds.SearchEvent.Guid;
-                            break;
-                        case "outcome":
-                            results = context.GetQueryable<SearchResultItem>().Where(x => x.Path.StartsWith("/sitecore/system/Marketing Control Panel/Outcomes/") && x.Name == sitecoreEventName).ToList();
-                            break;
-                        default:
-                            return "Invalid Category";
-                    }
+                                break;
+                            case "goal":
+                                results = context.GetQueryable<SearchResultItem>().Where(x => x.Path.StartsWith("/sitecore/system/Marketing Control Panel/Goals/") && x.Name == sitecoreEventName).ToList();
+                                break;
+                            case "campaign":
+                                results = context.GetQueryable<SearchResultItem>().Where(x => x.Path.StartsWith("/sitecore/system/Marketing Control Panel/Campaigns/") && x.Name == sitecoreEventName).ToList();
+                                break;
+                            case "download":
+                                eventDefinitionId = AnalyticsIds.DownloadEvent.Guid;
+                                break;
+                            case "search":
+                                eventDefinitionId = AnalyticsIds.SearchEvent.Guid;
+                                break;
+                            case "outcome":
+                                results = context.GetQueryable<SearchResultItem>().Where(x => x.Path.StartsWith("/sitecore/system/Marketing Control Panel/Outcomes/") && x.Name == sitecoreEventName).ToList();
+                                break;
+                            default:
+                                return "Invalid Category";
+                        }
 
-                    if (results.Any())
-                    {
-                        eventDefinitionId = results.FirstOrDefault().ItemId.Guid;
-                    }
-                    else
-                    {
-                        return "Invalid Event Definition";
+                        if (results.Any())
+                        {
+                            eventDefinitionId = results.FirstOrDefault().ItemId.Guid;
+                        }
+                        else
+                        {
+                            return "Invalid Event Definition";
+                        }
                     }
                 }
 
@@ -239,18 +233,18 @@ namespace RDA.Feature.GtmIntegration.Controllers
 
                         Tracker.Current.CurrentPage.Register(pageData);
                     }
-
-                    var msg = string.Format("RegisterAnalyticsEvent: sitecoreEventName='{0}', category='{1}', action='{2}', label='{3}', value='{4}', currencyCode='{5}', monetaryValue='{6}', itemId='{7}', pageUrl='{8}', culture='{9}', itemVersion='{10}', firstName='{11}', lastName='{12}', jobTitle='{13}', email='{14}', clickUrl='{15}', clickText='{16}', isInternalTraffic='{17}', position='{18}', mediaItemId='{19}', mediaItemName='{20}', searchTerm='{21}'", sitecoreEventName, category, action, label, value, currencyCode, monetaryValue, itemId.ToString(), pageUrl, culture, itemVersion, firstName, lastName, jobTitle, email, clickUrl, clickText, isInternalTraffic, position, mediaItemId, mediaItemName, searchTerm);
-                    Log.Info(msg, this);
                 }
 
-                return "ok";
+                responseMessage = string.Format("RegisterAnalyticsEvent: sitecoreEventName='{0}', category='{1}', action='{2}', label='{3}', value='{4}', currencyCode='{5}', monetaryValue='{6}', itemId='{7}', pageUrl='{8}', culture='{9}', itemVersion='{10}', firstName='{11}', lastName='{12}', jobTitle='{13}', email='{14}', clickUrl='{15}', clickText='{16}', isInternalTraffic='{17}', position='{18}', mediaItemId='{19}', mediaItemName='{20}', searchTerm='{21}'", sitecoreEventName, category, action, label, value, currencyCode, monetaryValue, itemId.ToString(), pageUrl, culture, itemVersion, firstName, lastName, jobTitle, email, clickUrl, clickText, isInternalTraffic, position, mediaItemId, mediaItemName, searchTerm);
+                Log.Info(responseMessage, this);
+
+                return "Success! " + responseMessage;
             }
             catch (Exception ex)
             {
-                var msg = string.Format("RegisterAnalyticsEvent Error: message='{0}', sitecoreEventName='{1}', category='{2}', action='{3}', label='{4}', value='{5}', currencyCode='{6}', monetaryValue='{7}', itemId='{8}', pageUrl='{9}', culture='{10}', itemVersion='{11}', firstName='{12}', lastName='{13}', jobTitle='{14}', email='{15}', clickUrl='{16}', clickText='{17}', isInternalTraffic='{18}', position='{19}', mediaItemId='{20}', mediaItemName='{21}', searchTerm='{22}'", ex.Message, sitecoreEventName, category, action, label, value, currencyCode, monetaryValue, itemId.ToString(), pageUrl, culture, itemVersion, firstName, lastName, jobTitle, email, clickUrl, clickText, isInternalTraffic, position, mediaItemId, mediaItemName, searchTerm);
-                Log.Error(msg, ex, this);
-                return msg;
+                responseMessage = string.Format("RegisterAnalyticsEvent Error: message='{0}', sitecoreEventName='{1}', category='{2}', action='{3}', label='{4}', value='{5}', currencyCode='{6}', monetaryValue='{7}', itemId='{8}', pageUrl='{9}', culture='{10}', itemVersion='{11}', firstName='{12}', lastName='{13}', jobTitle='{14}', email='{15}', clickUrl='{16}', clickText='{17}', isInternalTraffic='{18}', position='{19}', mediaItemId='{20}', mediaItemName='{21}', searchTerm='{22}'", ex.Message, sitecoreEventName, category, action, label, value, currencyCode, monetaryValue, itemId.ToString(), pageUrl, culture, itemVersion, firstName, lastName, jobTitle, email, clickUrl, clickText, isInternalTraffic, position, mediaItemId, mediaItemName, searchTerm);
+                Log.Error(responseMessage, ex, this);
+                return responseMessage;
             }
 
         }
