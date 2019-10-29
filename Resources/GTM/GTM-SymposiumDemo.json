@@ -1,2327 +1,2386 @@
 {
-  "exportFormatVersion": 2,
-  "exportTime": "2019-10-28 23:44:05",
-  "containerVersion": {
-    "path": "accounts/4702710201/containers/12810664/versions/0",
-    "accountId": "4702710201",
-    "containerId": "12810664",
-    "containerVersionId": "0",
-    "container": {
-      "path": "accounts/4702710201/containers/12810664",
-      "accountId": "4702710201",
-      "containerId": "12810664",
-      "name": "Symposium Demo Dev",
-      "publicId": "GTM-WFCWGRV",
-      "usageContext": [
-        "WEB"
-      ],
-      "fingerprint": "1572305669925",
-      "tagManagerUrl": "https://tagmanager.google.com/#/container/accounts/4702710201/containers/12810664/workspaces?apiLink=container"
-    },
-    "tag": [
-      {
+    "exportFormatVersion": 2,
+    "exportTime": "2019-10-29 15:30:54",
+    "containerVersion": {
+        "path": "accounts/4702710201/containers/12810664/versions/0",
         "accountId": "4702710201",
         "containerId": "12810664",
-        "tagId": "122",
-        "name": "Campaign - AdWords 2019 Fall Attire",
-        "type": "ua",
-        "parameter": [
-          {
-            "type": "BOOLEAN",
-            "key": "nonInteraction",
-            "value": "false"
-          },
-          {
-            "type": "BOOLEAN",
-            "key": "overrideGaSettings",
-            "value": "false"
-          },
-          {
-            "type": "TEMPLATE",
-            "key": "eventCategory",
-            "value": "Campaign"
-          },
-          {
-            "type": "TEMPLATE",
-            "key": "trackType",
-            "value": "TRACK_EVENT"
-          },
-          {
-            "type": "TEMPLATE",
-            "key": "gaSettings",
-            "value": "{{GA Settings}}"
-          },
-          {
-            "type": "TEMPLATE",
-            "key": "eventAction",
-            "value": "Campaign:2019 Fall Attire AdWords Campaign,Keyword:{{Paid Search Keyword}}"
-          },
-          {
-            "type": "TEMPLATE",
-            "key": "eventLabel",
-            "value": "AdWords 2019 Fall Attire Campaign"
-          }
-        ],
-        "fingerprint": "1571834938624",
-        "firingTriggerId": [
-          "105"
-        ],
-        "teardownTag": [
-          {
-            "tagName": "Campaign - AdWords 2019 Fall Attire SC"
-          }
-        ],
-        "tagFiringOption": "ONCE_PER_EVENT",
-        "monitoringMetadata": {
-          "type": "MAP"
-        }
-      },
-      {
-        "accountId": "4702710201",
-        "containerId": "12810664",
-        "tagId": "123",
-        "name": "Campaign - AdWords 2019 Fall Attire SC",
-        "type": "html",
-        "parameter": [
-          {
-            "type": "TEMPLATE",
-            "key": "html",
-            "value": "<script>\n  // This method will send the analytics event to Sitecore.\n  var sitecoreEventName = '2019 Fall Attire AdWords Campaign'; // This must exactly match the item name in Sitecore.\n  var category = 'Campaign'; // Must be one of the following: Page View, Page Event, Goal, Campaign, Outcome, Download or Search.\n  var action = 'Campaign:2019 Fall Attire AdWords,Keyword:' + {{GetUrlParameter}}('q') + {{GetUrlParameter}}('utm_term'); // Optional\n  var label = '2019 Fall Attire AdWords Campaign'; // Optional\n  var value = ''; // Optional\n  var currencyCode = ''; // Required for Outcome category.\n  var monetaryValue = ''; // Required for Outcome category.\n  var firstName = ''; // Optional\n  var lastName = ''; // Optional\n  var jobTitle = ''; // Optional\n  var email = ''; // Optional\n  var mediaItemId = ''; // Required for Download category.\n  var mediaItemName = ''; // Required for Download category.\n  var searchTerm = ''; // Required for Search category.\n  {{Post SC Analytics Event}}(sitecoreEventName,category,action,label,value,currencyCode,monetaryValue,firstName,lastName,jobTitle,email,mediaItemId,mediaItemName,searchTerm);\n</script>"
-          },
-          {
-            "type": "BOOLEAN",
-            "key": "supportDocumentWrite",
-            "value": "false"
-          }
-        ],
-        "fingerprint": "1571837278788",
-        "tagFiringOption": "ONCE_PER_EVENT",
-        "monitoringMetadata": {
-          "type": "MAP"
-        }
-      },
-      {
-        "accountId": "4702710201",
-        "containerId": "12810664",
-        "tagId": "117",
-        "name": "Campaign - Facebook 2019 Fall Attire",
-        "type": "ua",
-        "parameter": [
-          {
-            "type": "BOOLEAN",
-            "key": "nonInteraction",
-            "value": "false"
-          },
-          {
-            "type": "BOOLEAN",
-            "key": "overrideGaSettings",
-            "value": "false"
-          },
-          {
-            "type": "TEMPLATE",
-            "key": "eventCategory",
-            "value": "Campaign"
-          },
-          {
-            "type": "TEMPLATE",
-            "key": "trackType",
-            "value": "TRACK_EVENT"
-          },
-          {
-            "type": "TEMPLATE",
-            "key": "gaSettings",
-            "value": "{{GA Settings}}"
-          },
-          {
-            "type": "TEMPLATE",
-            "key": "eventAction",
-            "value": "Campaign:2019 Fall Attire Facebook Campaign"
-          },
-          {
-            "type": "TEMPLATE",
-            "key": "eventLabel",
-            "value": "2019 Fall Attire Facebook Campaign"
-          }
-        ],
-        "fingerprint": "1571834928500",
-        "firingTriggerId": [
-          "84"
-        ],
-        "teardownTag": [
-          {
-            "tagName": "Campaign - Facebook 2019 Fall Attire SC"
-          }
-        ],
-        "tagFiringOption": "ONCE_PER_EVENT",
-        "monitoringMetadata": {
-          "type": "MAP"
-        }
-      },
-      {
-        "accountId": "4702710201",
-        "containerId": "12810664",
-        "tagId": "118",
-        "name": "Campaign - Facebook 2019 Fall Attire SC",
-        "type": "html",
-        "parameter": [
-          {
-            "type": "TEMPLATE",
-            "key": "html",
-            "value": "<script>\n  // This method will send the analytics event to Sitecore.\n  var sitecoreEventName = '2019 Fall Attire Facebook Campaign'; // This must exactly match the item name in Sitecore.\n  var category = 'Campaign'; // Must be one of the following: Page View, Page Event, Goal, Campaign, Outcome, Download or Search.\n  var action = 'Campaign:2019 Fall Attire Facebook'; // Optional\n  var label = '2019 Fall Attire Facebook Campaign'; // Optional\n  var value = ''; // Optional\n  var currencyCode = ''; // Required for Outcome category.\n  var monetaryValue = ''; // Required for Outcome category.\n  var firstName = ''; // Optional\n  var lastName = ''; // Optional\n  var jobTitle = ''; // Optional\n  var email = ''; // Optional\n  var mediaItemId = ''; // Required for Download category.\n  var mediaItemName = ''; // Required for Download category.\n  var searchTerm = ''; // Required for Search category.\n  {{Post SC Analytics Event}}(sitecoreEventName,category,action,label,value,currencyCode,monetaryValue,firstName,lastName,jobTitle,email,mediaItemId,mediaItemName,searchTerm);\n</script>"
-          },
-          {
-            "type": "BOOLEAN",
-            "key": "supportDocumentWrite",
-            "value": "false"
-          }
-        ],
-        "fingerprint": "1571838081879",
-        "tagFiringOption": "ONCE_PER_EVENT",
-        "monitoringMetadata": {
-          "type": "MAP"
-        }
-      },
-      {
-        "accountId": "4702710201",
-        "containerId": "12810664",
-        "tagId": "120",
-        "name": "Campaign - TV 2019 Fall Attire",
-        "type": "ua",
-        "parameter": [
-          {
-            "type": "BOOLEAN",
-            "key": "nonInteraction",
-            "value": "false"
-          },
-          {
-            "type": "BOOLEAN",
-            "key": "overrideGaSettings",
-            "value": "false"
-          },
-          {
-            "type": "TEMPLATE",
-            "key": "eventCategory",
-            "value": "Campaign"
-          },
-          {
-            "type": "TEMPLATE",
-            "key": "trackType",
-            "value": "TRACK_EVENT"
-          },
-          {
-            "type": "TEMPLATE",
-            "key": "gaSettings",
-            "value": "{{GA Settings}}"
-          },
-          {
-            "type": "TEMPLATE",
-            "key": "eventAction",
-            "value": "Campaign:2019 Fall Attire TV Campaign"
-          },
-          {
-            "type": "TEMPLATE",
-            "key": "eventLabel",
-            "value": "2019 Fall Attire TV Campaign"
-          }
-        ],
-        "fingerprint": "1571834958833",
-        "firingTriggerId": [
-          "100"
-        ],
-        "teardownTag": [
-          {
-            "tagName": "Campaign - TV 2019 Fall Attire SC"
-          }
-        ],
-        "tagFiringOption": "ONCE_PER_EVENT",
-        "monitoringMetadata": {
-          "type": "MAP"
-        }
-      },
-      {
-        "accountId": "4702710201",
-        "containerId": "12810664",
-        "tagId": "121",
-        "name": "Campaign - TV 2019 Fall Attire SC",
-        "type": "html",
-        "parameter": [
-          {
-            "type": "TEMPLATE",
-            "key": "html",
-            "value": "<script>\n  // This method will send the analytics event to Sitecore.\n  var sitecoreEventName = '2019 Fall Attire TV Campaign'; // This must exactly match the item name in Sitecore.\n  var category = 'Campaign'; // Must be one of the following: Page View, Page Event, Goal, Campaign, Outcome, Download or Search.\n  var action = 'Campaign:2019 Fall Attire TV'; // Optional\n  var label = '2019 Fall Attire TV Campaign'; // Optional\n  var value = ''; // Optional\n  var currencyCode = ''; // Required for Outcome category.\n  var monetaryValue = ''; // Required for Outcome category.\n  var firstName = ''; // Optional\n  var lastName = ''; // Optional\n  var jobTitle = ''; // Optional\n  var email = ''; // Optional\n  var mediaItemId = ''; // Required for Download category.\n  var mediaItemName = ''; // Required for Download category.\n  var searchTerm = ''; // Required for Search category.\n  {{Post SC Analytics Event}}(sitecoreEventName,category,action,label,value,currencyCode,monetaryValue,firstName,lastName,jobTitle,email,mediaItemId,mediaItemName,searchTerm);\n</script>"
-          },
-          {
-            "type": "BOOLEAN",
-            "key": "supportDocumentWrite",
-            "value": "false"
-          }
-        ],
-        "fingerprint": "1571838089385",
-        "tagFiringOption": "ONCE_PER_EVENT",
-        "monitoringMetadata": {
-          "type": "MAP"
-        }
-      },
-      {
-        "accountId": "4702710201",
-        "containerId": "12810664",
-        "tagId": "134",
-        "name": "Event - Add to Cart Button Click",
-        "type": "ua",
-        "parameter": [
-          {
-            "type": "BOOLEAN",
-            "key": "nonInteraction",
-            "value": "false"
-          },
-          {
-            "type": "BOOLEAN",
-            "key": "overrideGaSettings",
-            "value": "false"
-          },
-          {
-            "type": "TEMPLATE",
-            "key": "eventCategory",
-            "value": "Page Event"
-          },
-          {
-            "type": "TEMPLATE",
-            "key": "trackType",
-            "value": "TRACK_EVENT"
-          },
-          {
-            "type": "TEMPLATE",
-            "key": "gaSettings",
-            "value": "{{GA Settings}}"
-          },
-          {
-            "type": "TEMPLATE",
-            "key": "eventAction",
-            "value": "Add to Cart Button Click -- Product Name:{{Add to Cart Product Name}}"
-          },
-          {
-            "type": "TEMPLATE",
-            "key": "eventLabel",
-            "value": "Add to Cart Button Click"
-          }
-        ],
-        "fingerprint": "1571423749380",
-        "firingTriggerId": [
-          "153"
-        ],
-        "teardownTag": [
-          {
-            "tagName": "Event - Add to Cart Button Click SC"
-          }
-        ],
-        "tagFiringOption": "ONCE_PER_EVENT",
-        "monitoringMetadata": {
-          "type": "MAP"
-        }
-      },
-      {
-        "accountId": "4702710201",
-        "containerId": "12810664",
-        "tagId": "130",
-        "name": "Event - Add to Cart Button Click SC",
-        "type": "html",
-        "parameter": [
-          {
-            "type": "TEMPLATE",
-            "key": "html",
-            "value": "<script>\n  // This method will send the analytics event to Sitecore.\n  var sitecoreEventName = 'Add to Cart Button Click'; // This must exactly match the item name in Sitecore.\n  var category = 'Page Event'; // Must be one of the following: Page View, Page Event, Goal, Campaign, Outcome, Download or Search.\n  var action = 'Product Name:{{Add to Cart Product Name}}'; // Optional\n  var label = 'Add to Cart Button Click'; // Optional\n  var value = ''; // Optional\n  var currencyCode = ''; // Required for Outcome category.\n  var monetaryValue = ''; // Required for Outcome category.\n  var firstName = ''; // Optional\n  var lastName = ''; // Optional\n  var jobTitle = ''; // Optional\n  var email = ''; // Optional\n  var mediaItemId = ''; // Required for Download category.\n  var mediaItemName = ''; // Required for Download category.\n  var searchTerm = ''; // Required for Search category.\n  {{Post SC Analytics Event}}(sitecoreEventName,category,action,label,value,currencyCode,monetaryValue,firstName,lastName,jobTitle,email,mediaItemId,mediaItemName,searchTerm);\n</script>"
-          },
-          {
-            "type": "BOOLEAN",
-            "key": "supportDocumentWrite",
-            "value": "false"
-          }
-        ],
-        "fingerprint": "1571837435412",
-        "tagFiringOption": "ONCE_PER_EVENT",
-        "monitoringMetadata": {
-          "type": "MAP"
-        }
-      },
-      {
-        "accountId": "4702710201",
-        "containerId": "12810664",
-        "tagId": "124",
-        "name": "Event - Any Link Click",
-        "type": "ua",
-        "parameter": [
-          {
-            "type": "BOOLEAN",
-            "key": "nonInteraction",
-            "value": "false"
-          },
-          {
-            "type": "BOOLEAN",
-            "key": "overrideGaSettings",
-            "value": "false"
-          },
-          {
-            "type": "TEMPLATE",
-            "key": "eventCategory",
-            "value": "Page Event"
-          },
-          {
-            "type": "TEMPLATE",
-            "key": "trackType",
-            "value": "TRACK_EVENT"
-          },
-          {
-            "type": "TEMPLATE",
-            "key": "gaSettings",
-            "value": "{{GA Settings}}"
-          },
-          {
-            "type": "TEMPLATE",
-            "key": "eventAction",
-            "value": "Any Link Click -- Click Text:{{Click Text or NA}},Click URL:{{Click URL or NA}}"
-          },
-          {
-            "type": "TEMPLATE",
-            "key": "eventLabel",
-            "value": "Any Link Click"
-          }
-        ],
-        "fingerprint": "1571422037459",
-        "firingTriggerId": [
-          "129"
-        ],
-        "teardownTag": [
-          {
-            "tagName": "Event - Any Link Click SC"
-          }
-        ],
-        "tagFiringOption": "ONCE_PER_EVENT",
-        "monitoringMetadata": {
-          "type": "MAP"
-        }
-      },
-      {
-        "accountId": "4702710201",
-        "containerId": "12810664",
-        "tagId": "125",
-        "name": "Event - Any Link Click SC",
-        "type": "html",
-        "parameter": [
-          {
-            "type": "TEMPLATE",
-            "key": "html",
-            "value": "<script>\n  // This method will send the analytics event to Sitecore.\n  var sitecoreEventName = 'Any Link Clicked'; // This must exactly match the item name in Sitecore.\n  var category = 'Page Event'; // Must be one of the following: Page View, Page Event, Goal, Campaign, Outcome, Download or Search.\n  var action = 'Click Text:' + {{Click Text or NA}} + ',Click URL:' + {{Click URL or NA}}; // Optional\n  var label = 'Any Link Click'; // Optional\n  var value = ''; // Optional\n  var currencyCode = ''; // Required for Outcome category.\n  var monetaryValue = ''; // Required for Outcome category.\n  var firstName = ''; // Optional\n  var lastName = ''; // Optional\n  var jobTitle = ''; // Optional\n  var email = ''; // Optional\n  var mediaItemId = ''; // Required for Download category.\n  var mediaItemName = ''; // Required for Download category.\n  var searchTerm = ''; // Required for Search category.\n  {{Post SC Analytics Event}}(sitecoreEventName,category,action,label,value,currencyCode,monetaryValue,firstName,lastName,jobTitle,email,mediaItemId,mediaItemName,searchTerm);\n</script>"
-          },
-          {
-            "type": "BOOLEAN",
-            "key": "supportDocumentWrite",
-            "value": "false"
-          }
-        ],
-        "fingerprint": "1571837412350",
-        "tagFiringOption": "ONCE_PER_EVENT",
-        "monitoringMetadata": {
-          "type": "MAP"
-        }
-      },
-      {
-        "accountId": "4702710201",
-        "containerId": "12810664",
-        "tagId": "137",
-        "name": "Event - Complete Order Button Click",
-        "type": "ua",
-        "parameter": [
-          {
-            "type": "BOOLEAN",
-            "key": "nonInteraction",
-            "value": "false"
-          },
-          {
-            "type": "BOOLEAN",
-            "key": "overrideGaSettings",
-            "value": "false"
-          },
-          {
-            "type": "TEMPLATE",
-            "key": "eventCategory",
-            "value": "Page Event"
-          },
-          {
-            "type": "TEMPLATE",
-            "key": "trackType",
-            "value": "TRACK_EVENT"
-          },
-          {
-            "type": "TEMPLATE",
-            "key": "gaSettings",
-            "value": "{{GA Settings}}"
-          },
-          {
-            "type": "TEMPLATE",
-            "key": "eventAction",
-            "value": "Complete Order Button Click"
-          },
-          {
-            "type": "TEMPLATE",
-            "key": "eventLabel",
-            "value": "Complete Order Button Click"
-          }
-        ],
-        "fingerprint": "1571425554077",
-        "firingTriggerId": [
-          "172"
-        ],
-        "teardownTag": [
-          {
-            "tagName": "Event - Complete Order Button Click SC"
-          }
-        ],
-        "tagFiringOption": "ONCE_PER_EVENT",
-        "monitoringMetadata": {
-          "type": "MAP"
-        }
-      },
-      {
-        "accountId": "4702710201",
-        "containerId": "12810664",
-        "tagId": "138",
-        "name": "Event - Complete Order Button Click SC",
-        "type": "html",
-        "parameter": [
-          {
-            "type": "TEMPLATE",
-            "key": "html",
-            "value": "<script>\n  // This method will send the analytics event to Sitecore.\n  var sitecoreEventName = 'Complete Order Button Click'; // This must exactly match the item name in Sitecore.\n  var category = 'Page Event'; // Must be one of the following: Page View, Page Event, Goal, Campaign, Outcome, Download or Search.\n  var action = 'Complete Order Button Click'; // Optional\n  var label = 'Complete Order Button Click'; // Optional\n  var value = ''; // Optional\n  var currencyCode = ''; // Required for Outcome category.\n  var monetaryValue = ''; // Required for Outcome category.\n  var firstName = ''; // Optional\n  var lastName = ''; // Optional\n  var jobTitle = ''; // Optional\n  var email = ''; // Optional\n  var mediaItemId = ''; // Required for Download category.\n  var mediaItemName = ''; // Required for Download category.\n  var searchTerm = ''; // Required for Search category.\n  {{Post SC Analytics Event}}(sitecoreEventName,category,action,label,value,currencyCode,monetaryValue,firstName,lastName,jobTitle,email,mediaItemId,mediaItemName,searchTerm);\n</script>"
-          },
-          {
-            "type": "BOOLEAN",
-            "key": "supportDocumentWrite",
-            "value": "false"
-          }
-        ],
-        "fingerprint": "1571837612511",
-        "tagFiringOption": "ONCE_PER_EVENT",
-        "monitoringMetadata": {
-          "type": "MAP"
-        }
-      },
-      {
-        "accountId": "4702710201",
-        "containerId": "12810664",
-        "tagId": "84",
-        "name": "Event - Page View",
-        "type": "ua",
-        "parameter": [
-          {
-            "type": "BOOLEAN",
-            "key": "overrideGaSettings",
-            "value": "false"
-          },
-          {
-            "type": "TEMPLATE",
-            "key": "trackType",
-            "value": "TRACK_PAGEVIEW"
-          },
-          {
-            "type": "TEMPLATE",
-            "key": "gaSettings",
-            "value": "{{GA Settings}}"
-          }
-        ],
-        "fingerprint": "1570714600550",
-        "firingTriggerId": [
-          "13"
-        ],
-        "teardownTag": [
-          {
-            "tagName": "Event - Page View SC",
-            "stopTeardownOnFailure": true
-          }
-        ],
-        "tagFiringOption": "ONCE_PER_EVENT",
-        "monitoringMetadata": {
-          "type": "MAP"
-        }
-      },
-      {
-        "accountId": "4702710201",
-        "containerId": "12810664",
-        "tagId": "114",
-        "name": "Event - Page View SC",
-        "type": "html",
-        "parameter": [
-          {
-            "type": "TEMPLATE",
-            "key": "html",
-            "value": "<script>\n  // This method will send the analytics event to Sitecore.\n  var sitecoreEventName = 'Page View'; // This must exactly match the item name in Sitecore.\n  var category = 'Page View'; // Must be one of the following: Page View, Page Event, Goal, Campaign, Outcome, Download or Search.\n  var action = ''; // Optional\n  var label = ''; // Optional\n  var value = ''; // Optional\n  var currencyCode = ''; // Required for Outcome category.\n  var monetaryValue = ''; // Required for Outcome category.\n  var firstName = ''; // Optional\n  var lastName = ''; // Optional\n  var jobTitle = ''; // Optional\n  var email = ''; // Optional\n  var mediaItemId = ''; // Required for Download category.\n  var mediaItemName = ''; // Required for Download category.\n  var searchTerm = ''; // Required for Search category.\n  {{Post SC Analytics Event}}(sitecoreEventName,category,action,label,value,currencyCode,monetaryValue,firstName,lastName,jobTitle,email,mediaItemId,mediaItemName,searchTerm);\n</script>"
-          },
-          {
-            "type": "BOOLEAN",
-            "key": "supportDocumentWrite",
-            "value": "false"
-          }
-        ],
-        "fingerprint": "1571837666709",
-        "tagFiringOption": "ONCE_PER_EVENT",
-        "monitoringMetadata": {
-          "type": "MAP"
-        }
-      },
-      {
-        "accountId": "4702710201",
-        "containerId": "12810664",
-        "tagId": "129",
-        "name": "Event - Payment Button Click",
-        "type": "ua",
-        "parameter": [
-          {
-            "type": "BOOLEAN",
-            "key": "nonInteraction",
-            "value": "false"
-          },
-          {
-            "type": "BOOLEAN",
-            "key": "overrideGaSettings",
-            "value": "false"
-          },
-          {
-            "type": "TEMPLATE",
-            "key": "eventCategory",
-            "value": "Page Event"
-          },
-          {
-            "type": "TEMPLATE",
-            "key": "trackType",
-            "value": "TRACK_EVENT"
-          },
-          {
-            "type": "TEMPLATE",
-            "key": "gaSettings",
-            "value": "{{GA Settings}}"
-          },
-          {
-            "type": "TEMPLATE",
-            "key": "eventAction",
-            "value": "Payment Button Click"
-          },
-          {
-            "type": "TEMPLATE",
-            "key": "eventLabel",
-            "value": "Payment Button Click"
-          }
-        ],
-        "fingerprint": "1571423765814",
-        "firingTriggerId": [
-          "164"
-        ],
-        "teardownTag": [
-          {
-            "tagName": "Event - Payment Button Click SC"
-          }
-        ],
-        "tagFiringOption": "ONCE_PER_EVENT",
-        "monitoringMetadata": {
-          "type": "MAP"
-        }
-      },
-      {
-        "accountId": "4702710201",
-        "containerId": "12810664",
-        "tagId": "133",
-        "name": "Event - Payment Button Click SC",
-        "type": "html",
-        "parameter": [
-          {
-            "type": "TEMPLATE",
-            "key": "html",
-            "value": "<script>\n  // This method will send the analytics event to Sitecore.\n  var sitecoreEventName = 'Payment Button Click'; // This must exactly match the item name in Sitecore.\n  var category = 'Page Event'; // Must be one of the following: Page View, Page Event, Goal, Campaign, Outcome, Download or Search.\n  var action = 'Payment Button Click'; // Optional\n  var label = 'Payment Button Click'; // Optional\n  var value = ''; // Optional\n  var currencyCode = ''; // Required for Outcome category.\n  var monetaryValue = ''; // Required for Outcome category.\n  var firstName = {{Shipping First Name}};\n  var lastName = {{Shipping Last Name}};\n  var jobTitle = {{Shipping Job Title}};\n  var email = {{Shipping Email}};\n  var mediaItemId = ''; // Required for Download category.\n  var mediaItemName = ''; // Required for Download category.\n  var searchTerm = ''; // Required for Search category.\n  {{Post SC Analytics Event}}(sitecoreEventName,category,action,label,value,currencyCode,monetaryValue,firstName,lastName,jobTitle,email,mediaItemId,mediaItemName,searchTerm);\n</script>"
-          },
-          {
-            "type": "BOOLEAN",
-            "key": "supportDocumentWrite",
-            "value": "false"
-          }
-        ],
-        "fingerprint": "1571837744358",
-        "tagFiringOption": "ONCE_PER_EVENT",
-        "monitoringMetadata": {
-          "type": "MAP"
-        }
-      },
-      {
-        "accountId": "4702710201",
-        "containerId": "12810664",
-        "tagId": "135",
-        "name": "Event - Review Button Click",
-        "type": "ua",
-        "parameter": [
-          {
-            "type": "BOOLEAN",
-            "key": "nonInteraction",
-            "value": "false"
-          },
-          {
-            "type": "BOOLEAN",
-            "key": "overrideGaSettings",
-            "value": "false"
-          },
-          {
-            "type": "TEMPLATE",
-            "key": "eventCategory",
-            "value": "Page Event"
-          },
-          {
-            "type": "TEMPLATE",
-            "key": "trackType",
-            "value": "TRACK_EVENT"
-          },
-          {
-            "type": "TEMPLATE",
-            "key": "gaSettings",
-            "value": "{{GA Settings}}"
-          },
-          {
-            "type": "TEMPLATE",
-            "key": "eventAction",
-            "value": "Review Button Click"
-          },
-          {
-            "type": "TEMPLATE",
-            "key": "eventLabel",
-            "value": "Review Button Click"
-          }
-        ],
-        "fingerprint": "1571425213843",
-        "firingTriggerId": [
-          "169"
-        ],
-        "teardownTag": [
-          {
-            "tagName": "Event - Review Button Click SC"
-          }
-        ],
-        "tagFiringOption": "ONCE_PER_EVENT",
-        "monitoringMetadata": {
-          "type": "MAP"
-        }
-      },
-      {
-        "accountId": "4702710201",
-        "containerId": "12810664",
-        "tagId": "136",
-        "name": "Event - Review Button Click SC",
-        "type": "html",
-        "parameter": [
-          {
-            "type": "TEMPLATE",
-            "key": "html",
-            "value": "<script>\n  // This method will send the analytics event to Sitecore.\n  var sitecoreEventName = 'Review Button Click'; // This must exactly match the item name in Sitecore.\n  var category = 'Page Event'; // Must be one of the following: Page View, Page Event, Goal, Campaign, Outcome, Download or Search.\n  var action = 'Review Button Click'; // Optional\n  var label = 'Review Button Click'; // Optional\n  var value = ''; // Optional\n  var currencyCode = ''; // Required for Outcome category.\n  var monetaryValue = ''; // Required for Outcome category.\n  var firstName = ''; // Optional\n  var lastName = ''; // Optional\n  var jobTitle = ''; // Optional\n  var email = ''; // Optional\n  var mediaItemId = ''; // Required for Download category.\n  var mediaItemName = ''; // Required for Download category.\n  var searchTerm = ''; // Required for Search category.\n  {{Post SC Analytics Event}}(sitecoreEventName,category,action,label,value,currencyCode,monetaryValue,firstName,lastName,jobTitle,email,mediaItemId,mediaItemName,searchTerm);\n</script>"
-          },
-          {
-            "type": "BOOLEAN",
-            "key": "supportDocumentWrite",
-            "value": "false"
-          }
-        ],
-        "fingerprint": "1571837827461",
-        "tagFiringOption": "ONCE_PER_EVENT",
-        "monitoringMetadata": {
-          "type": "MAP"
-        }
-      },
-      {
-        "accountId": "4702710201",
-        "containerId": "12810664",
-        "tagId": "127",
-        "name": "Event - Shop Now Button Click",
-        "type": "ua",
-        "parameter": [
-          {
-            "type": "BOOLEAN",
-            "key": "nonInteraction",
-            "value": "false"
-          },
-          {
-            "type": "BOOLEAN",
-            "key": "overrideGaSettings",
-            "value": "false"
-          },
-          {
-            "type": "TEMPLATE",
-            "key": "eventCategory",
-            "value": "Page Event"
-          },
-          {
-            "type": "TEMPLATE",
-            "key": "trackType",
-            "value": "TRACK_EVENT"
-          },
-          {
-            "type": "TEMPLATE",
-            "key": "gaSettings",
-            "value": "{{GA Settings}}"
-          },
-          {
-            "type": "TEMPLATE",
-            "key": "eventAction",
-            "value": "Shop Now Button Click -- Department:{{Shop Now Department}}"
-          },
-          {
-            "type": "TEMPLATE",
-            "key": "eventLabel",
-            "value": "Shop Now Button Click"
-          }
-        ],
-        "fingerprint": "1571422058287",
-        "firingTriggerId": [
-          "81"
-        ],
-        "teardownTag": [
-          {
-            "tagName": "Event - Shop Now Button Click SC"
-          }
-        ],
-        "tagFiringOption": "ONCE_PER_EVENT",
-        "monitoringMetadata": {
-          "type": "MAP"
-        }
-      },
-      {
-        "accountId": "4702710201",
-        "containerId": "12810664",
-        "tagId": "128",
-        "name": "Event - Shop Now Button Click SC",
-        "type": "html",
-        "parameter": [
-          {
-            "type": "TEMPLATE",
-            "key": "html",
-            "value": "<script>\n  // This method will send the analytics event to Sitecore.\n  var sitecoreEventName = 'Shop Now Button Click'; // This must exactly match the item name in Sitecore.\n  var category = 'Page Event'; // Must be one of the following: Page View, Page Event, Goal, Campaign, Outcome, Download or Search.\n  var action = 'Department:{{Shop Now Department}}'; // Optional\n  var label = 'Shop Now Button Click'; // Optional\n  var value = ''; // Optional\n  var currencyCode = ''; // Required for Outcome category.\n  var monetaryValue = ''; // Required for Outcome category.\n  var firstName = ''; // Optional\n  var lastName = ''; // Optional\n  var jobTitle = ''; // Optional\n  var email = ''; // Optional\n  var mediaItemId = ''; // Required for Download category.\n  var mediaItemName = ''; // Required for Download category.\n  var searchTerm = ''; // Required for Search category.\n  {{Post SC Analytics Event}}(sitecoreEventName,category,action,label,value,currencyCode,monetaryValue,firstName,lastName,jobTitle,email,mediaItemId,mediaItemName,searchTerm);\n</script>"
-          },
-          {
-            "type": "BOOLEAN",
-            "key": "supportDocumentWrite",
-            "value": "false"
-          }
-        ],
-        "fingerprint": "1571837892835",
-        "tagFiringOption": "ONCE_PER_EVENT",
-        "monitoringMetadata": {
-          "type": "MAP"
-        }
-      },
-      {
-        "accountId": "4702710201",
-        "containerId": "12810664",
-        "tagId": "131",
-        "name": "Event - View Cart Button Click",
-        "type": "ua",
-        "parameter": [
-          {
-            "type": "BOOLEAN",
-            "key": "nonInteraction",
-            "value": "false"
-          },
-          {
-            "type": "BOOLEAN",
-            "key": "overrideGaSettings",
-            "value": "false"
-          },
-          {
-            "type": "TEMPLATE",
-            "key": "eventCategory",
-            "value": "Page Event"
-          },
-          {
-            "type": "TEMPLATE",
-            "key": "trackType",
-            "value": "TRACK_EVENT"
-          },
-          {
-            "type": "TEMPLATE",
-            "key": "gaSettings",
-            "value": "{{GA Settings}}"
-          },
-          {
-            "type": "TEMPLATE",
-            "key": "eventAction",
-            "value": "View Cart Button Click -- Page URL:{{Page URL}}"
-          },
-          {
-            "type": "TEMPLATE",
-            "key": "eventLabel",
-            "value": "View Cart Button Click"
-          }
-        ],
-        "fingerprint": "1571422072133",
-        "firingTriggerId": [
-          "157"
-        ],
-        "teardownTag": [
-          {
-            "tagName": "Event - View Cart Button Click SC"
-          }
-        ],
-        "tagFiringOption": "ONCE_PER_EVENT",
-        "monitoringMetadata": {
-          "type": "MAP"
-        }
-      },
-      {
-        "accountId": "4702710201",
-        "containerId": "12810664",
-        "tagId": "132",
-        "name": "Event - View Cart Button Click SC",
-        "type": "html",
-        "parameter": [
-          {
-            "type": "TEMPLATE",
-            "key": "html",
-            "value": "<script>\n  // This method will send the analytics event to Sitecore.\n  var sitecoreEventName = 'View Cart Button Click'; // This must exactly match the item name in Sitecore.\n  var category = 'Page Event'; // Must be one of the following: Page View, Page Event, Goal, Campaign, Outcome, Download or Search.\n  var action = 'Page URL:{{Page URL}}'; // Optional\n  var label = 'View Cart Button Click'; // Optional\n  var value = ''; // Optional\n  var currencyCode = ''; // Required for Outcome category.\n  var monetaryValue = ''; // Required for Outcome category.\n  var firstName = ''; // Optional\n  var lastName = ''; // Optional\n  var jobTitle = ''; // Optional\n  var email = ''; // Optional\n  var mediaItemId = ''; // Required for Download category.\n  var mediaItemName = ''; // Required for Download category.\n  var searchTerm = ''; // Required for Search category.\n  {{Post SC Analytics Event}}(sitecoreEventName,category,action,label,value,currencyCode,monetaryValue,firstName,lastName,jobTitle,email,mediaItemId,mediaItemName,searchTerm);\n</script>"
-          },
-          {
-            "type": "BOOLEAN",
-            "key": "supportDocumentWrite",
-            "value": "false"
-          }
-        ],
-        "fingerprint": "1571837938595",
-        "tagFiringOption": "ONCE_PER_EVENT",
-        "monitoringMetadata": {
-          "type": "MAP"
-        }
-      },
-      {
-        "accountId": "4702710201",
-        "containerId": "12810664",
-        "tagId": "115",
-        "name": "Goal - Checkout Button Click",
-        "type": "ua",
-        "parameter": [
-          {
-            "type": "BOOLEAN",
-            "key": "nonInteraction",
-            "value": "false"
-          },
-          {
-            "type": "BOOLEAN",
-            "key": "overrideGaSettings",
-            "value": "false"
-          },
-          {
-            "type": "TEMPLATE",
-            "key": "eventCategory",
-            "value": "Goal"
-          },
-          {
-            "type": "TEMPLATE",
-            "key": "trackType",
-            "value": "TRACK_EVENT"
-          },
-          {
-            "type": "TEMPLATE",
-            "key": "gaSettings",
-            "value": "{{GA Settings}}"
-          },
-          {
-            "type": "TEMPLATE",
-            "key": "eventAction",
-            "value": "Checkout Button Click"
-          },
-          {
-            "type": "TEMPLATE",
-            "key": "eventLabel",
-            "value": "Checkout Button Click"
-          }
-        ],
-        "fingerprint": "1571423003153",
-        "firingTriggerId": [
-          "162"
-        ],
-        "teardownTag": [
-          {
-            "tagName": "Goal - Checkout Button Click SC"
-          }
-        ],
-        "tagFiringOption": "ONCE_PER_EVENT",
-        "monitoringMetadata": {
-          "type": "MAP"
-        }
-      },
-      {
-        "accountId": "4702710201",
-        "containerId": "12810664",
-        "tagId": "116",
-        "name": "Goal - Checkout Button Click SC",
-        "type": "html",
-        "parameter": [
-          {
-            "type": "TEMPLATE",
-            "key": "html",
-            "value": "<script>\n  \n  /// This method will send the analytics event to Sitecore.\n  \n  var sitecoreEventName = 'Checkout Button Click'; // This must exactly match the item name in Sitecore.\n  var category = 'Goal'; // Must be one of the following: Page View, Page Event, Goal, Campaign, Outcome, Download or Search.\n  var action = 'Checkout Button Click'; // Optional\n  var label = 'Checkout Button Click'; // Optional\n  var value = ''; // Optional\n  var currencyCode = ''; // Required for Outcome category.\n  var monetaryValue = ''; // Required for Outcome category.\n  var firstName = ''; // Optional\n  var lastName = ''; // Optional\n  var jobTitle = ''; // Optional\n  var email = ''; // Optional\n  var mediaItemId = ''; // Required for Download category.\n  var mediaItemName = ''; // Required for Download category.\n  var searchTerm = ''; // Required for Search category.\n\n  // DO NOT CHANGE ANYTHING BELOW THIS LINE.\n  {{Post SC Analytics Event}}(sitecoreEventName,category,action,label,value,currencyCode,monetaryValue,firstName,lastName,jobTitle,email,mediaItemId,mediaItemName,searchTerm);\n\n</script>"
-          },
-          {
-            "type": "BOOLEAN",
-            "key": "supportDocumentWrite",
-            "value": "false"
-          }
-        ],
-        "fingerprint": "1572297963289",
-        "tagFiringOption": "ONCE_PER_EVENT",
-        "monitoringMetadata": {
-          "type": "MAP"
-        }
-      },
-      {
-        "accountId": "4702710201",
-        "containerId": "12810664",
-        "tagId": "119",
-        "name": "Purchase SC",
-        "type": "html",
-        "parameter": [
-          {
-            "type": "TEMPLATE",
-            "key": "html",
-            "value": "<script>\n  // This method will send the analytics event to Sitecore.\n  var sitecoreEventName = 'Product Purchase'; // This must exactly match the item name in Sitecore.\n  var category = 'Outcome'; // Must be one of the following: Page View, Page Event, Goal, Campaign, Outcome, Download or Search.\n  var action = ''; // Optional\n  var label = ''; // Optional\n  var value = ''; // Optional\n  var currencyCode = {{Currency Code}}; // Required for Outcome category.\n  var monetaryValue = {{Transaction Total}}; // Required for Outcome category.\n  var firstName = ''; // Optional\n  var lastName = ''; // Optional\n  var jobTitle = ''; // Optional\n  var email = ''; // Optional\n  var mediaItemId = ''; // Required for Download category.\n  var mediaItemName = ''; // Required for Download category.\n  var searchTerm = ''; // Required for Search category.\n  {{Post SC Analytics Event}}(sitecoreEventName,category,action,label,value,currencyCode,monetaryValue,firstName,lastName,jobTitle,email,mediaItemId,mediaItemName,searchTerm);\n</script>"
-          },
-          {
-            "type": "BOOLEAN",
-            "key": "supportDocumentWrite",
-            "value": "false"
-          }
-        ],
-        "fingerprint": "1571836049646",
-        "firingTriggerId": [
-          "132"
-        ],
-        "tagFiringOption": "ONCE_PER_EVENT",
-        "monitoringMetadata": {
-          "type": "MAP"
-        }
-      }
-    ],
-    "trigger": [
-      {
-        "accountId": "4702710201",
-        "containerId": "12810664",
-        "triggerId": "105",
-        "name": "AdWords 2019 Fall Attire Campaign",
-        "type": "PAGEVIEW",
-        "filter": [
-          {
-            "type": "CONTAINS",
-            "parameter": [
-              {
-                "type": "TEMPLATE",
-                "key": "arg0",
-                "value": "{{Page URL}}"
-              },
-              {
-                "type": "TEMPLATE",
-                "key": "arg1",
-                "value": "utm_campaign=2019%20Fall%20Attire%20Adwords%20Campaign"
-              }
-            ]
-          }
-        ],
-        "fingerprint": "1570882122579"
-      },
-      {
-        "accountId": "4702710201",
-        "containerId": "12810664",
-        "triggerId": "153",
-        "name": "Add to Cart Button Click",
-        "type": "LINK_CLICK",
-        "filter": [
-          {
-            "type": "EQUALS",
-            "parameter": [
-              {
-                "type": "TEMPLATE",
-                "key": "arg0",
-                "value": "{{Click Text}}"
-              },
-              {
-                "type": "TEMPLATE",
-                "key": "arg1",
-                "value": "Add to Cart"
-              }
-            ]
-          }
-        ],
-        "waitForTags": {
-          "type": "BOOLEAN",
-          "value": "false"
+        "containerVersionId": "0",
+        "container": {
+            "path": "accounts/4702710201/containers/12810664",
+            "accountId": "4702710201",
+            "containerId": "12810664",
+            "name": "Symposium Demo Dev",
+            "publicId": "GTM-WFCWGRV",
+            "usageContext": [
+                "WEB"
+            ],
+            "fingerprint": "1572362745498",
+            "tagManagerUrl": "https://tagmanager.google.com/#/container/accounts/4702710201/containers/12810664/workspaces?apiLink=container"
         },
-        "checkValidation": {
-          "type": "BOOLEAN",
-          "value": "false"
-        },
-        "waitForTagsTimeout": {
-          "type": "TEMPLATE",
-          "value": "2000"
-        },
-        "uniqueTriggerId": {
-          "type": "TEMPLATE"
-        },
-        "fingerprint": "1571414816461"
-      },
-      {
-        "accountId": "4702710201",
-        "containerId": "12810664",
-        "triggerId": "13",
-        "name": "All Pages After GTM.dom",
-        "type": "DOM_READY",
-        "filter": [
-          {
-            "type": "MATCH_REGEX",
-            "parameter": [
-              {
-                "type": "TEMPLATE",
-                "key": "arg0",
-                "value": "{{Page URL}}"
-              },
-              {
-                "type": "TEMPLATE",
-                "key": "arg1",
-                "value": ".*"
-              }
-            ]
-          }
+        "tag": [
+            {
+                "accountId": "4702710201",
+                "containerId": "12810664",
+                "tagId": "122",
+                "name": "Campaign - AdWords 2019 Fall Attire",
+                "type": "ua",
+                "parameter": [
+                    {
+                        "type": "BOOLEAN",
+                        "key": "nonInteraction",
+                        "value": "false"
+                    },
+                    {
+                        "type": "BOOLEAN",
+                        "key": "overrideGaSettings",
+                        "value": "false"
+                    },
+                    {
+                        "type": "TEMPLATE",
+                        "key": "eventCategory",
+                        "value": "Campaign"
+                    },
+                    {
+                        "type": "TEMPLATE",
+                        "key": "trackType",
+                        "value": "TRACK_EVENT"
+                    },
+                    {
+                        "type": "TEMPLATE",
+                        "key": "gaSettings",
+                        "value": "{{GA Settings}}"
+                    },
+                    {
+                        "type": "TEMPLATE",
+                        "key": "eventAction",
+                        "value": "Campaign:2019 Fall Attire AdWords Campaign,Keyword:{{Paid Search Keyword}}"
+                    },
+                    {
+                        "type": "TEMPLATE",
+                        "key": "eventLabel",
+                        "value": "AdWords 2019 Fall Attire Campaign"
+                    }
+                ],
+                "fingerprint": "1571834938624",
+                "firingTriggerId": [
+                    "105"
+                ],
+                "teardownTag": [
+                    {
+                        "tagName": "Campaign - AdWords 2019 Fall Attire SC"
+                    }
+                ],
+                "tagFiringOption": "ONCE_PER_EVENT",
+                "monitoringMetadata": {
+                    "type": "MAP"
+                }
+            },
+            {
+                "accountId": "4702710201",
+                "containerId": "12810664",
+                "tagId": "123",
+                "name": "Campaign - AdWords 2019 Fall Attire SC",
+                "type": "html",
+                "parameter": [
+                    {
+                        "type": "TEMPLATE",
+                        "key": "html",
+                        "value": "<script>\n  // This method will send the analytics event to Sitecore.\n  var sitecoreEventName = '2019 Fall Attire AdWords Campaign'; // This must exactly match the item name in Sitecore.\n  var category = 'Campaign'; // Must be one of the following: Page View, Page Event, Goal, Campaign, Outcome, Download or Search.\n  var action = 'Campaign:2019 Fall Attire AdWords,Keyword:' + {{GetUrlParameter}}('q') + {{GetUrlParameter}}('utm_term'); // Optional\n  var label = '2019 Fall Attire AdWords Campaign'; // Optional\n  var value = ''; // Optional\n  var currencyCode = ''; // Required for Outcome category.\n  var monetaryValue = ''; // Required for Outcome category.\n  var firstName = ''; // Optional\n  var lastName = ''; // Optional\n  var jobTitle = ''; // Optional\n  var email = ''; // Optional\n  var mediaItemId = ''; // Required for Download category.\n  var mediaItemName = ''; // Required for Download category.\n  var searchTerm = ''; // Required for Search category.\n  {{Post SC Analytics Event}}(sitecoreEventName,category,action,label,value,currencyCode,monetaryValue,firstName,lastName,jobTitle,email,mediaItemId,mediaItemName,searchTerm);\n</script>"
+                    },
+                    {
+                        "type": "BOOLEAN",
+                        "key": "supportDocumentWrite",
+                        "value": "false"
+                    }
+                ],
+                "fingerprint": "1571837278788",
+                "tagFiringOption": "ONCE_PER_EVENT",
+                "monitoringMetadata": {
+                    "type": "MAP"
+                }
+            },
+            {
+                "accountId": "4702710201",
+                "containerId": "12810664",
+                "tagId": "117",
+                "name": "Campaign - Facebook 2019 Fall Attire",
+                "type": "ua",
+                "parameter": [
+                    {
+                        "type": "BOOLEAN",
+                        "key": "nonInteraction",
+                        "value": "false"
+                    },
+                    {
+                        "type": "BOOLEAN",
+                        "key": "overrideGaSettings",
+                        "value": "false"
+                    },
+                    {
+                        "type": "TEMPLATE",
+                        "key": "eventCategory",
+                        "value": "Campaign"
+                    },
+                    {
+                        "type": "TEMPLATE",
+                        "key": "trackType",
+                        "value": "TRACK_EVENT"
+                    },
+                    {
+                        "type": "TEMPLATE",
+                        "key": "gaSettings",
+                        "value": "{{GA Settings}}"
+                    },
+                    {
+                        "type": "TEMPLATE",
+                        "key": "eventAction",
+                        "value": "Campaign:2019 Fall Attire Facebook Campaign"
+                    },
+                    {
+                        "type": "TEMPLATE",
+                        "key": "eventLabel",
+                        "value": "2019 Fall Attire Facebook Campaign"
+                    }
+                ],
+                "fingerprint": "1571834928500",
+                "firingTriggerId": [
+                    "84"
+                ],
+                "teardownTag": [
+                    {
+                        "tagName": "Campaign - Facebook 2019 Fall Attire SC"
+                    }
+                ],
+                "tagFiringOption": "ONCE_PER_EVENT",
+                "monitoringMetadata": {
+                    "type": "MAP"
+                }
+            },
+            {
+                "accountId": "4702710201",
+                "containerId": "12810664",
+                "tagId": "118",
+                "name": "Campaign - Facebook 2019 Fall Attire SC",
+                "type": "html",
+                "parameter": [
+                    {
+                        "type": "TEMPLATE",
+                        "key": "html",
+                        "value": "<script>\n  // This method will send the analytics event to Sitecore.\n  var sitecoreEventName = '2019 Fall Attire Facebook Campaign'; // This must exactly match the item name in Sitecore.\n  var category = 'Campaign'; // Must be one of the following: Page View, Page Event, Goal, Campaign, Outcome, Download or Search.\n  var action = 'Campaign:2019 Fall Attire Facebook'; // Optional\n  var label = '2019 Fall Attire Facebook Campaign'; // Optional\n  var value = ''; // Optional\n  var currencyCode = ''; // Required for Outcome category.\n  var monetaryValue = ''; // Required for Outcome category.\n  var firstName = ''; // Optional\n  var lastName = ''; // Optional\n  var jobTitle = ''; // Optional\n  var email = ''; // Optional\n  var mediaItemId = ''; // Required for Download category.\n  var mediaItemName = ''; // Required for Download category.\n  var searchTerm = ''; // Required for Search category.\n  {{Post SC Analytics Event}}(sitecoreEventName,category,action,label,value,currencyCode,monetaryValue,firstName,lastName,jobTitle,email,mediaItemId,mediaItemName,searchTerm);\n</script>"
+                    },
+                    {
+                        "type": "BOOLEAN",
+                        "key": "supportDocumentWrite",
+                        "value": "false"
+                    }
+                ],
+                "fingerprint": "1571838081879",
+                "tagFiringOption": "ONCE_PER_EVENT",
+                "monitoringMetadata": {
+                    "type": "MAP"
+                }
+            },
+            {
+                "accountId": "4702710201",
+                "containerId": "12810664",
+                "tagId": "120",
+                "name": "Campaign - TV 2019 Fall Attire",
+                "type": "ua",
+                "parameter": [
+                    {
+                        "type": "BOOLEAN",
+                        "key": "nonInteraction",
+                        "value": "false"
+                    },
+                    {
+                        "type": "BOOLEAN",
+                        "key": "overrideGaSettings",
+                        "value": "false"
+                    },
+                    {
+                        "type": "TEMPLATE",
+                        "key": "eventCategory",
+                        "value": "Campaign"
+                    },
+                    {
+                        "type": "TEMPLATE",
+                        "key": "trackType",
+                        "value": "TRACK_EVENT"
+                    },
+                    {
+                        "type": "TEMPLATE",
+                        "key": "gaSettings",
+                        "value": "{{GA Settings}}"
+                    },
+                    {
+                        "type": "TEMPLATE",
+                        "key": "eventAction",
+                        "value": "Campaign:2019 Fall Attire TV Campaign"
+                    },
+                    {
+                        "type": "TEMPLATE",
+                        "key": "eventLabel",
+                        "value": "2019 Fall Attire TV Campaign"
+                    }
+                ],
+                "fingerprint": "1571834958833",
+                "firingTriggerId": [
+                    "100"
+                ],
+                "teardownTag": [
+                    {
+                        "tagName": "Campaign - TV 2019 Fall Attire SC"
+                    }
+                ],
+                "tagFiringOption": "ONCE_PER_EVENT",
+                "monitoringMetadata": {
+                    "type": "MAP"
+                }
+            },
+            {
+                "accountId": "4702710201",
+                "containerId": "12810664",
+                "tagId": "121",
+                "name": "Campaign - TV 2019 Fall Attire SC",
+                "type": "html",
+                "parameter": [
+                    {
+                        "type": "TEMPLATE",
+                        "key": "html",
+                        "value": "<script>\n  // This method will send the analytics event to Sitecore.\n  var sitecoreEventName = '2019 Fall Attire TV Campaign'; // This must exactly match the item name in Sitecore.\n  var category = 'Campaign'; // Must be one of the following: Page View, Page Event, Goal, Campaign, Outcome, Download or Search.\n  var action = 'Campaign:2019 Fall Attire TV'; // Optional\n  var label = '2019 Fall Attire TV Campaign'; // Optional\n  var value = ''; // Optional\n  var currencyCode = ''; // Required for Outcome category.\n  var monetaryValue = ''; // Required for Outcome category.\n  var firstName = ''; // Optional\n  var lastName = ''; // Optional\n  var jobTitle = ''; // Optional\n  var email = ''; // Optional\n  var mediaItemId = ''; // Required for Download category.\n  var mediaItemName = ''; // Required for Download category.\n  var searchTerm = ''; // Required for Search category.\n  {{Post SC Analytics Event}}(sitecoreEventName,category,action,label,value,currencyCode,monetaryValue,firstName,lastName,jobTitle,email,mediaItemId,mediaItemName,searchTerm);\n</script>"
+                    },
+                    {
+                        "type": "BOOLEAN",
+                        "key": "supportDocumentWrite",
+                        "value": "false"
+                    }
+                ],
+                "fingerprint": "1571838089385",
+                "tagFiringOption": "ONCE_PER_EVENT",
+                "monitoringMetadata": {
+                    "type": "MAP"
+                }
+            },
+            {
+                "accountId": "4702710201",
+                "containerId": "12810664",
+                "tagId": "134",
+                "name": "Event - Add to Cart Button Click",
+                "type": "ua",
+                "parameter": [
+                    {
+                        "type": "BOOLEAN",
+                        "key": "nonInteraction",
+                        "value": "false"
+                    },
+                    {
+                        "type": "BOOLEAN",
+                        "key": "overrideGaSettings",
+                        "value": "false"
+                    },
+                    {
+                        "type": "TEMPLATE",
+                        "key": "eventCategory",
+                        "value": "Page Event"
+                    },
+                    {
+                        "type": "TEMPLATE",
+                        "key": "trackType",
+                        "value": "TRACK_EVENT"
+                    },
+                    {
+                        "type": "TEMPLATE",
+                        "key": "gaSettings",
+                        "value": "{{GA Settings}}"
+                    },
+                    {
+                        "type": "TEMPLATE",
+                        "key": "eventAction",
+                        "value": "Add to Cart Button Click -- Product Name:{{Add to Cart Product Name}}"
+                    },
+                    {
+                        "type": "TEMPLATE",
+                        "key": "eventLabel",
+                        "value": "Add to Cart Button Click"
+                    }
+                ],
+                "fingerprint": "1571423749380",
+                "firingTriggerId": [
+                    "153"
+                ],
+                "teardownTag": [
+                    {
+                        "tagName": "Event - Add to Cart Button Click SC"
+                    }
+                ],
+                "tagFiringOption": "ONCE_PER_EVENT",
+                "monitoringMetadata": {
+                    "type": "MAP"
+                }
+            },
+            {
+                "accountId": "4702710201",
+                "containerId": "12810664",
+                "tagId": "130",
+                "name": "Event - Add to Cart Button Click SC",
+                "type": "html",
+                "parameter": [
+                    {
+                        "type": "TEMPLATE",
+                        "key": "html",
+                        "value": "<script>\n  // This method will send the analytics event to Sitecore.\n  var sitecoreEventName = 'Add to Cart Button Click'; // This must exactly match the item name in Sitecore.\n  var category = 'Page Event'; // Must be one of the following: Page View, Page Event, Goal, Campaign, Outcome, Download or Search.\n  var action = 'Product Name:{{Add to Cart Product Name}}'; // Optional\n  var label = 'Add to Cart Button Click'; // Optional\n  var value = ''; // Optional\n  var currencyCode = ''; // Required for Outcome category.\n  var monetaryValue = ''; // Required for Outcome category.\n  var firstName = ''; // Optional\n  var lastName = ''; // Optional\n  var jobTitle = ''; // Optional\n  var email = ''; // Optional\n  var mediaItemId = ''; // Required for Download category.\n  var mediaItemName = ''; // Required for Download category.\n  var searchTerm = ''; // Required for Search category.\n  {{Post SC Analytics Event}}(sitecoreEventName,category,action,label,value,currencyCode,monetaryValue,firstName,lastName,jobTitle,email,mediaItemId,mediaItemName,searchTerm);\n</script>"
+                    },
+                    {
+                        "type": "BOOLEAN",
+                        "key": "supportDocumentWrite",
+                        "value": "false"
+                    }
+                ],
+                "fingerprint": "1571837435412",
+                "tagFiringOption": "ONCE_PER_EVENT",
+                "monitoringMetadata": {
+                    "type": "MAP"
+                }
+            },
+            {
+                "accountId": "4702710201",
+                "containerId": "12810664",
+                "tagId": "124",
+                "name": "Event - Any Link Click",
+                "type": "ua",
+                "parameter": [
+                    {
+                        "type": "BOOLEAN",
+                        "key": "nonInteraction",
+                        "value": "false"
+                    },
+                    {
+                        "type": "BOOLEAN",
+                        "key": "overrideGaSettings",
+                        "value": "false"
+                    },
+                    {
+                        "type": "TEMPLATE",
+                        "key": "eventCategory",
+                        "value": "Page Event"
+                    },
+                    {
+                        "type": "TEMPLATE",
+                        "key": "trackType",
+                        "value": "TRACK_EVENT"
+                    },
+                    {
+                        "type": "TEMPLATE",
+                        "key": "gaSettings",
+                        "value": "{{GA Settings}}"
+                    },
+                    {
+                        "type": "TEMPLATE",
+                        "key": "eventAction",
+                        "value": "Any Link Click -- Click Text:{{Click Text or NA}},Click URL:{{Click URL or NA}}"
+                    },
+                    {
+                        "type": "TEMPLATE",
+                        "key": "eventLabel",
+                        "value": "Any Link Click"
+                    }
+                ],
+                "fingerprint": "1571422037459",
+                "firingTriggerId": [
+                    "129"
+                ],
+                "teardownTag": [
+                    {
+                        "tagName": "Event - Any Link Click SC"
+                    }
+                ],
+                "tagFiringOption": "ONCE_PER_EVENT",
+                "monitoringMetadata": {
+                    "type": "MAP"
+                }
+            },
+            {
+                "accountId": "4702710201",
+                "containerId": "12810664",
+                "tagId": "125",
+                "name": "Event - Any Link Click SC",
+                "type": "html",
+                "parameter": [
+                    {
+                        "type": "TEMPLATE",
+                        "key": "html",
+                        "value": "<script>\n  // This method will send the analytics event to Sitecore.\n  var sitecoreEventName = 'Any Link Clicked'; // This must exactly match the item name in Sitecore.\n  var category = 'Page Event'; // Must be one of the following: Page View, Page Event, Goal, Campaign, Outcome, Download or Search.\n  var action = 'Click Text:' + {{Click Text or NA}} + ',Click URL:' + {{Click URL or NA}}; // Optional\n  var label = 'Any Link Click'; // Optional\n  var value = ''; // Optional\n  var currencyCode = ''; // Required for Outcome category.\n  var monetaryValue = ''; // Required for Outcome category.\n  var firstName = ''; // Optional\n  var lastName = ''; // Optional\n  var jobTitle = ''; // Optional\n  var email = ''; // Optional\n  var mediaItemId = ''; // Required for Download category.\n  var mediaItemName = ''; // Required for Download category.\n  var searchTerm = ''; // Required for Search category.\n  {{Post SC Analytics Event}}(sitecoreEventName,category,action,label,value,currencyCode,monetaryValue,firstName,lastName,jobTitle,email,mediaItemId,mediaItemName,searchTerm);\n</script>"
+                    },
+                    {
+                        "type": "BOOLEAN",
+                        "key": "supportDocumentWrite",
+                        "value": "false"
+                    }
+                ],
+                "fingerprint": "1571837412350",
+                "tagFiringOption": "ONCE_PER_EVENT",
+                "monitoringMetadata": {
+                    "type": "MAP"
+                }
+            },
+            {
+                "accountId": "4702710201",
+                "containerId": "12810664",
+                "tagId": "137",
+                "name": "Event - Complete Order Button Click",
+                "type": "ua",
+                "parameter": [
+                    {
+                        "type": "BOOLEAN",
+                        "key": "nonInteraction",
+                        "value": "false"
+                    },
+                    {
+                        "type": "BOOLEAN",
+                        "key": "overrideGaSettings",
+                        "value": "false"
+                    },
+                    {
+                        "type": "TEMPLATE",
+                        "key": "eventCategory",
+                        "value": "Page Event"
+                    },
+                    {
+                        "type": "TEMPLATE",
+                        "key": "trackType",
+                        "value": "TRACK_EVENT"
+                    },
+                    {
+                        "type": "TEMPLATE",
+                        "key": "gaSettings",
+                        "value": "{{GA Settings}}"
+                    },
+                    {
+                        "type": "TEMPLATE",
+                        "key": "eventAction",
+                        "value": "Complete Order Button Click"
+                    },
+                    {
+                        "type": "TEMPLATE",
+                        "key": "eventLabel",
+                        "value": "Complete Order Button Click"
+                    }
+                ],
+                "fingerprint": "1571425554077",
+                "firingTriggerId": [
+                    "172"
+                ],
+                "teardownTag": [
+                    {
+                        "tagName": "Event - Complete Order Button Click SC"
+                    }
+                ],
+                "tagFiringOption": "ONCE_PER_EVENT",
+                "monitoringMetadata": {
+                    "type": "MAP"
+                }
+            },
+            {
+                "accountId": "4702710201",
+                "containerId": "12810664",
+                "tagId": "138",
+                "name": "Event - Complete Order Button Click SC",
+                "type": "html",
+                "parameter": [
+                    {
+                        "type": "TEMPLATE",
+                        "key": "html",
+                        "value": "<script>\n  // This method will send the analytics event to Sitecore.\n  var sitecoreEventName = 'Complete Order Button Click'; // This must exactly match the item name in Sitecore.\n  var category = 'Page Event'; // Must be one of the following: Page View, Page Event, Goal, Campaign, Outcome, Download or Search.\n  var action = 'Complete Order Button Click'; // Optional\n  var label = 'Complete Order Button Click'; // Optional\n  var value = ''; // Optional\n  var currencyCode = ''; // Required for Outcome category.\n  var monetaryValue = ''; // Required for Outcome category.\n  var firstName = ''; // Optional\n  var lastName = ''; // Optional\n  var jobTitle = ''; // Optional\n  var email = ''; // Optional\n  var mediaItemId = ''; // Required for Download category.\n  var mediaItemName = ''; // Required for Download category.\n  var searchTerm = ''; // Required for Search category.\n  {{Post SC Analytics Event}}(sitecoreEventName,category,action,label,value,currencyCode,monetaryValue,firstName,lastName,jobTitle,email,mediaItemId,mediaItemName,searchTerm);\n</script>"
+                    },
+                    {
+                        "type": "BOOLEAN",
+                        "key": "supportDocumentWrite",
+                        "value": "false"
+                    }
+                ],
+                "fingerprint": "1571837612511",
+                "tagFiringOption": "ONCE_PER_EVENT",
+                "monitoringMetadata": {
+                    "type": "MAP"
+                }
+            },
+            {
+                "accountId": "4702710201",
+                "containerId": "12810664",
+                "tagId": "84",
+                "name": "Event - Page View",
+                "type": "ua",
+                "parameter": [
+                    {
+                        "type": "BOOLEAN",
+                        "key": "overrideGaSettings",
+                        "value": "false"
+                    },
+                    {
+                        "type": "TEMPLATE",
+                        "key": "trackType",
+                        "value": "TRACK_PAGEVIEW"
+                    },
+                    {
+                        "type": "TEMPLATE",
+                        "key": "gaSettings",
+                        "value": "{{GA Settings}}"
+                    }
+                ],
+                "fingerprint": "1570714600550",
+                "firingTriggerId": [
+                    "13"
+                ],
+                "teardownTag": [
+                    {
+                        "tagName": "Event - Page View SC",
+                        "stopTeardownOnFailure": true
+                    }
+                ],
+                "tagFiringOption": "ONCE_PER_EVENT",
+                "monitoringMetadata": {
+                    "type": "MAP"
+                }
+            },
+            {
+                "accountId": "4702710201",
+                "containerId": "12810664",
+                "tagId": "114",
+                "name": "Event - Page View SC",
+                "type": "html",
+                "parameter": [
+                    {
+                        "type": "TEMPLATE",
+                        "key": "html",
+                        "value": "<script>\n  // This method will send the analytics event to Sitecore.\n  var sitecoreEventName = 'Page View'; // This must exactly match the item name in Sitecore.\n  var category = 'Page View'; // Must be one of the following: Page View, Page Event, Goal, Campaign, Outcome, Download or Search.\n  var action = ''; // Optional\n  var label = ''; // Optional\n  var value = ''; // Optional\n  var currencyCode = ''; // Required for Outcome category.\n  var monetaryValue = ''; // Required for Outcome category.\n  var firstName = ''; // Optional\n  var lastName = ''; // Optional\n  var jobTitle = ''; // Optional\n  var email = ''; // Optional\n  var mediaItemId = ''; // Required for Download category.\n  var mediaItemName = ''; // Required for Download category.\n  var searchTerm = ''; // Required for Search category.\n  {{Post SC Analytics Event}}(sitecoreEventName,category,action,label,value,currencyCode,monetaryValue,firstName,lastName,jobTitle,email,mediaItemId,mediaItemName,searchTerm);\n</script>"
+                    },
+                    {
+                        "type": "BOOLEAN",
+                        "key": "supportDocumentWrite",
+                        "value": "false"
+                    }
+                ],
+                "fingerprint": "1571837666709",
+                "tagFiringOption": "ONCE_PER_EVENT",
+                "monitoringMetadata": {
+                    "type": "MAP"
+                }
+            },
+            {
+                "accountId": "4702710201",
+                "containerId": "12810664",
+                "tagId": "129",
+                "name": "Event - Payment Button Click",
+                "type": "ua",
+                "parameter": [
+                    {
+                        "type": "BOOLEAN",
+                        "key": "nonInteraction",
+                        "value": "false"
+                    },
+                    {
+                        "type": "BOOLEAN",
+                        "key": "overrideGaSettings",
+                        "value": "false"
+                    },
+                    {
+                        "type": "TEMPLATE",
+                        "key": "eventCategory",
+                        "value": "Page Event"
+                    },
+                    {
+                        "type": "TEMPLATE",
+                        "key": "trackType",
+                        "value": "TRACK_EVENT"
+                    },
+                    {
+                        "type": "TEMPLATE",
+                        "key": "gaSettings",
+                        "value": "{{GA Settings}}"
+                    },
+                    {
+                        "type": "TEMPLATE",
+                        "key": "eventAction",
+                        "value": "Payment Button Click"
+                    },
+                    {
+                        "type": "TEMPLATE",
+                        "key": "eventLabel",
+                        "value": "Payment Button Click"
+                    }
+                ],
+                "fingerprint": "1571423765814",
+                "firingTriggerId": [
+                    "164"
+                ],
+                "teardownTag": [
+                    {
+                        "tagName": "Event - Payment Button Click SC"
+                    }
+                ],
+                "tagFiringOption": "ONCE_PER_EVENT",
+                "monitoringMetadata": {
+                    "type": "MAP"
+                }
+            },
+            {
+                "accountId": "4702710201",
+                "containerId": "12810664",
+                "tagId": "133",
+                "name": "Event - Payment Button Click SC",
+                "type": "html",
+                "parameter": [
+                    {
+                        "type": "TEMPLATE",
+                        "key": "html",
+                        "value": "<script>\n  // This method will send the analytics event to Sitecore.\n  var sitecoreEventName = 'Payment Button Click'; // This must exactly match the item name in Sitecore.\n  var category = 'Page Event'; // Must be one of the following: Page View, Page Event, Goal, Campaign, Outcome, Download or Search.\n  var action = 'Payment Button Click'; // Optional\n  var label = 'Payment Button Click'; // Optional\n  var value = ''; // Optional\n  var currencyCode = ''; // Required for Outcome category.\n  var monetaryValue = ''; // Required for Outcome category.\n  var firstName = {{Shipping First Name}};\n  var lastName = {{Shipping Last Name}};\n  var jobTitle = {{Shipping Job Title}};\n  var email = {{Shipping Email}};\n  var mediaItemId = ''; // Required for Download category.\n  var mediaItemName = ''; // Required for Download category.\n  var searchTerm = ''; // Required for Search category.\n  {{Post SC Analytics Event}}(sitecoreEventName,category,action,label,value,currencyCode,monetaryValue,firstName,lastName,jobTitle,email,mediaItemId,mediaItemName,searchTerm);\n</script>"
+                    },
+                    {
+                        "type": "BOOLEAN",
+                        "key": "supportDocumentWrite",
+                        "value": "false"
+                    }
+                ],
+                "fingerprint": "1571837744358",
+                "tagFiringOption": "ONCE_PER_EVENT",
+                "monitoringMetadata": {
+                    "type": "MAP"
+                }
+            },
+            {
+                "accountId": "4702710201",
+                "containerId": "12810664",
+                "tagId": "135",
+                "name": "Event - Review Button Click",
+                "type": "ua",
+                "parameter": [
+                    {
+                        "type": "BOOLEAN",
+                        "key": "nonInteraction",
+                        "value": "false"
+                    },
+                    {
+                        "type": "BOOLEAN",
+                        "key": "overrideGaSettings",
+                        "value": "false"
+                    },
+                    {
+                        "type": "TEMPLATE",
+                        "key": "eventCategory",
+                        "value": "Page Event"
+                    },
+                    {
+                        "type": "TEMPLATE",
+                        "key": "trackType",
+                        "value": "TRACK_EVENT"
+                    },
+                    {
+                        "type": "TEMPLATE",
+                        "key": "gaSettings",
+                        "value": "{{GA Settings}}"
+                    },
+                    {
+                        "type": "TEMPLATE",
+                        "key": "eventAction",
+                        "value": "Review Button Click"
+                    },
+                    {
+                        "type": "TEMPLATE",
+                        "key": "eventLabel",
+                        "value": "Review Button Click"
+                    }
+                ],
+                "fingerprint": "1571425213843",
+                "firingTriggerId": [
+                    "169"
+                ],
+                "teardownTag": [
+                    {
+                        "tagName": "Event - Review Button Click SC"
+                    }
+                ],
+                "tagFiringOption": "ONCE_PER_EVENT",
+                "monitoringMetadata": {
+                    "type": "MAP"
+                }
+            },
+            {
+                "accountId": "4702710201",
+                "containerId": "12810664",
+                "tagId": "136",
+                "name": "Event - Review Button Click SC",
+                "type": "html",
+                "parameter": [
+                    {
+                        "type": "TEMPLATE",
+                        "key": "html",
+                        "value": "<script>\n  // This method will send the analytics event to Sitecore.\n  var sitecoreEventName = 'Review Button Click'; // This must exactly match the item name in Sitecore.\n  var category = 'Page Event'; // Must be one of the following: Page View, Page Event, Goal, Campaign, Outcome, Download or Search.\n  var action = 'Review Button Click'; // Optional\n  var label = 'Review Button Click'; // Optional\n  var value = ''; // Optional\n  var currencyCode = ''; // Required for Outcome category.\n  var monetaryValue = ''; // Required for Outcome category.\n  var firstName = ''; // Optional\n  var lastName = ''; // Optional\n  var jobTitle = ''; // Optional\n  var email = ''; // Optional\n  var mediaItemId = ''; // Required for Download category.\n  var mediaItemName = ''; // Required for Download category.\n  var searchTerm = ''; // Required for Search category.\n  {{Post SC Analytics Event}}(sitecoreEventName,category,action,label,value,currencyCode,monetaryValue,firstName,lastName,jobTitle,email,mediaItemId,mediaItemName,searchTerm);\n</script>"
+                    },
+                    {
+                        "type": "BOOLEAN",
+                        "key": "supportDocumentWrite",
+                        "value": "false"
+                    }
+                ],
+                "fingerprint": "1571837827461",
+                "tagFiringOption": "ONCE_PER_EVENT",
+                "monitoringMetadata": {
+                    "type": "MAP"
+                }
+            },
+            {
+                "accountId": "4702710201",
+                "containerId": "12810664",
+                "tagId": "127",
+                "name": "Event - Shop Now Button Click",
+                "type": "ua",
+                "parameter": [
+                    {
+                        "type": "BOOLEAN",
+                        "key": "nonInteraction",
+                        "value": "false"
+                    },
+                    {
+                        "type": "BOOLEAN",
+                        "key": "overrideGaSettings",
+                        "value": "false"
+                    },
+                    {
+                        "type": "TEMPLATE",
+                        "key": "eventCategory",
+                        "value": "Page Event"
+                    },
+                    {
+                        "type": "TEMPLATE",
+                        "key": "trackType",
+                        "value": "TRACK_EVENT"
+                    },
+                    {
+                        "type": "TEMPLATE",
+                        "key": "gaSettings",
+                        "value": "{{GA Settings}}"
+                    },
+                    {
+                        "type": "TEMPLATE",
+                        "key": "eventAction",
+                        "value": "Shop Now Button Click -- Department:{{Shop Now Department}}"
+                    },
+                    {
+                        "type": "TEMPLATE",
+                        "key": "eventLabel",
+                        "value": "Shop Now Button Click"
+                    }
+                ],
+                "fingerprint": "1571422058287",
+                "firingTriggerId": [
+                    "81"
+                ],
+                "teardownTag": [
+                    {
+                        "tagName": "Event - Shop Now Button Click SC"
+                    }
+                ],
+                "tagFiringOption": "ONCE_PER_EVENT",
+                "monitoringMetadata": {
+                    "type": "MAP"
+                }
+            },
+            {
+                "accountId": "4702710201",
+                "containerId": "12810664",
+                "tagId": "128",
+                "name": "Event - Shop Now Button Click SC",
+                "type": "html",
+                "parameter": [
+                    {
+                        "type": "TEMPLATE",
+                        "key": "html",
+                        "value": "<script>\n  // This method will send the analytics event to Sitecore.\n  var sitecoreEventName = 'Shop Now Button Click'; // This must exactly match the item name in Sitecore.\n  var category = 'Page Event'; // Must be one of the following: Page View, Page Event, Goal, Campaign, Outcome, Download or Search.\n  var action = 'Department:{{Shop Now Department}}'; // Optional\n  var label = 'Shop Now Button Click'; // Optional\n  var value = ''; // Optional\n  var currencyCode = ''; // Required for Outcome category.\n  var monetaryValue = ''; // Required for Outcome category.\n  var firstName = ''; // Optional\n  var lastName = ''; // Optional\n  var jobTitle = ''; // Optional\n  var email = ''; // Optional\n  var mediaItemId = ''; // Required for Download category.\n  var mediaItemName = ''; // Required for Download category.\n  var searchTerm = ''; // Required for Search category.\n  {{Post SC Analytics Event}}(sitecoreEventName,category,action,label,value,currencyCode,monetaryValue,firstName,lastName,jobTitle,email,mediaItemId,mediaItemName,searchTerm);\n</script>"
+                    },
+                    {
+                        "type": "BOOLEAN",
+                        "key": "supportDocumentWrite",
+                        "value": "false"
+                    }
+                ],
+                "fingerprint": "1571837892835",
+                "tagFiringOption": "ONCE_PER_EVENT",
+                "monitoringMetadata": {
+                    "type": "MAP"
+                }
+            },
+            {
+                "accountId": "4702710201",
+                "containerId": "12810664",
+                "tagId": "131",
+                "name": "Event - View Cart Button Click",
+                "type": "ua",
+                "parameter": [
+                    {
+                        "type": "BOOLEAN",
+                        "key": "nonInteraction",
+                        "value": "false"
+                    },
+                    {
+                        "type": "BOOLEAN",
+                        "key": "overrideGaSettings",
+                        "value": "false"
+                    },
+                    {
+                        "type": "TEMPLATE",
+                        "key": "eventCategory",
+                        "value": "Page Event"
+                    },
+                    {
+                        "type": "TEMPLATE",
+                        "key": "trackType",
+                        "value": "TRACK_EVENT"
+                    },
+                    {
+                        "type": "TEMPLATE",
+                        "key": "gaSettings",
+                        "value": "{{GA Settings}}"
+                    },
+                    {
+                        "type": "TEMPLATE",
+                        "key": "eventAction",
+                        "value": "View Cart Button Click -- Page URL:{{Page URL}}"
+                    },
+                    {
+                        "type": "TEMPLATE",
+                        "key": "eventLabel",
+                        "value": "View Cart Button Click"
+                    }
+                ],
+                "fingerprint": "1571422072133",
+                "firingTriggerId": [
+                    "157"
+                ],
+                "teardownTag": [
+                    {
+                        "tagName": "Event - View Cart Button Click SC"
+                    }
+                ],
+                "tagFiringOption": "ONCE_PER_EVENT",
+                "monitoringMetadata": {
+                    "type": "MAP"
+                }
+            },
+            {
+                "accountId": "4702710201",
+                "containerId": "12810664",
+                "tagId": "132",
+                "name": "Event - View Cart Button Click SC",
+                "type": "html",
+                "parameter": [
+                    {
+                        "type": "TEMPLATE",
+                        "key": "html",
+                        "value": "<script>\n  // This method will send the analytics event to Sitecore.\n  var sitecoreEventName = 'View Cart Button Click'; // This must exactly match the item name in Sitecore.\n  var category = 'Page Event'; // Must be one of the following: Page View, Page Event, Goal, Campaign, Outcome, Download or Search.\n  var action = 'Page URL:{{Page URL}}'; // Optional\n  var label = 'View Cart Button Click'; // Optional\n  var value = ''; // Optional\n  var currencyCode = ''; // Required for Outcome category.\n  var monetaryValue = ''; // Required for Outcome category.\n  var firstName = ''; // Optional\n  var lastName = ''; // Optional\n  var jobTitle = ''; // Optional\n  var email = ''; // Optional\n  var mediaItemId = ''; // Required for Download category.\n  var mediaItemName = ''; // Required for Download category.\n  var searchTerm = ''; // Required for Search category.\n  {{Post SC Analytics Event}}(sitecoreEventName,category,action,label,value,currencyCode,monetaryValue,firstName,lastName,jobTitle,email,mediaItemId,mediaItemName,searchTerm);\n</script>"
+                    },
+                    {
+                        "type": "BOOLEAN",
+                        "key": "supportDocumentWrite",
+                        "value": "false"
+                    }
+                ],
+                "fingerprint": "1571837938595",
+                "tagFiringOption": "ONCE_PER_EVENT",
+                "monitoringMetadata": {
+                    "type": "MAP"
+                }
+            },
+            {
+                "accountId": "4702710201",
+                "containerId": "12810664",
+                "tagId": "115",
+                "name": "Goal - Checkout Button Click",
+                "type": "ua",
+                "parameter": [
+                    {
+                        "type": "BOOLEAN",
+                        "key": "nonInteraction",
+                        "value": "false"
+                    },
+                    {
+                        "type": "BOOLEAN",
+                        "key": "overrideGaSettings",
+                        "value": "false"
+                    },
+                    {
+                        "type": "TEMPLATE",
+                        "key": "eventCategory",
+                        "value": "Goal"
+                    },
+                    {
+                        "type": "TEMPLATE",
+                        "key": "trackType",
+                        "value": "TRACK_EVENT"
+                    },
+                    {
+                        "type": "TEMPLATE",
+                        "key": "gaSettings",
+                        "value": "{{GA Settings}}"
+                    },
+                    {
+                        "type": "TEMPLATE",
+                        "key": "eventAction",
+                        "value": "Checkout Button Click"
+                    },
+                    {
+                        "type": "TEMPLATE",
+                        "key": "eventLabel",
+                        "value": "Checkout Button Click"
+                    }
+                ],
+                "fingerprint": "1571423003153",
+                "firingTriggerId": [
+                    "162"
+                ],
+                "teardownTag": [
+                    {
+                        "tagName": "Goal - Checkout Button Click SC"
+                    }
+                ],
+                "tagFiringOption": "ONCE_PER_EVENT",
+                "monitoringMetadata": {
+                    "type": "MAP"
+                }
+            },
+            {
+                "accountId": "4702710201",
+                "containerId": "12810664",
+                "tagId": "116",
+                "name": "Goal - Checkout Button Click SC",
+                "type": "html",
+                "parameter": [
+                    {
+                        "type": "TEMPLATE",
+                        "key": "html",
+                        "value": "<script>\n  \n  /// This method will send the analytics event to Sitecore.\n  \n  var sitecoreEventName = 'Checkout Button Click'; // This must exactly match the item name in Sitecore.\n  var category = 'Goal'; // Must be one of the following: Page View, Page Event, Goal, Campaign, Outcome, Download or Search.\n  var action = 'Checkout Button Click'; // Optional\n  var label = 'Checkout Button Click'; // Optional\n  var value = ''; // Optional\n  var currencyCode = ''; // Required for Outcome category.\n  var monetaryValue = ''; // Required for Outcome category.\n  var firstName = ''; // Optional\n  var lastName = ''; // Optional\n  var jobTitle = ''; // Optional\n  var email = ''; // Optional\n  var mediaItemId = ''; // Required for Download category.\n  var mediaItemName = ''; // Required for Download category.\n  var searchTerm = ''; // Required for Search category.\n\n  // DO NOT CHANGE ANYTHING BELOW THIS LINE.\n  {{Post SC Analytics Event}}(sitecoreEventName,category,action,label,value,currencyCode,monetaryValue,firstName,lastName,jobTitle,email,mediaItemId,mediaItemName,searchTerm);\n\n</script>"
+                    },
+                    {
+                        "type": "BOOLEAN",
+                        "key": "supportDocumentWrite",
+                        "value": "false"
+                    }
+                ],
+                "fingerprint": "1572297963289",
+                "tagFiringOption": "ONCE_PER_EVENT",
+                "monitoringMetadata": {
+                    "type": "MAP"
+                }
+            },
+            {
+                "accountId": "4702710201",
+                "containerId": "12810664",
+                "tagId": "141",
+                "name": "Product Purchase",
+                "type": "ua",
+                "parameter": [
+                    {
+                        "type": "BOOLEAN",
+                        "key": "nonInteraction",
+                        "value": "false"
+                    },
+                    {
+                        "type": "BOOLEAN",
+                        "key": "overrideGaSettings",
+                        "value": "false"
+                    },
+                    {
+                        "type": "TEMPLATE",
+                        "key": "eventCategory",
+                        "value": "Outcome"
+                    },
+                    {
+                        "type": "TEMPLATE",
+                        "key": "trackType",
+                        "value": "TRACK_EVENT"
+                    },
+                    {
+                        "type": "TEMPLATE",
+                        "key": "gaSettings",
+                        "value": "{{GA Settings}}"
+                    },
+                    {
+                        "type": "TEMPLATE",
+                        "key": "eventAction",
+                        "value": "Product Purchase"
+                    },
+                    {
+                        "type": "TEMPLATE",
+                        "key": "eventLabel",
+                        "value": "Product Purchase"
+                    }
+                ],
+                "fingerprint": "1572362355359",
+                "firingTriggerId": [
+                    "132"
+                ],
+                "teardownTag": [
+                    {
+                        "tagName": "Product Purchase SC"
+                    }
+                ],
+                "tagFiringOption": "ONCE_PER_EVENT",
+                "monitoringMetadata": {
+                    "type": "MAP"
+                }
+            },
+            {
+                "accountId": "4702710201",
+                "containerId": "12810664",
+                "tagId": "119",
+                "name": "Product Purchase SC",
+                "type": "html",
+                "parameter": [
+                    {
+                        "type": "TEMPLATE",
+                        "key": "html",
+                        "value": "<script>\n  // This method will send the analytics event to Sitecore.\n  var sitecoreEventName = 'Product Purchase'; // This must exactly match the item name in Sitecore.\n  var category = 'Outcome'; // Must be one of the following: Page View, Page Event, Goal, Campaign, Outcome, Download or Search.\n  var action = ''; // Optional\n  var label = ''; // Optional\n  var value = ''; // Optional\n  var currencyCode = {{Currency Code}}; // Required for Outcome category.\n  var monetaryValue = {{Transaction Total}}; // Required for Outcome category.\n  var firstName = ''; // Optional\n  var lastName = ''; // Optional\n  var jobTitle = ''; // Optional\n  var email = ''; // Optional\n  var mediaItemId = ''; // Required for Download category.\n  var mediaItemName = ''; // Required for Download category.\n  var searchTerm = ''; // Required for Search category.\n  {{Post SC Analytics Event}}(sitecoreEventName,category,action,label,value,currencyCode,monetaryValue,firstName,lastName,jobTitle,email,mediaItemId,mediaItemName,searchTerm);\n</script>"
+                    },
+                    {
+                        "type": "BOOLEAN",
+                        "key": "supportDocumentWrite",
+                        "value": "false"
+                    }
+                ],
+                "fingerprint": "1572360120582",
+                "tagFiringOption": "ONCE_PER_EVENT",
+                "monitoringMetadata": {
+                    "type": "MAP"
+                }
+            }
         ],
-        "fingerprint": "1567195731016"
-      },
-      {
-        "accountId": "4702710201",
-        "containerId": "12810664",
-        "triggerId": "129",
-        "name": "Any Link Click",
-        "type": "LINK_CLICK",
-        "waitForTags": {
-          "type": "BOOLEAN",
-          "value": "false"
-        },
-        "checkValidation": {
-          "type": "BOOLEAN",
-          "value": "false"
-        },
-        "waitForTagsTimeout": {
-          "type": "TEMPLATE",
-          "value": "2000"
-        },
-        "uniqueTriggerId": {
-          "type": "TEMPLATE"
-        },
-        "fingerprint": "1570897606751"
-      },
-      {
-        "accountId": "4702710201",
-        "containerId": "12810664",
-        "triggerId": "162",
-        "name": "Checkout Button Click",
-        "type": "LINK_CLICK",
-        "filter": [
-          {
-            "type": "EQUALS",
-            "parameter": [
-              {
-                "type": "TEMPLATE",
-                "key": "arg0",
-                "value": "{{Click ID}}"
-              },
-              {
-                "type": "TEMPLATE",
-                "key": "arg1",
-                "value": "btnCheckout"
-              }
-            ]
-          }
-        ],
-        "waitForTags": {
-          "type": "BOOLEAN",
-          "value": "false"
-        },
-        "checkValidation": {
-          "type": "BOOLEAN",
-          "value": "false"
-        },
-        "waitForTagsTimeout": {
-          "type": "TEMPLATE",
-          "value": "2000"
-        },
-        "uniqueTriggerId": {
-          "type": "TEMPLATE"
-        },
-        "fingerprint": "1572291788561"
-      },
-      {
-        "accountId": "4702710201",
-        "containerId": "12810664",
-        "triggerId": "172",
-        "name": "Complete Order Button Click",
-        "type": "LINK_CLICK",
-        "filter": [
-          {
-            "type": "EQUALS",
-            "parameter": [
-              {
-                "type": "TEMPLATE",
-                "key": "arg0",
-                "value": "{{Click ID}}"
-              },
-              {
-                "type": "TEMPLATE",
-                "key": "arg1",
-                "value": "btnComplete"
-              }
-            ]
-          }
-        ],
-        "waitForTags": {
-          "type": "BOOLEAN",
-          "value": "false"
-        },
-        "checkValidation": {
-          "type": "BOOLEAN",
-          "value": "false"
-        },
-        "waitForTagsTimeout": {
-          "type": "TEMPLATE",
-          "value": "2000"
-        },
-        "uniqueTriggerId": {
-          "type": "TEMPLATE"
-        },
-        "fingerprint": "1572305653812"
-      },
-      {
-        "accountId": "4702710201",
-        "containerId": "12810664",
-        "triggerId": "84",
-        "name": "Facebook 2019 Fall Attire Campaign",
-        "type": "PAGEVIEW",
-        "filter": [
-          {
-            "type": "CONTAINS",
-            "parameter": [
-              {
-                "type": "TEMPLATE",
-                "key": "arg0",
-                "value": "{{Page URL}}"
-              },
-              {
-                "type": "TEMPLATE",
-                "key": "arg1",
-                "value": "utm_campaign=2019%20Fall%20Attire%20Facebook%20Campaign"
-              }
-            ]
-          }
-        ],
-        "fingerprint": "1570669565966"
-      },
-      {
-        "accountId": "4702710201",
-        "containerId": "12810664",
-        "triggerId": "164",
-        "name": "Payment Button Click",
-        "type": "LINK_CLICK",
-        "filter": [
-          {
-            "type": "EQUALS",
-            "parameter": [
-              {
-                "type": "TEMPLATE",
-                "key": "arg0",
-                "value": "{{Click ID}}"
-              },
-              {
-                "type": "TEMPLATE",
-                "key": "arg1",
-                "value": "btnPayment"
-              }
-            ]
-          }
-        ],
-        "waitForTags": {
-          "type": "BOOLEAN",
-          "value": "false"
-        },
-        "checkValidation": {
-          "type": "BOOLEAN",
-          "value": "false"
-        },
-        "waitForTagsTimeout": {
-          "type": "TEMPLATE",
-          "value": "2000"
-        },
-        "uniqueTriggerId": {
-          "type": "TEMPLATE"
-        },
-        "fingerprint": "1572301788440"
-      },
-      {
-        "accountId": "4702710201",
-        "containerId": "12810664",
-        "triggerId": "132",
-        "name": "Purchase Completed",
-        "type": "DOM_READY",
-        "filter": [
-          {
-            "type": "CONTAINS",
-            "parameter": [
-              {
-                "type": "TEMPLATE",
-                "key": "arg0",
-                "value": "{{Page URL}}"
-              },
-              {
-                "type": "TEMPLATE",
-                "key": "arg1",
-                "value": "checkout-4"
-              }
-            ]
-          }
-        ],
-        "fingerprint": "1571396738932"
-      },
-      {
-        "accountId": "4702710201",
-        "containerId": "12810664",
-        "triggerId": "169",
-        "name": "Review Button Click",
-        "type": "LINK_CLICK",
-        "filter": [
-          {
-            "type": "CONTAINS",
-            "parameter": [
-              {
-                "type": "TEMPLATE",
-                "key": "arg0",
-                "value": "{{Click ID}}"
-              },
-              {
-                "type": "TEMPLATE",
-                "key": "arg1",
-                "value": "btnReview"
-              }
-            ]
-          }
-        ],
-        "waitForTags": {
-          "type": "BOOLEAN",
-          "value": "false"
-        },
-        "checkValidation": {
-          "type": "BOOLEAN",
-          "value": "false"
-        },
-        "waitForTagsTimeout": {
-          "type": "TEMPLATE",
-          "value": "2000"
-        },
-        "uniqueTriggerId": {
-          "type": "TEMPLATE"
-        },
-        "fingerprint": "1572305268911"
-      },
-      {
-        "accountId": "4702710201",
-        "containerId": "12810664",
-        "triggerId": "81",
-        "name": "Shop Now Button Click",
-        "type": "LINK_CLICK",
-        "filter": [
-          {
-            "type": "EQUALS",
-            "parameter": [
-              {
-                "type": "TEMPLATE",
-                "key": "arg0",
-                "value": "{{Click Text}}"
-              },
-              {
-                "type": "TEMPLATE",
-                "key": "arg1",
-                "value": "Shop Now"
-              }
-            ]
-          }
-        ],
-        "waitForTags": {
-          "type": "BOOLEAN",
-          "value": "false"
-        },
-        "checkValidation": {
-          "type": "BOOLEAN",
-          "value": "false"
-        },
-        "waitForTagsTimeout": {
-          "type": "TEMPLATE",
-          "value": "2000"
-        },
-        "uniqueTriggerId": {
-          "type": "TEMPLATE"
-        },
-        "fingerprint": "1570734198993"
-      },
-      {
-        "accountId": "4702710201",
-        "containerId": "12810664",
-        "triggerId": "100",
-        "name": "TV 2019 Fall Attire Campaign",
-        "type": "PAGEVIEW",
-        "filter": [
-          {
-            "type": "CONTAINS",
-            "parameter": [
-              {
-                "type": "TEMPLATE",
-                "key": "arg0",
-                "value": "{{Page URL}}"
-              },
-              {
-                "type": "TEMPLATE",
-                "key": "arg1",
-                "value": "sc_camp=1521E14DC53F4A07B4AC5FCF7227DC25"
-              }
-            ]
-          }
-        ],
-        "fingerprint": "1570738406849"
-      },
-      {
-        "accountId": "4702710201",
-        "containerId": "12810664",
-        "triggerId": "157",
-        "name": "View Cart Button Click",
-        "type": "LINK_CLICK",
-        "filter": [
-          {
-            "type": "CONTAINS",
-            "parameter": [
-              {
-                "type": "TEMPLATE",
-                "key": "arg0",
-                "value": "{{Click Classes}}"
-              },
-              {
-                "type": "TEMPLATE",
-                "key": "arg1",
-                "value": "has-badge"
-              }
-            ]
-          }
-        ],
-        "waitForTags": {
-          "type": "BOOLEAN",
-          "value": "false"
-        },
-        "checkValidation": {
-          "type": "BOOLEAN",
-          "value": "false"
-        },
-        "waitForTagsTimeout": {
-          "type": "TEMPLATE",
-          "value": "2000"
-        },
-        "uniqueTriggerId": {
-          "type": "TEMPLATE"
-        },
-        "fingerprint": "1571422126315"
-      }
-    ],
-    "variable": [
-      {
-        "accountId": "4702710201",
-        "containerId": "12810664",
-        "variableId": "123",
-        "name": "Add to Cart Product Name",
-        "type": "jsm",
-        "parameter": [
-          {
-            "type": "TEMPLATE",
-            "key": "javascript",
-            "value": "function () {\n  return $({{Click Element}}).parent().siblings().children(\".card-title\").text();\n}"
-          }
-        ],
-        "fingerprint": "1571420891014",
-        "formatValue": {}
-      },
-      {
-        "accountId": "4702710201",
-        "containerId": "12810664",
-        "variableId": "120",
-        "name": "Click Text Lowercase",
-        "type": "jsm",
-        "parameter": [
-          {
-            "type": "TEMPLATE",
-            "key": "javascript",
-            "value": "function() {\n    return {{Click Text}}.toLowerCase();\n}"
-          }
-        ],
-        "fingerprint": "1570896926319",
-        "formatValue": {}
-      },
-      {
-        "accountId": "4702710201",
-        "containerId": "12810664",
-        "variableId": "118",
-        "name": "Click Text or NA",
-        "type": "jsm",
-        "parameter": [
-          {
-            "type": "TEMPLATE",
-            "key": "javascript",
-            "value": "function() {\n    if ({{Click Text}}) {\n    \treturn {{Click Text Lowercase}};\n    } else {\n  \t\treturn \"N/A\";\n    }\n}"
-          }
-        ],
-        "fingerprint": "1570896568071",
-        "formatValue": {}
-      },
-      {
-        "accountId": "4702710201",
-        "containerId": "12810664",
-        "variableId": "114",
-        "name": "Click URL or NA",
-        "type": "jsm",
-        "parameter": [
-          {
-            "type": "TEMPLATE",
-            "key": "javascript",
-            "value": "function() {\n\tif ({{Link URL}})\n    {\n    \treturn {{Link URL}}.toLowerCase();\n    } else if ({{Click URL}}) {\n    \treturn {{Click URL}}.toLowerCase();\n    } else {\n  \t\treturn \"N/A\";\n    }\n}"
-          }
-        ],
-        "fingerprint": "1570896261795",
-        "formatValue": {}
-      },
-      {
-        "accountId": "4702710201",
-        "containerId": "12810664",
-        "variableId": "106",
-        "name": "Culture",
-        "type": "v",
-        "parameter": [
-          {
-            "type": "INTEGER",
-            "key": "dataLayerVersion",
-            "value": "2"
-          },
-          {
-            "type": "BOOLEAN",
-            "key": "setDefaultValue",
-            "value": "false"
-          },
-          {
-            "type": "TEMPLATE",
-            "key": "name",
-            "value": "Culture"
-          }
-        ],
-        "fingerprint": "1570411397393",
-        "formatValue": {}
-      },
-      {
-        "accountId": "4702710201",
-        "containerId": "12810664",
-        "variableId": "121",
-        "name": "Currency Code",
-        "type": "v",
-        "parameter": [
-          {
-            "type": "INTEGER",
-            "key": "dataLayerVersion",
-            "value": "2"
-          },
-          {
-            "type": "BOOLEAN",
-            "key": "setDefaultValue",
-            "value": "false"
-          },
-          {
-            "type": "TEMPLATE",
-            "key": "name",
-            "value": "currencyCode"
-          }
-        ],
-        "fingerprint": "1571407091904",
-        "formatValue": {}
-      },
-      {
-        "accountId": "4702710201",
-        "containerId": "12810664",
-        "variableId": "54",
-        "name": "GA Property",
-        "type": "jsm",
-        "parameter": [
-          {
-            "type": "TEMPLATE",
-            "key": "javascript",
-            "value": "\nfunction() {\n    var ga = '';\n  \n  \tswitch ({{Container ID}}) {\n      case 'GTM-WFCWGRV': // Dev\n        ga = 'UA-148600425-1';\n        break;\n      case 'GTM-XXXXXX': // QA\n        ga = 'UA-00000000-0';\n        break;\n      case 'GTM-XXXXXX': // UAT\n        ga = 'UA-00000000-0';\n        break;\n      case 'GTM-XXXXXX': // Prod\n        ga = 'UA-00000000-0';\n        break;\n    }\n  \n\treturn ga;\n}"
-          }
-        ],
-        "fingerprint": "1569325984938",
-        "formatValue": {}
-      },
-      {
-        "accountId": "4702710201",
-        "containerId": "12810664",
-        "variableId": "107",
-        "name": "GA Settings",
-        "type": "gas",
-        "parameter": [
-          {
-            "type": "TEMPLATE",
-            "key": "cookieDomain",
-            "value": "auto"
-          },
-          {
-            "type": "BOOLEAN",
-            "key": "useEcommerceDataLayer",
-            "value": "true"
-          },
-          {
-            "type": "BOOLEAN",
-            "key": "doubleClick",
-            "value": "false"
-          },
-          {
-            "type": "BOOLEAN",
-            "key": "setTrackerName",
-            "value": "false"
-          },
-          {
-            "type": "BOOLEAN",
-            "key": "useDebugVersion",
-            "value": "false"
-          },
-          {
-            "type": "LIST",
-            "key": "fieldsToSet",
-            "list": [
-              {
-                "type": "MAP",
-                "map": [
-                  {
+        "trigger": [
+            {
+                "accountId": "4702710201",
+                "containerId": "12810664",
+                "triggerId": "105",
+                "name": "AdWords 2019 Fall Attire Campaign",
+                "type": "PAGEVIEW",
+                "filter": [
+                    {
+                        "type": "CONTAINS",
+                        "parameter": [
+                            {
+                                "type": "TEMPLATE",
+                                "key": "arg0",
+                                "value": "{{Page URL}}"
+                            },
+                            {
+                                "type": "TEMPLATE",
+                                "key": "arg1",
+                                "value": "utm_campaign=2019%20Fall%20Attire%20Adwords%20Campaign"
+                            }
+                        ]
+                    }
+                ],
+                "fingerprint": "1570882122579"
+            },
+            {
+                "accountId": "4702710201",
+                "containerId": "12810664",
+                "triggerId": "153",
+                "name": "Add to Cart Button Click",
+                "type": "LINK_CLICK",
+                "filter": [
+                    {
+                        "type": "EQUALS",
+                        "parameter": [
+                            {
+                                "type": "TEMPLATE",
+                                "key": "arg0",
+                                "value": "{{Click Text}}"
+                            },
+                            {
+                                "type": "TEMPLATE",
+                                "key": "arg1",
+                                "value": "Add to Cart"
+                            }
+                        ]
+                    }
+                ],
+                "waitForTags": {
+                    "type": "BOOLEAN",
+                    "value": "false"
+                },
+                "checkValidation": {
+                    "type": "BOOLEAN",
+                    "value": "false"
+                },
+                "waitForTagsTimeout": {
                     "type": "TEMPLATE",
-                    "key": "fieldName",
-                    "value": "allowLinker"
-                  },
-                  {
+                    "value": "2000"
+                },
+                "uniqueTriggerId": {
+                    "type": "TEMPLATE"
+                },
+                "fingerprint": "1571414816461"
+            },
+            {
+                "accountId": "4702710201",
+                "containerId": "12810664",
+                "triggerId": "13",
+                "name": "All Pages After GTM.dom",
+                "type": "DOM_READY",
+                "filter": [
+                    {
+                        "type": "CONTAINS",
+                        "parameter": [
+                            {
+                                "type": "TEMPLATE",
+                                "key": "arg0",
+                                "value": "{{Page URL}}"
+                            },
+                            {
+                                "type": "TEMPLATE",
+                                "key": "arg1",
+                                "value": "checkout-4"
+                            },
+                            {
+                                "type": "BOOLEAN",
+                                "key": "negate",
+                                "value": "true"
+                            }
+                        ]
+                    }
+                ],
+                "fingerprint": "1572362486910"
+            },
+            {
+                "accountId": "4702710201",
+                "containerId": "12810664",
+                "triggerId": "129",
+                "name": "Any Link Click",
+                "type": "LINK_CLICK",
+                "waitForTags": {
+                    "type": "BOOLEAN",
+                    "value": "false"
+                },
+                "checkValidation": {
+                    "type": "BOOLEAN",
+                    "value": "false"
+                },
+                "waitForTagsTimeout": {
                     "type": "TEMPLATE",
-                    "key": "value",
-                    "value": "true"
-                  }
-                ]
-              },
-              {
-                "type": "MAP",
-                "map": [
-                  {
+                    "value": "2000"
+                },
+                "uniqueTriggerId": {
+                    "type": "TEMPLATE"
+                },
+                "fingerprint": "1570897606751"
+            },
+            {
+                "accountId": "4702710201",
+                "containerId": "12810664",
+                "triggerId": "162",
+                "name": "Checkout Button Click",
+                "type": "LINK_CLICK",
+                "filter": [
+                    {
+                        "type": "EQUALS",
+                        "parameter": [
+                            {
+                                "type": "TEMPLATE",
+                                "key": "arg0",
+                                "value": "{{Click ID}}"
+                            },
+                            {
+                                "type": "TEMPLATE",
+                                "key": "arg1",
+                                "value": "btnCheckout"
+                            }
+                        ]
+                    }
+                ],
+                "waitForTags": {
+                    "type": "BOOLEAN",
+                    "value": "false"
+                },
+                "checkValidation": {
+                    "type": "BOOLEAN",
+                    "value": "false"
+                },
+                "waitForTagsTimeout": {
                     "type": "TEMPLATE",
-                    "key": "fieldName",
-                    "value": "cookieDomain"
-                  },
-                  {
+                    "value": "2000"
+                },
+                "uniqueTriggerId": {
+                    "type": "TEMPLATE"
+                },
+                "fingerprint": "1572291788561"
+            },
+            {
+                "accountId": "4702710201",
+                "containerId": "12810664",
+                "triggerId": "172",
+                "name": "Complete Order Button Click",
+                "type": "LINK_CLICK",
+                "filter": [
+                    {
+                        "type": "EQUALS",
+                        "parameter": [
+                            {
+                                "type": "TEMPLATE",
+                                "key": "arg0",
+                                "value": "{{Click ID}}"
+                            },
+                            {
+                                "type": "TEMPLATE",
+                                "key": "arg1",
+                                "value": "btnComplete"
+                            }
+                        ]
+                    }
+                ],
+                "waitForTags": {
+                    "type": "BOOLEAN",
+                    "value": "false"
+                },
+                "checkValidation": {
+                    "type": "BOOLEAN",
+                    "value": "false"
+                },
+                "waitForTagsTimeout": {
                     "type": "TEMPLATE",
-                    "key": "value",
-                    "value": "auto"
-                  }
-                ]
-              }
-            ]
-          },
-          {
-            "type": "BOOLEAN",
-            "key": "useHashAutoLink",
-            "value": "false"
-          },
-          {
-            "type": "BOOLEAN",
-            "key": "decorateFormsAutoLink",
-            "value": "false"
-          },
-          {
-            "type": "BOOLEAN",
-            "key": "enableLinkId",
-            "value": "true"
-          },
-          {
-            "type": "LIST",
-            "key": "dimension",
-            "list": [
-              {
-                "type": "MAP",
-                "map": [
-                  {
+                    "value": "2000"
+                },
+                "uniqueTriggerId": {
+                    "type": "TEMPLATE"
+                },
+                "fingerprint": "1572305653812"
+            },
+            {
+                "accountId": "4702710201",
+                "containerId": "12810664",
+                "triggerId": "84",
+                "name": "Facebook 2019 Fall Attire Campaign",
+                "type": "PAGEVIEW",
+                "filter": [
+                    {
+                        "type": "CONTAINS",
+                        "parameter": [
+                            {
+                                "type": "TEMPLATE",
+                                "key": "arg0",
+                                "value": "{{Page URL}}"
+                            },
+                            {
+                                "type": "TEMPLATE",
+                                "key": "arg1",
+                                "value": "utm_campaign=2019%20Fall%20Attire%20Facebook%20Campaign"
+                            }
+                        ]
+                    }
+                ],
+                "fingerprint": "1570669565966"
+            },
+            {
+                "accountId": "4702710201",
+                "containerId": "12810664",
+                "triggerId": "164",
+                "name": "Payment Button Click",
+                "type": "LINK_CLICK",
+                "filter": [
+                    {
+                        "type": "EQUALS",
+                        "parameter": [
+                            {
+                                "type": "TEMPLATE",
+                                "key": "arg0",
+                                "value": "{{Click ID}}"
+                            },
+                            {
+                                "type": "TEMPLATE",
+                                "key": "arg1",
+                                "value": "btnPayment"
+                            }
+                        ]
+                    }
+                ],
+                "waitForTags": {
+                    "type": "BOOLEAN",
+                    "value": "false"
+                },
+                "checkValidation": {
+                    "type": "BOOLEAN",
+                    "value": "false"
+                },
+                "waitForTagsTimeout": {
                     "type": "TEMPLATE",
-                    "key": "index",
-                    "value": "1"
-                  },
-                  {
+                    "value": "2000"
+                },
+                "uniqueTriggerId": {
+                    "type": "TEMPLATE"
+                },
+                "fingerprint": "1572301788440"
+            },
+            {
+                "accountId": "4702710201",
+                "containerId": "12810664",
+                "triggerId": "132",
+                "name": "Purchase Completed",
+                "type": "DOM_READY",
+                "filter": [
+                    {
+                        "type": "CONTAINS",
+                        "parameter": [
+                            {
+                                "type": "TEMPLATE",
+                                "key": "arg0",
+                                "value": "{{Page URL}}"
+                            },
+                            {
+                                "type": "TEMPLATE",
+                                "key": "arg1",
+                                "value": "checkout-4"
+                            }
+                        ]
+                    }
+                ],
+                "fingerprint": "1571396738932"
+            },
+            {
+                "accountId": "4702710201",
+                "containerId": "12810664",
+                "triggerId": "169",
+                "name": "Review Button Click",
+                "type": "LINK_CLICK",
+                "filter": [
+                    {
+                        "type": "CONTAINS",
+                        "parameter": [
+                            {
+                                "type": "TEMPLATE",
+                                "key": "arg0",
+                                "value": "{{Click ID}}"
+                            },
+                            {
+                                "type": "TEMPLATE",
+                                "key": "arg1",
+                                "value": "btnReview"
+                            }
+                        ]
+                    }
+                ],
+                "waitForTags": {
+                    "type": "BOOLEAN",
+                    "value": "false"
+                },
+                "checkValidation": {
+                    "type": "BOOLEAN",
+                    "value": "false"
+                },
+                "waitForTagsTimeout": {
                     "type": "TEMPLATE",
-                    "key": "dimension",
-                    "value": "{{Page URL}}"
-                  }
-                ]
-              },
-              {
-                "type": "MAP",
-                "map": [
-                  {
+                    "value": "2000"
+                },
+                "uniqueTriggerId": {
+                    "type": "TEMPLATE"
+                },
+                "fingerprint": "1572305268911"
+            },
+            {
+                "accountId": "4702710201",
+                "containerId": "12810664",
+                "triggerId": "81",
+                "name": "Shop Now Button Click",
+                "type": "LINK_CLICK",
+                "filter": [
+                    {
+                        "type": "EQUALS",
+                        "parameter": [
+                            {
+                                "type": "TEMPLATE",
+                                "key": "arg0",
+                                "value": "{{Click Text}}"
+                            },
+                            {
+                                "type": "TEMPLATE",
+                                "key": "arg1",
+                                "value": "Shop Now"
+                            }
+                        ]
+                    }
+                ],
+                "waitForTags": {
+                    "type": "BOOLEAN",
+                    "value": "false"
+                },
+                "checkValidation": {
+                    "type": "BOOLEAN",
+                    "value": "false"
+                },
+                "waitForTagsTimeout": {
                     "type": "TEMPLATE",
-                    "key": "index",
-                    "value": "2"
-                  },
-                  {
+                    "value": "2000"
+                },
+                "uniqueTriggerId": {
+                    "type": "TEMPLATE"
+                },
+                "fingerprint": "1570734198993"
+            },
+            {
+                "accountId": "4702710201",
+                "containerId": "12810664",
+                "triggerId": "100",
+                "name": "TV 2019 Fall Attire Campaign",
+                "type": "PAGEVIEW",
+                "filter": [
+                    {
+                        "type": "CONTAINS",
+                        "parameter": [
+                            {
+                                "type": "TEMPLATE",
+                                "key": "arg0",
+                                "value": "{{Page URL}}"
+                            },
+                            {
+                                "type": "TEMPLATE",
+                                "key": "arg1",
+                                "value": "sc_camp=1521E14DC53F4A07B4AC5FCF7227DC25"
+                            }
+                        ]
+                    }
+                ],
+                "fingerprint": "1570738406849"
+            },
+            {
+                "accountId": "4702710201",
+                "containerId": "12810664",
+                "triggerId": "157",
+                "name": "View Cart Button Click",
+                "type": "LINK_CLICK",
+                "filter": [
+                    {
+                        "type": "CONTAINS",
+                        "parameter": [
+                            {
+                                "type": "TEMPLATE",
+                                "key": "arg0",
+                                "value": "{{Click Classes}}"
+                            },
+                            {
+                                "type": "TEMPLATE",
+                                "key": "arg1",
+                                "value": "has-badge"
+                            }
+                        ]
+                    }
+                ],
+                "waitForTags": {
+                    "type": "BOOLEAN",
+                    "value": "false"
+                },
+                "checkValidation": {
+                    "type": "BOOLEAN",
+                    "value": "false"
+                },
+                "waitForTagsTimeout": {
                     "type": "TEMPLATE",
-                    "key": "dimension",
-                    "value": "{{Click URL or NA}}"
-                  }
-                ]
-              },
-              {
-                "type": "MAP",
-                "map": [
-                  {
-                    "type": "TEMPLATE",
-                    "key": "index",
-                    "value": "3"
-                  },
-                  {
-                    "type": "TEMPLATE",
-                    "key": "dimension",
-                    "value": "{{Click Text or NA}}"
-                  }
-                ]
-              },
-              {
-                "type": "MAP",
-                "map": [
-                  {
-                    "type": "TEMPLATE",
-                    "key": "index",
-                    "value": "4"
-                  },
-                  {
-                    "type": "TEMPLATE",
-                    "key": "dimension",
-                    "value": "{{Item ID or NA}}"
-                  }
-                ]
-              },
-              {
-                "type": "MAP",
-                "map": [
-                  {
-                    "type": "TEMPLATE",
-                    "key": "index",
-                    "value": "5"
-                  },
-                  {
-                    "type": "TEMPLATE",
-                    "key": "dimension",
-                    "value": "{{Item Culture or NA}}"
-                  }
-                ]
-              },
-              {
-                "type": "MAP",
-                "map": [
-                  {
-                    "type": "TEMPLATE",
-                    "key": "index",
-                    "value": "6"
-                  },
-                  {
-                    "type": "TEMPLATE",
-                    "key": "dimension",
-                    "value": "{{Item Version or NA}}"
-                  }
-                ]
-              },
-              {
-                "type": "MAP",
-                "map": [
-                  {
-                    "type": "TEMPLATE",
-                    "key": "index",
-                    "value": "7"
-                  },
-                  {
-                    "type": "TEMPLATE",
-                    "key": "dimension",
-                    "value": "{{Is Internal Traffic}}"
-                  }
-                ]
-              },
-              {
-                "type": "MAP",
-                "map": [
-                  {
-                    "type": "TEMPLATE",
-                    "key": "index",
-                    "value": "8"
-                  },
-                  {
-                    "type": "TEMPLATE",
-                    "key": "dimension",
-                    "value": "{{Position or NA}}"
-                  }
-                ]
-              }
-            ]
-          },
-          {
-            "type": "BOOLEAN",
-            "key": "enableEcommerce",
-            "value": "true"
-          },
-          {
-            "type": "TEMPLATE",
-            "key": "trackingId",
-            "value": "{{GA Property}}"
-          }
+                    "value": "2000"
+                },
+                "uniqueTriggerId": {
+                    "type": "TEMPLATE"
+                },
+                "fingerprint": "1571422126315"
+            }
         ],
-        "fingerprint": "1570896819981"
-      },
-      {
-        "accountId": "4702710201",
-        "containerId": "12810664",
-        "variableId": "111",
-        "name": "GetUrlParameter",
-        "type": "jsm",
-        "parameter": [
-          {
-            "type": "TEMPLATE",
-            "key": "javascript",
-            "value": "function(name) {\nreturn function getUrlParameter(name) {\n    name = name.replace(/[\\[]/, '\\\\[').replace(/[\\]]/, '\\\\]');\n    var regex = new RegExp('[\\\\?&]' + name + '=([^&#]*)');\n    var results = regex.exec(location.search);\n    return results === null ? '' : decodeURIComponent(results[1].replace(/\\+/g, ' '));\n};\n}"
-          }
+        "variable": [
+            {
+                "accountId": "4702710201",
+                "containerId": "12810664",
+                "variableId": "123",
+                "name": "Add to Cart Product Name",
+                "type": "jsm",
+                "parameter": [
+                    {
+                        "type": "TEMPLATE",
+                        "key": "javascript",
+                        "value": "function () {\n  return $({{Click Element}}).parent().siblings().children(\".card-title\").text();\n}"
+                    }
+                ],
+                "fingerprint": "1571420891014",
+                "formatValue": {}
+            },
+            {
+                "accountId": "4702710201",
+                "containerId": "12810664",
+                "variableId": "120",
+                "name": "Click Text Lowercase",
+                "type": "jsm",
+                "parameter": [
+                    {
+                        "type": "TEMPLATE",
+                        "key": "javascript",
+                        "value": "function() {\n    return {{Click Text}}.toLowerCase();\n}"
+                    }
+                ],
+                "fingerprint": "1570896926319",
+                "formatValue": {}
+            },
+            {
+                "accountId": "4702710201",
+                "containerId": "12810664",
+                "variableId": "118",
+                "name": "Click Text or NA",
+                "type": "jsm",
+                "parameter": [
+                    {
+                        "type": "TEMPLATE",
+                        "key": "javascript",
+                        "value": "function() {\n    if ({{Click Text}}) {\n    \treturn {{Click Text Lowercase}};\n    } else {\n  \t\treturn \"N/A\";\n    }\n}"
+                    }
+                ],
+                "fingerprint": "1570896568071",
+                "formatValue": {}
+            },
+            {
+                "accountId": "4702710201",
+                "containerId": "12810664",
+                "variableId": "114",
+                "name": "Click URL or NA",
+                "type": "jsm",
+                "parameter": [
+                    {
+                        "type": "TEMPLATE",
+                        "key": "javascript",
+                        "value": "function() {\n\tif ({{Link URL}})\n    {\n    \treturn {{Link URL}}.toLowerCase();\n    } else if ({{Click URL}}) {\n    \treturn {{Click URL}}.toLowerCase();\n    } else {\n  \t\treturn \"N/A\";\n    }\n}"
+                    }
+                ],
+                "fingerprint": "1570896261795",
+                "formatValue": {}
+            },
+            {
+                "accountId": "4702710201",
+                "containerId": "12810664",
+                "variableId": "106",
+                "name": "Culture",
+                "type": "v",
+                "parameter": [
+                    {
+                        "type": "INTEGER",
+                        "key": "dataLayerVersion",
+                        "value": "2"
+                    },
+                    {
+                        "type": "BOOLEAN",
+                        "key": "setDefaultValue",
+                        "value": "false"
+                    },
+                    {
+                        "type": "TEMPLATE",
+                        "key": "name",
+                        "value": "Culture"
+                    }
+                ],
+                "fingerprint": "1570411397393",
+                "formatValue": {}
+            },
+            {
+                "accountId": "4702710201",
+                "containerId": "12810664",
+                "variableId": "121",
+                "name": "Currency Code",
+                "type": "v",
+                "parameter": [
+                    {
+                        "type": "INTEGER",
+                        "key": "dataLayerVersion",
+                        "value": "2"
+                    },
+                    {
+                        "type": "BOOLEAN",
+                        "key": "setDefaultValue",
+                        "value": "false"
+                    },
+                    {
+                        "type": "TEMPLATE",
+                        "key": "name",
+                        "value": "currencyCode"
+                    }
+                ],
+                "fingerprint": "1571407091904",
+                "formatValue": {}
+            },
+            {
+                "accountId": "4702710201",
+                "containerId": "12810664",
+                "variableId": "54",
+                "name": "GA Property",
+                "type": "jsm",
+                "parameter": [
+                    {
+                        "type": "TEMPLATE",
+                        "key": "javascript",
+                        "value": "\nfunction() {\n    var ga = '';\n  \n  \tswitch ({{Container ID}}) {\n      case 'GTM-WFCWGRV': // Dev\n        ga = 'UA-148600425-1';\n        break;\n      case 'GTM-XXXXXX': // QA\n        ga = 'UA-00000000-0';\n        break;\n      case 'GTM-XXXXXX': // UAT\n        ga = 'UA-00000000-0';\n        break;\n      case 'GTM-XXXXXX': // Prod\n        ga = 'UA-00000000-0';\n        break;\n    }\n  \n\treturn ga;\n}"
+                    }
+                ],
+                "fingerprint": "1569325984938",
+                "formatValue": {}
+            },
+            {
+                "accountId": "4702710201",
+                "containerId": "12810664",
+                "variableId": "107",
+                "name": "GA Settings",
+                "type": "gas",
+                "parameter": [
+                    {
+                        "type": "TEMPLATE",
+                        "key": "cookieDomain",
+                        "value": "auto"
+                    },
+                    {
+                        "type": "BOOLEAN",
+                        "key": "useEcommerceDataLayer",
+                        "value": "true"
+                    },
+                    {
+                        "type": "BOOLEAN",
+                        "key": "doubleClick",
+                        "value": "false"
+                    },
+                    {
+                        "type": "BOOLEAN",
+                        "key": "setTrackerName",
+                        "value": "false"
+                    },
+                    {
+                        "type": "BOOLEAN",
+                        "key": "useDebugVersion",
+                        "value": "false"
+                    },
+                    {
+                        "type": "LIST",
+                        "key": "fieldsToSet",
+                        "list": [
+                            {
+                                "type": "MAP",
+                                "map": [
+                                    {
+                                        "type": "TEMPLATE",
+                                        "key": "fieldName",
+                                        "value": "allowLinker"
+                                    },
+                                    {
+                                        "type": "TEMPLATE",
+                                        "key": "value",
+                                        "value": "true"
+                                    }
+                                ]
+                            },
+                            {
+                                "type": "MAP",
+                                "map": [
+                                    {
+                                        "type": "TEMPLATE",
+                                        "key": "fieldName",
+                                        "value": "cookieDomain"
+                                    },
+                                    {
+                                        "type": "TEMPLATE",
+                                        "key": "value",
+                                        "value": "auto"
+                                    }
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "type": "BOOLEAN",
+                        "key": "useHashAutoLink",
+                        "value": "false"
+                    },
+                    {
+                        "type": "BOOLEAN",
+                        "key": "decorateFormsAutoLink",
+                        "value": "false"
+                    },
+                    {
+                        "type": "BOOLEAN",
+                        "key": "enableLinkId",
+                        "value": "true"
+                    },
+                    {
+                        "type": "LIST",
+                        "key": "dimension",
+                        "list": [
+                            {
+                                "type": "MAP",
+                                "map": [
+                                    {
+                                        "type": "TEMPLATE",
+                                        "key": "index",
+                                        "value": "1"
+                                    },
+                                    {
+                                        "type": "TEMPLATE",
+                                        "key": "dimension",
+                                        "value": "{{Page URL}}"
+                                    }
+                                ]
+                            },
+                            {
+                                "type": "MAP",
+                                "map": [
+                                    {
+                                        "type": "TEMPLATE",
+                                        "key": "index",
+                                        "value": "2"
+                                    },
+                                    {
+                                        "type": "TEMPLATE",
+                                        "key": "dimension",
+                                        "value": "{{Click URL or NA}}"
+                                    }
+                                ]
+                            },
+                            {
+                                "type": "MAP",
+                                "map": [
+                                    {
+                                        "type": "TEMPLATE",
+                                        "key": "index",
+                                        "value": "3"
+                                    },
+                                    {
+                                        "type": "TEMPLATE",
+                                        "key": "dimension",
+                                        "value": "{{Click Text or NA}}"
+                                    }
+                                ]
+                            },
+                            {
+                                "type": "MAP",
+                                "map": [
+                                    {
+                                        "type": "TEMPLATE",
+                                        "key": "index",
+                                        "value": "4"
+                                    },
+                                    {
+                                        "type": "TEMPLATE",
+                                        "key": "dimension",
+                                        "value": "{{Item ID or NA}}"
+                                    }
+                                ]
+                            },
+                            {
+                                "type": "MAP",
+                                "map": [
+                                    {
+                                        "type": "TEMPLATE",
+                                        "key": "index",
+                                        "value": "5"
+                                    },
+                                    {
+                                        "type": "TEMPLATE",
+                                        "key": "dimension",
+                                        "value": "{{Item Culture or NA}}"
+                                    }
+                                ]
+                            },
+                            {
+                                "type": "MAP",
+                                "map": [
+                                    {
+                                        "type": "TEMPLATE",
+                                        "key": "index",
+                                        "value": "6"
+                                    },
+                                    {
+                                        "type": "TEMPLATE",
+                                        "key": "dimension",
+                                        "value": "{{Item Version or NA}}"
+                                    }
+                                ]
+                            },
+                            {
+                                "type": "MAP",
+                                "map": [
+                                    {
+                                        "type": "TEMPLATE",
+                                        "key": "index",
+                                        "value": "7"
+                                    },
+                                    {
+                                        "type": "TEMPLATE",
+                                        "key": "dimension",
+                                        "value": "{{Is Internal Traffic}}"
+                                    }
+                                ]
+                            },
+                            {
+                                "type": "MAP",
+                                "map": [
+                                    {
+                                        "type": "TEMPLATE",
+                                        "key": "index",
+                                        "value": "8"
+                                    },
+                                    {
+                                        "type": "TEMPLATE",
+                                        "key": "dimension",
+                                        "value": "{{Position or NA}}"
+                                    }
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "type": "BOOLEAN",
+                        "key": "enableEcommerce",
+                        "value": "true"
+                    },
+                    {
+                        "type": "TEMPLATE",
+                        "key": "trackingId",
+                        "value": "{{GA Property}}"
+                    }
+                ],
+                "fingerprint": "1570896819981"
+            },
+            {
+                "accountId": "4702710201",
+                "containerId": "12810664",
+                "variableId": "111",
+                "name": "GetUrlParameter",
+                "type": "jsm",
+                "parameter": [
+                    {
+                        "type": "TEMPLATE",
+                        "key": "javascript",
+                        "value": "function(name) {\nreturn function getUrlParameter(name) {\n    name = name.replace(/[\\[]/, '\\\\[').replace(/[\\]]/, '\\\\]');\n    var regex = new RegExp('[\\\\?&]' + name + '=([^&#]*)');\n    var results = regex.exec(location.search);\n    return results === null ? '' : decodeURIComponent(results[1].replace(/\\+/g, ' '));\n};\n}"
+                    }
+                ],
+                "fingerprint": "1570882233491",
+                "formatValue": {}
+            },
+            {
+                "accountId": "4702710201",
+                "containerId": "12810664",
+                "variableId": "119",
+                "name": "Is Internal Traffic",
+                "type": "v",
+                "parameter": [
+                    {
+                        "type": "INTEGER",
+                        "key": "dataLayerVersion",
+                        "value": "2"
+                    },
+                    {
+                        "type": "BOOLEAN",
+                        "key": "setDefaultValue",
+                        "value": "false"
+                    },
+                    {
+                        "type": "TEMPLATE",
+                        "key": "name",
+                        "value": "IsInternalTraffic"
+                    }
+                ],
+                "fingerprint": "1570896748252",
+                "formatValue": {}
+            },
+            {
+                "accountId": "4702710201",
+                "containerId": "12810664",
+                "variableId": "46",
+                "name": "Item Culture or NA",
+                "type": "jsm",
+                "parameter": [
+                    {
+                        "type": "TEMPLATE",
+                        "key": "javascript",
+                        "value": "function() {\n    if ({{Culture}}) {\n    \treturn {{Culture}};\n    } else {\n  \t\treturn \"N/A\";\n    }\n}"
+                    }
+                ],
+                "fingerprint": "1570896645679",
+                "formatValue": {}
+            },
+            {
+                "accountId": "4702710201",
+                "containerId": "12810664",
+                "variableId": "103",
+                "name": "Item ID",
+                "type": "v",
+                "parameter": [
+                    {
+                        "type": "INTEGER",
+                        "key": "dataLayerVersion",
+                        "value": "2"
+                    },
+                    {
+                        "type": "BOOLEAN",
+                        "key": "setDefaultValue",
+                        "value": "false"
+                    },
+                    {
+                        "type": "TEMPLATE",
+                        "key": "name",
+                        "value": "ItemId"
+                    }
+                ],
+                "fingerprint": "1570192349223",
+                "formatValue": {}
+            },
+            {
+                "accountId": "4702710201",
+                "containerId": "12810664",
+                "variableId": "58",
+                "name": "Item ID or NA",
+                "type": "jsm",
+                "parameter": [
+                    {
+                        "type": "TEMPLATE",
+                        "key": "javascript",
+                        "value": "function() {\n    if ({{Item ID}}) {\n    \treturn {{Item ID}};\n    } else {\n  \t\treturn \"N/A\";\n    }\n}"
+                    }
+                ],
+                "fingerprint": "1570192294576",
+                "formatValue": {}
+            },
+            {
+                "accountId": "4702710201",
+                "containerId": "12810664",
+                "variableId": "128",
+                "name": "Item Name",
+                "type": "v",
+                "parameter": [
+                    {
+                        "type": "INTEGER",
+                        "key": "dataLayerVersion",
+                        "value": "2"
+                    },
+                    {
+                        "type": "BOOLEAN",
+                        "key": "setDefaultValue",
+                        "value": "false"
+                    },
+                    {
+                        "type": "TEMPLATE",
+                        "key": "name",
+                        "value": "ItemName"
+                    }
+                ],
+                "fingerprint": "1571833575098",
+                "formatValue": {}
+            },
+            {
+                "accountId": "4702710201",
+                "containerId": "12810664",
+                "variableId": "104",
+                "name": "Item Version",
+                "type": "v",
+                "parameter": [
+                    {
+                        "type": "INTEGER",
+                        "key": "dataLayerVersion",
+                        "value": "2"
+                    },
+                    {
+                        "type": "BOOLEAN",
+                        "key": "setDefaultValue",
+                        "value": "false"
+                    },
+                    {
+                        "type": "TEMPLATE",
+                        "key": "name",
+                        "value": "ItemVersion"
+                    }
+                ],
+                "fingerprint": "1570410838454",
+                "formatValue": {}
+            },
+            {
+                "accountId": "4702710201",
+                "containerId": "12810664",
+                "variableId": "105",
+                "name": "Item Version or NA",
+                "type": "jsm",
+                "parameter": [
+                    {
+                        "type": "TEMPLATE",
+                        "key": "javascript",
+                        "value": "function() {\n    if ({{Item Version}}) {\n    \treturn {{Item Version}};\n    } else {\n  \t\treturn \"N/A\";\n    }\n}"
+                    }
+                ],
+                "fingerprint": "1570410881842",
+                "formatValue": {}
+            },
+            {
+                "accountId": "4702710201",
+                "containerId": "12810664",
+                "variableId": "116",
+                "name": "Link HREF",
+                "type": "jsm",
+                "parameter": [
+                    {
+                        "type": "TEMPLATE",
+                        "key": "javascript",
+                        "value": "function () {\n  if ($({{Click Element}}).is('a'))\n  {\n  \treturn $({{Click Element}}).attr('href');\n  }\n  if ($({{Click Element}}).closest(a).length > 0)\n  {\n    return $({{Click Element}}).closest(a).attr('href');\n  } \n  return \"empty\";\n}"
+                    }
+                ],
+                "fingerprint": "1570896310542",
+                "formatValue": {}
+            },
+            {
+                "accountId": "4702710201",
+                "containerId": "12810664",
+                "variableId": "115",
+                "name": "Link Text",
+                "type": "jsm",
+                "parameter": [
+                    {
+                        "type": "TEMPLATE",
+                        "key": "javascript",
+                        "value": "function () {\n  if ($({{Click Element}}).is('a'))\n  {\n  \treturn $({{Click Element}}).text().toLowerCase();\n  }\n  if ($({{Click Element}}).closest(a).length > 0)\n  {\n    return $({{Click Element}}).closest(a).text().toLowerCase();\n  } \n  return \"empty\";\n}"
+                    }
+                ],
+                "fingerprint": "1570896287129",
+                "formatValue": {}
+            },
+            {
+                "accountId": "4702710201",
+                "containerId": "12810664",
+                "variableId": "113",
+                "name": "Link URL",
+                "type": "jsm",
+                "parameter": [
+                    {
+                        "type": "TEMPLATE",
+                        "key": "javascript",
+                        "value": "function() {\n  \treturn $({{Click Element}}).closest('a').attr('href');\n}"
+                    }
+                ],
+                "fingerprint": "1570896236336",
+                "formatValue": {}
+            },
+            {
+                "accountId": "4702710201",
+                "containerId": "12810664",
+                "variableId": "117",
+                "name": "Location or NA",
+                "type": "jsm",
+                "parameter": [
+                    {
+                        "type": "TEMPLATE",
+                        "key": "javascript",
+                        "value": "function () {\n  \tvar rtn = 'N/A';\n\tvar l1 = $({{Click Element}}).closest('div[data-placement]');\n\n    if (l1.length == 0)\n    {\n      \t// AddThis Email button\n    \tl1 = $('.email-button').closest('div[data-placement]');\n    }\n  \n\tif (l1.length == 0)\n\t{\n    \t// Flowplayer\n  \t\tl1 = $('object').closest('div[data-placement]');\n\t}\n  \n\tif (l1.length == 0)\n\t{\n    \t// HTML5 player\n  \t\tl1 = $('video').closest('div[data-placement]');\n\t}\n  \n    if (l1.length > 0)\n    {\n      \trtn = $(l1).attr('data-placement');\n  \t\tvar l2 = $(l1).parent().closest('div[data-placement]');\n  \t\tvar l3 = $(l2).parent().closest('div[data-placement]');\n  \t\trtn = $(l1).attr('data-placement');\n  \t\tif (l2.length > 0) {\n  \t\t\trtn = $(l2).attr('data-placement') + '>>' + rtn;\n  \t\t}\n  \t\tif (l3.length > 0) {\n  \t\t\trtn = $(l3).attr('data-placement') + '>>' + rtn;\n  \t\t}\n  \t}\n  \n\treturn rtn;\n}"
+                    }
+                ],
+                "fingerprint": "1570896342813",
+                "formatValue": {}
+            },
+            {
+                "accountId": "4702710201",
+                "containerId": "12810664",
+                "variableId": "112",
+                "name": "Paid Search Keyword",
+                "type": "jsm",
+                "parameter": [
+                    {
+                        "type": "TEMPLATE",
+                        "key": "javascript",
+                        "value": "function() {\n  return {{GetUrlParameter}}('q') + {{GetUrlParameter}}('utm_term');\n}"
+                    }
+                ],
+                "fingerprint": "1570886881540",
+                "formatValue": {}
+            },
+            {
+                "accountId": "4702710201",
+                "containerId": "12810664",
+                "variableId": "72",
+                "name": "Position or NA",
+                "type": "jsm",
+                "parameter": [
+                    {
+                        "type": "TEMPLATE",
+                        "key": "javascript",
+                        "value": "function () {\n  \tvar rtn = 'N/A';\n\tvar l1 = $({{Click Element}}).closest('div[data-placement]');\n\n    if (l1.length == 0)\n    {\n      \t// AddThis Email button\n    \tl1 = $('.email-button').closest('div[data-placement]');\n    }\n  \n\tif (l1.length == 0)\n\t{\n    \t// Flowplayer\n  \t\tl1 = $('object').closest('div[data-placement]');\n\t}\n  \n\tif (l1.length == 0)\n\t{\n    \t// HTML5 player\n  \t\tl1 = $('video').closest('div[data-placement]');\n\t}\n  \n    if (l1.length > 0)\n    {\n      \trtn = $(l1).attr('data-placement');\n  \t\tvar l2 = $(l1).parent().closest('div[data-placement]');\n  \t\tvar l3 = $(l2).parent().closest('div[data-placement]');\n  \t\trtn = $(l1).attr('data-placement');\n  \t\tif (l2.length > 0) {\n  \t\t\trtn = $(l2).attr('data-placement') + '>>' + rtn;\n  \t\t}\n  \t\tif (l3.length > 0) {\n  \t\t\trtn = $(l3).attr('data-placement') + '>>' + rtn;\n  \t\t}\n  \t}\n  \n\treturn rtn;\n}"
+                    }
+                ],
+                "fingerprint": "1570896844851",
+                "formatValue": {}
+            },
+            {
+                "accountId": "4702710201",
+                "containerId": "12810664",
+                "variableId": "60",
+                "name": "Post SC Analytics Event",
+                "type": "jsm",
+                "parameter": [
+                    {
+                        "type": "TEMPLATE",
+                        "key": "javascript",
+                        "value": "function() {\n  return function (sitecoreEventNameName,category,action,label,value,currencyCode,monetaryValue,firstName,lastName,jobTitle,email,mediaItemId,mediaItemName,searchTerm) { \n    \n    console.log('Post SC Analytics Event Start - \"' + sitecoreEventNameName + '\"');\n    \n\tvar data = [\n      \tsitecoreEventNameName,\n      \tcategory,\n      \taction,\n      \tlabel,\n      \tvalue,\n        currencyCode,\n        monetaryValue,\n        {{Item ID or NA}},\n    \t{{Page URL}},\n    \t{{Item Culture or NA}},\n\t\t{{Item Version or NA}},\n        firstName,\n        lastName,\n        jobTitle,\n        email,\n        {{Click URL or NA}},\n        {{Click Text or NA}},\n        {{Is Internal Traffic}},\n        {{Position or NA}},\n        mediaItemId,\n        mediaItemName,\n        searchTerm,\n        {{Item Name}}\n  \t];    \n    \n  jQuery.ajax({\n    type: \"POST\",\n    data: JSON.stringify(data),\n    url: \"/scanalytics/registeranalyticsevent\",\n    contentType: \"application/json; charset=utf-8\",\n    success: function( resp ) {\n      \tconsole.log(resp);\n      },\n    error: function (xhr, ajaxOptions, thrownError) {\n      console.log('Post SC Analytics Event Error- \"' + sitecoreEventNameName + '\": ' + xhr.status + ' - ' + thrownError);\n    }\n  })\n  return '';\n  };\n}"
+                    }
+                ],
+                "fingerprint": "1572298228780",
+                "formatValue": {}
+            },
+            {
+                "accountId": "4702710201",
+                "containerId": "12810664",
+                "variableId": "126",
+                "name": "Shipping Email",
+                "type": "jsm",
+                "parameter": [
+                    {
+                        "type": "TEMPLATE",
+                        "key": "javascript",
+                        "value": "function () {\n  return $('#shippingEmail').val();\n}"
+                    }
+                ],
+                "fingerprint": "1571427475711",
+                "formatValue": {}
+            },
+            {
+                "accountId": "4702710201",
+                "containerId": "12810664",
+                "variableId": "124",
+                "name": "Shipping First Name",
+                "type": "jsm",
+                "parameter": [
+                    {
+                        "type": "TEMPLATE",
+                        "key": "javascript",
+                        "value": "function () {\n  return $('#shippingFirstName').val();\n}"
+                    }
+                ],
+                "fingerprint": "1571427393363",
+                "formatValue": {}
+            },
+            {
+                "accountId": "4702710201",
+                "containerId": "12810664",
+                "variableId": "127",
+                "name": "Shipping Job Title",
+                "type": "jsm",
+                "parameter": [
+                    {
+                        "type": "TEMPLATE",
+                        "key": "javascript",
+                        "value": "function () {\n  return $('#shippingJobTitle').val();\n}"
+                    }
+                ],
+                "fingerprint": "1571427502537",
+                "formatValue": {}
+            },
+            {
+                "accountId": "4702710201",
+                "containerId": "12810664",
+                "variableId": "125",
+                "name": "Shipping Last Name",
+                "type": "jsm",
+                "parameter": [
+                    {
+                        "type": "TEMPLATE",
+                        "key": "javascript",
+                        "value": "function () {\n  return $('#shippingLastName').val();\n}"
+                    }
+                ],
+                "fingerprint": "1571427442907",
+                "formatValue": {}
+            },
+            {
+                "accountId": "4702710201",
+                "containerId": "12810664",
+                "variableId": "110",
+                "name": "Shop Now Department",
+                "type": "jsm",
+                "parameter": [
+                    {
+                        "type": "TEMPLATE",
+                        "key": "javascript",
+                        "value": "function () {\n  return $({{Click Element}}).siblings(\".department\").text();\n}"
+                    }
+                ],
+                "fingerprint": "1571420881108",
+                "formatValue": {}
+            },
+            {
+                "accountId": "4702710201",
+                "containerId": "12810664",
+                "variableId": "122",
+                "name": "Transaction Total",
+                "type": "v",
+                "parameter": [
+                    {
+                        "type": "INTEGER",
+                        "key": "dataLayerVersion",
+                        "value": "2"
+                    },
+                    {
+                        "type": "BOOLEAN",
+                        "key": "setDefaultValue",
+                        "value": "false"
+                    },
+                    {
+                        "type": "TEMPLATE",
+                        "key": "name",
+                        "value": "totalSale"
+                    }
+                ],
+                "fingerprint": "1571412065243",
+                "formatValue": {}
+            },
+            {
+                "accountId": "4702710201",
+                "containerId": "12810664",
+                "variableId": "63",
+                "name": "gaDomain",
+                "type": "c",
+                "parameter": [
+                    {
+                        "type": "TEMPLATE",
+                        "key": "value",
+                        "value": "auto"
+                    }
+                ],
+                "fingerprint": "1567195731065"
+            }
         ],
-        "fingerprint": "1570882233491",
-        "formatValue": {}
-      },
-      {
-        "accountId": "4702710201",
-        "containerId": "12810664",
-        "variableId": "119",
-        "name": "Is Internal Traffic",
-        "type": "v",
-        "parameter": [
-          {
-            "type": "INTEGER",
-            "key": "dataLayerVersion",
-            "value": "2"
-          },
-          {
-            "type": "BOOLEAN",
-            "key": "setDefaultValue",
-            "value": "false"
-          },
-          {
-            "type": "TEMPLATE",
-            "key": "name",
-            "value": "IsInternalTraffic"
-          }
+        "builtInVariable": [
+            {
+                "accountId": "4702710201",
+                "containerId": "12810664",
+                "type": "PAGE_URL",
+                "name": "Page URL"
+            },
+            {
+                "accountId": "4702710201",
+                "containerId": "12810664",
+                "type": "PAGE_HOSTNAME",
+                "name": "Page Hostname"
+            },
+            {
+                "accountId": "4702710201",
+                "containerId": "12810664",
+                "type": "PAGE_PATH",
+                "name": "Page Path"
+            },
+            {
+                "accountId": "4702710201",
+                "containerId": "12810664",
+                "type": "REFERRER",
+                "name": "Referrer"
+            },
+            {
+                "accountId": "4702710201",
+                "containerId": "12810664",
+                "type": "EVENT",
+                "name": "Event"
+            },
+            {
+                "accountId": "4702710201",
+                "containerId": "12810664",
+                "type": "CLICK_ELEMENT",
+                "name": "Click Element"
+            },
+            {
+                "accountId": "4702710201",
+                "containerId": "12810664",
+                "type": "CLICK_CLASSES",
+                "name": "Click Classes"
+            },
+            {
+                "accountId": "4702710201",
+                "containerId": "12810664",
+                "type": "CLICK_ID",
+                "name": "Click ID"
+            },
+            {
+                "accountId": "4702710201",
+                "containerId": "12810664",
+                "type": "CLICK_TARGET",
+                "name": "Click Target"
+            },
+            {
+                "accountId": "4702710201",
+                "containerId": "12810664",
+                "type": "CLICK_URL",
+                "name": "Click URL"
+            },
+            {
+                "accountId": "4702710201",
+                "containerId": "12810664",
+                "type": "CLICK_TEXT",
+                "name": "Click Text"
+            },
+            {
+                "accountId": "4702710201",
+                "containerId": "12810664",
+                "type": "FORM_ELEMENT",
+                "name": "Form Element"
+            },
+            {
+                "accountId": "4702710201",
+                "containerId": "12810664",
+                "type": "FORM_CLASSES",
+                "name": "Form Classes"
+            },
+            {
+                "accountId": "4702710201",
+                "containerId": "12810664",
+                "type": "FORM_ID",
+                "name": "Form ID"
+            },
+            {
+                "accountId": "4702710201",
+                "containerId": "12810664",
+                "type": "FORM_TARGET",
+                "name": "Form Target"
+            },
+            {
+                "accountId": "4702710201",
+                "containerId": "12810664",
+                "type": "FORM_URL",
+                "name": "Form URL"
+            },
+            {
+                "accountId": "4702710201",
+                "containerId": "12810664",
+                "type": "FORM_TEXT",
+                "name": "Form Text"
+            },
+            {
+                "accountId": "4702710201",
+                "containerId": "12810664",
+                "type": "CONTAINER_ID",
+                "name": "Container ID"
+            },
+            {
+                "accountId": "4702710201",
+                "containerId": "12810664",
+                "type": "HTML_ID",
+                "name": "HTML ID"
+            },
+            {
+                "accountId": "4702710201",
+                "containerId": "12810664",
+                "type": "SCROLL_DEPTH_THRESHOLD",
+                "name": "Scroll Depth Threshold"
+            },
+            {
+                "accountId": "4702710201",
+                "containerId": "12810664",
+                "type": "ELEMENT_VISIBILITY_RATIO",
+                "name": "Percent Visible"
+            },
+            {
+                "accountId": "4702710201",
+                "containerId": "12810664",
+                "type": "ELEMENT_VISIBILITY_TIME",
+                "name": "On-Screen Duration"
+            }
         ],
-        "fingerprint": "1570896748252",
-        "formatValue": {}
-      },
-      {
-        "accountId": "4702710201",
-        "containerId": "12810664",
-        "variableId": "46",
-        "name": "Item Culture or NA",
-        "type": "jsm",
-        "parameter": [
-          {
-            "type": "TEMPLATE",
-            "key": "javascript",
-            "value": "function() {\n    if ({{Culture}}) {\n    \treturn {{Culture}};\n    } else {\n  \t\treturn \"N/A\";\n    }\n}"
-          }
-        ],
-        "fingerprint": "1570896645679",
-        "formatValue": {}
-      },
-      {
-        "accountId": "4702710201",
-        "containerId": "12810664",
-        "variableId": "103",
-        "name": "Item ID",
-        "type": "v",
-        "parameter": [
-          {
-            "type": "INTEGER",
-            "key": "dataLayerVersion",
-            "value": "2"
-          },
-          {
-            "type": "BOOLEAN",
-            "key": "setDefaultValue",
-            "value": "false"
-          },
-          {
-            "type": "TEMPLATE",
-            "key": "name",
-            "value": "ItemId"
-          }
-        ],
-        "fingerprint": "1570192349223",
-        "formatValue": {}
-      },
-      {
-        "accountId": "4702710201",
-        "containerId": "12810664",
-        "variableId": "58",
-        "name": "Item ID or NA",
-        "type": "jsm",
-        "parameter": [
-          {
-            "type": "TEMPLATE",
-            "key": "javascript",
-            "value": "function() {\n    if ({{Item ID}}) {\n    \treturn {{Item ID}};\n    } else {\n  \t\treturn \"N/A\";\n    }\n}"
-          }
-        ],
-        "fingerprint": "1570192294576",
-        "formatValue": {}
-      },
-      {
-        "accountId": "4702710201",
-        "containerId": "12810664",
-        "variableId": "128",
-        "name": "Item Name",
-        "type": "v",
-        "parameter": [
-          {
-            "type": "INTEGER",
-            "key": "dataLayerVersion",
-            "value": "2"
-          },
-          {
-            "type": "BOOLEAN",
-            "key": "setDefaultValue",
-            "value": "false"
-          },
-          {
-            "type": "TEMPLATE",
-            "key": "name",
-            "value": "ItemName"
-          }
-        ],
-        "fingerprint": "1571833575098",
-        "formatValue": {}
-      },
-      {
-        "accountId": "4702710201",
-        "containerId": "12810664",
-        "variableId": "104",
-        "name": "Item Version",
-        "type": "v",
-        "parameter": [
-          {
-            "type": "INTEGER",
-            "key": "dataLayerVersion",
-            "value": "2"
-          },
-          {
-            "type": "BOOLEAN",
-            "key": "setDefaultValue",
-            "value": "false"
-          },
-          {
-            "type": "TEMPLATE",
-            "key": "name",
-            "value": "ItemVersion"
-          }
-        ],
-        "fingerprint": "1570410838454",
-        "formatValue": {}
-      },
-      {
-        "accountId": "4702710201",
-        "containerId": "12810664",
-        "variableId": "105",
-        "name": "Item Version or NA",
-        "type": "jsm",
-        "parameter": [
-          {
-            "type": "TEMPLATE",
-            "key": "javascript",
-            "value": "function() {\n    if ({{Item Version}}) {\n    \treturn {{Item Version}};\n    } else {\n  \t\treturn \"N/A\";\n    }\n}"
-          }
-        ],
-        "fingerprint": "1570410881842",
-        "formatValue": {}
-      },
-      {
-        "accountId": "4702710201",
-        "containerId": "12810664",
-        "variableId": "116",
-        "name": "Link HREF",
-        "type": "jsm",
-        "parameter": [
-          {
-            "type": "TEMPLATE",
-            "key": "javascript",
-            "value": "function () {\n  if ($({{Click Element}}).is('a'))\n  {\n  \treturn $({{Click Element}}).attr('href');\n  }\n  if ($({{Click Element}}).closest(a).length > 0)\n  {\n    return $({{Click Element}}).closest(a).attr('href');\n  } \n  return \"empty\";\n}"
-          }
-        ],
-        "fingerprint": "1570896310542",
-        "formatValue": {}
-      },
-      {
-        "accountId": "4702710201",
-        "containerId": "12810664",
-        "variableId": "115",
-        "name": "Link Text",
-        "type": "jsm",
-        "parameter": [
-          {
-            "type": "TEMPLATE",
-            "key": "javascript",
-            "value": "function () {\n  if ($({{Click Element}}).is('a'))\n  {\n  \treturn $({{Click Element}}).text().toLowerCase();\n  }\n  if ($({{Click Element}}).closest(a).length > 0)\n  {\n    return $({{Click Element}}).closest(a).text().toLowerCase();\n  } \n  return \"empty\";\n}"
-          }
-        ],
-        "fingerprint": "1570896287129",
-        "formatValue": {}
-      },
-      {
-        "accountId": "4702710201",
-        "containerId": "12810664",
-        "variableId": "113",
-        "name": "Link URL",
-        "type": "jsm",
-        "parameter": [
-          {
-            "type": "TEMPLATE",
-            "key": "javascript",
-            "value": "function() {\n  \treturn $({{Click Element}}).closest('a').attr('href');\n}"
-          }
-        ],
-        "fingerprint": "1570896236336",
-        "formatValue": {}
-      },
-      {
-        "accountId": "4702710201",
-        "containerId": "12810664",
-        "variableId": "117",
-        "name": "Location or NA",
-        "type": "jsm",
-        "parameter": [
-          {
-            "type": "TEMPLATE",
-            "key": "javascript",
-            "value": "function () {\n  \tvar rtn = 'N/A';\n\tvar l1 = $({{Click Element}}).closest('div[data-placement]');\n\n    if (l1.length == 0)\n    {\n      \t// AddThis Email button\n    \tl1 = $('.email-button').closest('div[data-placement]');\n    }\n  \n\tif (l1.length == 0)\n\t{\n    \t// Flowplayer\n  \t\tl1 = $('object').closest('div[data-placement]');\n\t}\n  \n\tif (l1.length == 0)\n\t{\n    \t// HTML5 player\n  \t\tl1 = $('video').closest('div[data-placement]');\n\t}\n  \n    if (l1.length > 0)\n    {\n      \trtn = $(l1).attr('data-placement');\n  \t\tvar l2 = $(l1).parent().closest('div[data-placement]');\n  \t\tvar l3 = $(l2).parent().closest('div[data-placement]');\n  \t\trtn = $(l1).attr('data-placement');\n  \t\tif (l2.length > 0) {\n  \t\t\trtn = $(l2).attr('data-placement') + '>>' + rtn;\n  \t\t}\n  \t\tif (l3.length > 0) {\n  \t\t\trtn = $(l3).attr('data-placement') + '>>' + rtn;\n  \t\t}\n  \t}\n  \n\treturn rtn;\n}"
-          }
-        ],
-        "fingerprint": "1570896342813",
-        "formatValue": {}
-      },
-      {
-        "accountId": "4702710201",
-        "containerId": "12810664",
-        "variableId": "112",
-        "name": "Paid Search Keyword",
-        "type": "jsm",
-        "parameter": [
-          {
-            "type": "TEMPLATE",
-            "key": "javascript",
-            "value": "function() {\n  return {{GetUrlParameter}}('q') + {{GetUrlParameter}}('utm_term');\n}"
-          }
-        ],
-        "fingerprint": "1570886881540",
-        "formatValue": {}
-      },
-      {
-        "accountId": "4702710201",
-        "containerId": "12810664",
-        "variableId": "72",
-        "name": "Position or NA",
-        "type": "jsm",
-        "parameter": [
-          {
-            "type": "TEMPLATE",
-            "key": "javascript",
-            "value": "function () {\n  \tvar rtn = 'N/A';\n\tvar l1 = $({{Click Element}}).closest('div[data-placement]');\n\n    if (l1.length == 0)\n    {\n      \t// AddThis Email button\n    \tl1 = $('.email-button').closest('div[data-placement]');\n    }\n  \n\tif (l1.length == 0)\n\t{\n    \t// Flowplayer\n  \t\tl1 = $('object').closest('div[data-placement]');\n\t}\n  \n\tif (l1.length == 0)\n\t{\n    \t// HTML5 player\n  \t\tl1 = $('video').closest('div[data-placement]');\n\t}\n  \n    if (l1.length > 0)\n    {\n      \trtn = $(l1).attr('data-placement');\n  \t\tvar l2 = $(l1).parent().closest('div[data-placement]');\n  \t\tvar l3 = $(l2).parent().closest('div[data-placement]');\n  \t\trtn = $(l1).attr('data-placement');\n  \t\tif (l2.length > 0) {\n  \t\t\trtn = $(l2).attr('data-placement') + '>>' + rtn;\n  \t\t}\n  \t\tif (l3.length > 0) {\n  \t\t\trtn = $(l3).attr('data-placement') + '>>' + rtn;\n  \t\t}\n  \t}\n  \n\treturn rtn;\n}"
-          }
-        ],
-        "fingerprint": "1570896844851",
-        "formatValue": {}
-      },
-      {
-        "accountId": "4702710201",
-        "containerId": "12810664",
-        "variableId": "60",
-        "name": "Post SC Analytics Event",
-        "type": "jsm",
-        "parameter": [
-          {
-            "type": "TEMPLATE",
-            "key": "javascript",
-            "value": "function() {\n  return function (sitecoreEventNameName,category,action,label,value,currencyCode,monetaryValue,firstName,lastName,jobTitle,email,mediaItemId,mediaItemName,searchTerm) { \n    \n    console.log('Post SC Analytics Event Start - \"' + sitecoreEventNameName + '\"');\n    \n\tvar data = [\n      \tsitecoreEventNameName,\n      \tcategory,\n      \taction,\n      \tlabel,\n      \tvalue,\n        currencyCode,\n        monetaryValue,\n        {{Item ID or NA}},\n    \t{{Page URL}},\n    \t{{Item Culture or NA}},\n\t\t{{Item Version or NA}},\n        firstName,\n        lastName,\n        jobTitle,\n        email,\n        {{Click URL or NA}},\n        {{Click Text or NA}},\n        {{Is Internal Traffic}},\n        {{Position or NA}},\n        mediaItemId,\n        mediaItemName,\n        searchTerm,\n        {{Item Name}}\n  \t];    \n    \n  jQuery.ajax({\n    type: \"POST\",\n    data: JSON.stringify(data),\n    url: \"/scanalytics/registeranalyticsevent\",\n    contentType: \"application/json; charset=utf-8\",\n    success: function( resp ) {\n      \tconsole.log(resp);\n      },\n    error: function (xhr, ajaxOptions, thrownError) {\n      console.log('Post SC Analytics Event Error- \"' + sitecoreEventNameName + '\": ' + xhr.status + ' - ' + thrownError);\n    }\n  })\n  return '';\n  };\n}"
-          }
-        ],
-        "fingerprint": "1572298228780",
-        "formatValue": {}
-      },
-      {
-        "accountId": "4702710201",
-        "containerId": "12810664",
-        "variableId": "126",
-        "name": "Shipping Email",
-        "type": "jsm",
-        "parameter": [
-          {
-            "type": "TEMPLATE",
-            "key": "javascript",
-            "value": "function () {\n  return $('#shippingEmail').val();\n}"
-          }
-        ],
-        "fingerprint": "1571427475711",
-        "formatValue": {}
-      },
-      {
-        "accountId": "4702710201",
-        "containerId": "12810664",
-        "variableId": "124",
-        "name": "Shipping First Name",
-        "type": "jsm",
-        "parameter": [
-          {
-            "type": "TEMPLATE",
-            "key": "javascript",
-            "value": "function () {\n  return $('#shippingFirstName').val();\n}"
-          }
-        ],
-        "fingerprint": "1571427393363",
-        "formatValue": {}
-      },
-      {
-        "accountId": "4702710201",
-        "containerId": "12810664",
-        "variableId": "127",
-        "name": "Shipping Job Title",
-        "type": "jsm",
-        "parameter": [
-          {
-            "type": "TEMPLATE",
-            "key": "javascript",
-            "value": "function () {\n  return $('#shippingJobTitle').val();\n}"
-          }
-        ],
-        "fingerprint": "1571427502537",
-        "formatValue": {}
-      },
-      {
-        "accountId": "4702710201",
-        "containerId": "12810664",
-        "variableId": "125",
-        "name": "Shipping Last Name",
-        "type": "jsm",
-        "parameter": [
-          {
-            "type": "TEMPLATE",
-            "key": "javascript",
-            "value": "function () {\n  return $('#shippingLastName').val();\n}"
-          }
-        ],
-        "fingerprint": "1571427442907",
-        "formatValue": {}
-      },
-      {
-        "accountId": "4702710201",
-        "containerId": "12810664",
-        "variableId": "110",
-        "name": "Shop Now Department",
-        "type": "jsm",
-        "parameter": [
-          {
-            "type": "TEMPLATE",
-            "key": "javascript",
-            "value": "function () {\n  return $({{Click Element}}).siblings(\".department\").text();\n}"
-          }
-        ],
-        "fingerprint": "1571420881108",
-        "formatValue": {}
-      },
-      {
-        "accountId": "4702710201",
-        "containerId": "12810664",
-        "variableId": "122",
-        "name": "Transaction Total",
-        "type": "v",
-        "parameter": [
-          {
-            "type": "INTEGER",
-            "key": "dataLayerVersion",
-            "value": "2"
-          },
-          {
-            "type": "BOOLEAN",
-            "key": "setDefaultValue",
-            "value": "false"
-          },
-          {
-            "type": "TEMPLATE",
-            "key": "name",
-            "value": "totalSale"
-          }
-        ],
-        "fingerprint": "1571412065243",
-        "formatValue": {}
-      },
-      {
-        "accountId": "4702710201",
-        "containerId": "12810664",
-        "variableId": "63",
-        "name": "gaDomain",
-        "type": "c",
-        "parameter": [
-          {
-            "type": "TEMPLATE",
-            "key": "value",
-            "value": "auto"
-          }
-        ],
-        "fingerprint": "1567195731065"
-      }
-    ],
-    "builtInVariable": [
-      {
-        "accountId": "4702710201",
-        "containerId": "12810664",
-        "type": "PAGE_URL",
-        "name": "Page URL"
-      },
-      {
-        "accountId": "4702710201",
-        "containerId": "12810664",
-        "type": "PAGE_HOSTNAME",
-        "name": "Page Hostname"
-      },
-      {
-        "accountId": "4702710201",
-        "containerId": "12810664",
-        "type": "PAGE_PATH",
-        "name": "Page Path"
-      },
-      {
-        "accountId": "4702710201",
-        "containerId": "12810664",
-        "type": "REFERRER",
-        "name": "Referrer"
-      },
-      {
-        "accountId": "4702710201",
-        "containerId": "12810664",
-        "type": "EVENT",
-        "name": "Event"
-      },
-      {
-        "accountId": "4702710201",
-        "containerId": "12810664",
-        "type": "CLICK_ELEMENT",
-        "name": "Click Element"
-      },
-      {
-        "accountId": "4702710201",
-        "containerId": "12810664",
-        "type": "CLICK_CLASSES",
-        "name": "Click Classes"
-      },
-      {
-        "accountId": "4702710201",
-        "containerId": "12810664",
-        "type": "CLICK_ID",
-        "name": "Click ID"
-      },
-      {
-        "accountId": "4702710201",
-        "containerId": "12810664",
-        "type": "CLICK_TARGET",
-        "name": "Click Target"
-      },
-      {
-        "accountId": "4702710201",
-        "containerId": "12810664",
-        "type": "CLICK_URL",
-        "name": "Click URL"
-      },
-      {
-        "accountId": "4702710201",
-        "containerId": "12810664",
-        "type": "CLICK_TEXT",
-        "name": "Click Text"
-      },
-      {
-        "accountId": "4702710201",
-        "containerId": "12810664",
-        "type": "FORM_ELEMENT",
-        "name": "Form Element"
-      },
-      {
-        "accountId": "4702710201",
-        "containerId": "12810664",
-        "type": "FORM_CLASSES",
-        "name": "Form Classes"
-      },
-      {
-        "accountId": "4702710201",
-        "containerId": "12810664",
-        "type": "FORM_ID",
-        "name": "Form ID"
-      },
-      {
-        "accountId": "4702710201",
-        "containerId": "12810664",
-        "type": "FORM_TARGET",
-        "name": "Form Target"
-      },
-      {
-        "accountId": "4702710201",
-        "containerId": "12810664",
-        "type": "FORM_URL",
-        "name": "Form URL"
-      },
-      {
-        "accountId": "4702710201",
-        "containerId": "12810664",
-        "type": "FORM_TEXT",
-        "name": "Form Text"
-      },
-      {
-        "accountId": "4702710201",
-        "containerId": "12810664",
-        "type": "CONTAINER_ID",
-        "name": "Container ID"
-      },
-      {
-        "accountId": "4702710201",
-        "containerId": "12810664",
-        "type": "HTML_ID",
-        "name": "HTML ID"
-      },
-      {
-        "accountId": "4702710201",
-        "containerId": "12810664",
-        "type": "SCROLL_DEPTH_THRESHOLD",
-        "name": "Scroll Depth Threshold"
-      },
-      {
-        "accountId": "4702710201",
-        "containerId": "12810664",
-        "type": "ELEMENT_VISIBILITY_RATIO",
-        "name": "Percent Visible"
-      },
-      {
-        "accountId": "4702710201",
-        "containerId": "12810664",
-        "type": "ELEMENT_VISIBILITY_TIME",
-        "name": "On-Screen Duration"
-      }
-    ],
-    "fingerprint": "0",
-    "tagManagerUrl": "https://tagmanager.google.com/#/versions/accounts/4702710201/containers/12810664/versions/0?apiLink=version"
-  }
+        "fingerprint": "0",
+        "tagManagerUrl": "https://tagmanager.google.com/#/versions/accounts/4702710201/containers/12810664/versions/0?apiLink=version"
+    }
 }
