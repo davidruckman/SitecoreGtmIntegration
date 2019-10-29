@@ -13,13 +13,13 @@ created: 20191010T212812Z
 ----version----
 language: en
 version: 1
-revision: 4b27d393-c8a9-42e3-b7f9-b3ecfa024c4d
+revision: 8081f3ae-b6ac-4a42-97b8-ceba12f87320
 
 ----field----
 field: {01A5F9FF-7E14-4C2D-AB36-1BDDF2B1D2CD}
 name: Rich Text
 key: rich text
-content-length: 29281
+content-length: 29298
 
 <!-- Required meta tags -->
 <meta charset="utf-8" />
@@ -329,7 +329,7 @@ Components
 </div>
 <hr />
 </div>
-<a href="/checkout-1" class="btn btn-lg btn-block btn-primary">PROCEED TO CHECKOUT</a>
+<a id="btnCheckout" href="/checkout-1" class="btn btn-lg btn-block btn-primary">PROCEED TO CHECKOUT</a>
 </div>
 </div>
 </div>
@@ -725,14 +725,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-4b27d393-c8a9-42e3-b7f9-b3ecfa024c4d
+8081f3ae-b6ac-4a42-97b8-ceba12f87320
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
 content-length: 16
 
-20191011T004105Z
+20191028T191157Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by

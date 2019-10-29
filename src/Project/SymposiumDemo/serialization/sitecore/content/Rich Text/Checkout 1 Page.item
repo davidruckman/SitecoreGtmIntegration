@@ -13,13 +13,13 @@ created: 20191010T234805Z
 ----version----
 language: en
 version: 1
-revision: a94355d6-988b-4cc4-b8d7-0dfeec1782d3
+revision: d7f50dcc-4476-49a8-a40d-876ed5d70f8c
 
 ----field----
 field: {01A5F9FF-7E14-4C2D-AB36-1BDDF2B1D2CD}
 name: Rich Text
 key: rich text
-content-length: 28995
+content-length: 28387
 
 <!-- Required meta tags -->
 <meta charset="utf-8" />
@@ -289,23 +289,23 @@ Components
     <hr />
     <div class="form-group">
     <label for="shippingFirstName">First Name</label>
-    <input type="text" class="form-control" id="shippingFirstName" value="" />
+    <input type="text" class="form-control" id="shippingFirstName" />
     </div>
     <div class="form-group">
     <label for="shippingLastName">Last Name</label>
-    <input type="text" class="form-control" id="shippingLastName" value="" />
+    <input type="text" class="form-control" id="shippingLastName" />
     </div>
     <div class="form-group">
     <label for="shippingEmail">Email Address</label>
-    <input type="email" class="form-control" id="shippingEmail" value="" />
+    <input type="email" class="form-control" id="shippingEmail" />
     </div>
     <div class="form-group">
     <label for="shippingJobTitle">Job Title</label>
-    <input type="text" class="form-control" id="shippingJobTitle" value="" />
+    <input type="text" class="form-control" id="shippingJobTitle" value="Developer" />
     </div>
     <div class="form-group">
     <label for="shippingPhone">Phone Number</label>
-    <input type="tel" class="form-control" id="shippingPhone" value="" />
+    <input type="tel" class="form-control" id="shippingPhone" />
     </div>
     <div class="form-row">
     <div class="form-group col-12">
@@ -325,20 +325,20 @@ Components
     <div class="form-group col-6 col-sm-5 col-md-6 col-lg-5">
     <label for="shippingCountry">Country</label>
     <select class="form-control custom-select" id="shippingCountry">
-    <option />Choose country
-    
-    <option value="Australia" />Australia
-    
-    <option value="Canada" />Canada
-    
-    <option value="France" />France
-    
-    <option value="Germany" />Germany
-    
-    <option value="Switzerland" />Switzerland
-    
-    <option value="USA" />United States
-    
+    <option>Choose country
+    </option>
+    <option value="Australia">Australia
+    </option>
+    <option value="Canada">Canada
+    </option>
+    <option value="France">France
+    </option>
+    <option value="Germany">Germany
+    </option>
+    <option value="Switzerland">Switzerland
+    </option>
+    <option value="USA">United States
+    </option>
     </select>
     </div>
     <div class="form-group col-6 col-sm-5 col-md-6 col-lg-5">
@@ -420,84 +420,83 @@ Components
 </div>
 <hr />
 </div>
-<a href="checkout-2" class="btn btn-lg btn-primary btn-block has-icon">CONTINUE TO PAYMENT<em class="material-icons">chevron_right</em></a>
+<a id="btnPayment" href="checkout-2" class="btn btn-lg btn-primary btn-block has-icon">CONTINUE TO PAYMENT<em class="material-icons">chevron_right</em></a>
 </div>
 </div>
 </div>
 </div>
 </div>
 <!-- FOOTER -->
-  <div class="footer">
-    <div class="container-fluid">
-      <div class="d-grid grid-template-col-sm-2 grid-template-col-lg-4">
-        <div class="px-3 text-center">
-          <h5>Subscribe</h5>
-          <p>and get <strong class="text-primary">10% discount</strong></p>
-          <form>
-            <div class="form-group">
-              <input type="email" class="form-control rounded-pill text-center" placeholder="Enter your email" />
-            </div>
-            <button type="button" class="btn btn-primary btn-block rounded-pill">SUBSCRIBE</button>
-          </form>
-        </div>
-        <div>
-          <h5>Customer Service</h5>
-          <div class="list-group list-group-flush list-group-no-border list-group-sm">
-            <a class="list-group-item list-group-item-action">Help Center</a>
-            <a class="list-group-item list-group-item-action">How to buy</a>
-            <a class="list-group-item list-group-item-action">Delivery</a>
-            <a class="list-group-item list-group-item-action">How to return</a>
-            <a class="list-group-item list-group-item-action">Payment Method</a>
-            <a class="list-group-item list-group-item-action">Shipping Method</a>
-          </div>
-        </div>
-        <div>
-          <h5>Mimity</h5>
-          <div class="list-group list-group-flush list-group-no-border list-group-sm">
-            <a href="/" class="list-group-item list-group-item-action">About Us</a>
-            <a class="list-group-item list-group-item-action">Terms and Conditions</a>
-            <a class="list-group-item list-group-item-action">Privacy Policy</a>
-            <a href="/" class="list-group-item list-group-item-action">FAQs</a>
-            <a class="list-group-item list-group-item-action">Our Story</a>
-            <a class="list-group-item list-group-item-action">Services</a>
-          </div>
-        </div>
-        <div>
-          <h5>Download The App</h5>
-          <a class="download-app">
-            <div class="media">
-              <img src="/img/app/google-play.svg" alt="Google Play Logo" height="30" />
-              <div class="media-body">
-                <small>Get it on</small>
-                <h5>Google Play</h5>
-              </div>
-            </div>
-          </a>
-          <a class="download-app">
-            <div class="media">
-              <img src="/img/app/apple.svg" alt="Apple Logo" height="30" />
-              <div class="media-body">
-                <small>Download on the</small>
-                <h5>App Store</h5>
-              </div>
-            </div>
-          </a>
-          <a class="download-app">
-            <div class="media">
-              <img src="/img/app/windows.svg" alt="Windows Logo" height="30" />
-              <div class="media-body">
-                <small>Get it from</small>
-                <h5>Microsoft Store</h5>
-              </div>
-            </div>
-          </a>
-        </div>
-      </div>
+<div class="footer">
+<div class="container-fluid">
+<div class="d-grid grid-template-col-sm-2 grid-template-col-lg-4">
+<div class="px-3 text-center">
+<h5>Subscribe</h5>
+<p>and get <strong class="text-primary">10% discount</strong></p>
+<form>
+    <div class="form-group">
+    <input type="email" class="form-control rounded-pill text-center" placeholder="Enter your email" />
     </div>
-  </div>
-
-  <div class="copyright">Copyright © 2019 Mimity All right reserved</div>
-  <!-- /FOOTER -->
+    <button type="button" class="btn btn-primary btn-block rounded-pill">SUBSCRIBE</button>
+</form>
+</div>
+<div>
+<h5>Customer Service</h5>
+<div class="list-group list-group-flush list-group-no-border list-group-sm">
+<a class="list-group-item list-group-item-action">Help Center</a>
+<a class="list-group-item list-group-item-action">How to buy</a>
+<a class="list-group-item list-group-item-action">Delivery</a>
+<a class="list-group-item list-group-item-action">How to return</a>
+<a class="list-group-item list-group-item-action">Payment Method</a>
+<a class="list-group-item list-group-item-action">Shipping Method</a>
+</div>
+</div>
+<div>
+<h5>Mimity</h5>
+<div class="list-group list-group-flush list-group-no-border list-group-sm">
+<a href="/" class="list-group-item list-group-item-action">About Us</a>
+<a class="list-group-item list-group-item-action">Terms and Conditions</a>
+<a class="list-group-item list-group-item-action">Privacy Policy</a>
+<a href="/" class="list-group-item list-group-item-action">FAQs</a>
+<a class="list-group-item list-group-item-action">Our Story</a>
+<a class="list-group-item list-group-item-action">Services</a>
+</div>
+</div>
+<div>
+<h5>Download The App</h5>
+<a class="download-app">
+</a>
+<div class="media"><a class="download-app">
+<img src="/img/app/google-play.svg" alt="Google Play Logo" height="30" />
+<div class="media-body">
+<small>Get it on</small>
+<h5>Google Play</h5>
+</div>
+</a></div>
+<a class="download-app">
+</a>
+<div class="media"><a class="download-app">
+<img src="/img/app/apple.svg" alt="Apple Logo" height="30" />
+<div class="media-body">
+<small>Download on the</small>
+<h5>App Store</h5>
+</div>
+</a></div>
+<a class="download-app">
+</a>
+<div class="media"><a class="download-app">
+<img src="/img/app/windows.svg" alt="Windows Logo" height="30" />
+<div class="media-body">
+<small>Get it from</small>
+<h5>Microsoft Store</h5>
+</div>
+</a></div>
+</div>
+</div>
+</div>
+</div>
+<div class="copyright">Copyright &copy; 2019 Mimity All right reserved</div>
+<!-- /FOOTER -->
 <!-- MENU MODAL -->
 <div class="modal fade modal-content-left" id="menuModal" tabindex="-1" role="dialog" aria-hidden="true">
 <div class="modal-dialog modal-dialog-scrollable" role="document">
@@ -689,14 +688,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-a94355d6-988b-4cc4-b8d7-0dfeec1782d3
+d7f50dcc-4476-49a8-a40d-876ed5d70f8c
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
 content-length: 16
 
-20191018T193256Z
+20191028T222314Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by

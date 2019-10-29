@@ -13,13 +13,13 @@ created: 20191011T000357Z
 ----version----
 language: en
 version: 1
-revision: 6324bfba-c210-493e-9b90-590f5784cfbd
+revision: 095b2d7e-9e40-4a2c-9fe5-de6247873f4d
 
 ----field----
 field: {01A5F9FF-7E14-4C2D-AB36-1BDDF2B1D2CD}
 name: Rich Text
 key: rich text
-content-length: 25801
+content-length: 25816
 
 <!-- Required meta tags -->
 <meta charset="utf-8" />
@@ -399,7 +399,7 @@ You currently have <strong>9,386</strong> Points to spend.
 </div>
 <hr />
 </div>
-<a href="/checkout-3" class="btn btn-lg btn-primary btn-block has-icon">REVIEW MY ORDER<em class="material-icons">chevron_right</em></a>
+<a id="btnReview" href="/checkout-3" class="btn btn-lg btn-primary btn-block has-icon">REVIEW MY ORDER<em class="material-icons">chevron_right</em></a>
 </div>
 </div>
 </div>
@@ -667,14 +667,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-6324bfba-c210-493e-9b90-590f5784cfbd
+095b2d7e-9e40-4a2c-9fe5-de6247873f4d
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
 content-length: 16
 
-20191019T121326Z
+20191028T222507Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by
