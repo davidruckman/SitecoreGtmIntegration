@@ -13,13 +13,13 @@ created: 20191003T154655Z
 ----version----
 language: en
 version: 1
-revision: 9c953bf5-eb71-4335-a453-df5239cf1b75
+revision: b6187760-0c68-475e-ae2c-bb254c5f5f10
 
 ----field----
 field: {01A5F9FF-7E14-4C2D-AB36-1BDDF2B1D2CD}
 name: Rich Text
 key: rich text
-content-length: 40477
+content-length: 40495
 
 <head>
   <!-- Required meta tags -->
@@ -543,7 +543,7 @@ FLASH DEALS
             <div class="form-group">
               <input type="email" class="form-control rounded-pill text-center" placeholder="Enter your email" />
             </div>
-            <button type="button" class="btn btn-primary btn-block rounded-pill">SUBSCRIBE</button>
+            <button id="btnSubscribe" type="button" class="btn btn-primary btn-block rounded-pill">SUBSCRIBE</button>
           </form>
         </div>
         <div>
@@ -929,14 +929,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-9c953bf5-eb71-4335-a453-df5239cf1b75
+b6187760-0c68-475e-ae2c-bb254c5f5f10
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
 content-length: 16
 
-20191010T235440Z
+20191101T153021Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by
