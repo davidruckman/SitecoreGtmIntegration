@@ -13,13 +13,13 @@ created: 20191011T004841Z
 ----version----
 language: en
 version: 1
-revision: 17b0391f-df47-424c-bc7f-dc60f87e5de8
+revision: 5ef1654d-890e-4f55-8746-52ec76d8cadc
 
 ----field----
 field: {01A5F9FF-7E14-4C2D-AB36-1BDDF2B1D2CD}
 name: Rich Text
 key: rich text
-content-length: 23787
+content-length: 23812
 
 <script>
 dataLayer.push({
@@ -310,7 +310,7 @@ Components
 <span class="text-muted">Amount: </span>
 <span class="text-info">$16.54</span></p>
 <p>A confirmation email has been sent to <span style="text-decoration: underline;">john.thor@example.com</span></p>
-<a href="/" class="btn btn-faded-secondary rounded mb-3">Continue Shopping</a>
+<a id="btnContinueShopping" href="/" class="btn btn-faded-secondary rounded mb-3">Continue Shopping</a>
 <a href="account-orders.html" class="btn btn-primary rounded mb-3">View Order</a>
 </div>
 </div>
@@ -585,14 +585,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-17b0391f-df47-424c-bc7f-dc60f87e5de8
+5ef1654d-890e-4f55-8746-52ec76d8cadc
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
 content-length: 16
 
-20191018T152341Z
+20191107T125421Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by

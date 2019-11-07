@@ -249,6 +249,14 @@ namespace RDA.Feature.GtmIntegration.Controllers
 
         }
 
+        [HttpPost]
+        public void EndAnalyticsSession()
+        {
+            HttpContext.Session.Abandon();
+            Tracker.Current.EndVisit(true);
+            Tracker.Current.EndTracking();
+        }
+
         private void IdentifyContact(string source, string firstName, string lastName, string jobTitle, string email)
         {
             using (var client = this.CreateClient())

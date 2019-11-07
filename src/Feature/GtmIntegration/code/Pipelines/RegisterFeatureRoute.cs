@@ -18,6 +18,11 @@ namespace RDA.Feature.GtmIntegration.Pipelines
                 controller = "ScAnalytics",
                 action = "RegisterAnalyticsEvent"
             });
+            RouteTable.Routes.MapRoute("RDA.Feature.GtmIntegration.EndAnalyticsSession.Api", "ScAnalytics/EndAnalyticsSession", new
+            {
+                controller = "ScAnalytics",
+                action = "EndAnalyticsSession"
+            });
         }
     }
 }
